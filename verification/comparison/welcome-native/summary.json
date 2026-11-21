@@ -1,0 +1,8 @@
+{
+  "pair_count": 2,
+  "failed_state_ids": [
+    "WELCOME-FIRST-RUN-LIGHT",
+    "WELCOME-FIRST-RUN-DARK"
+  ],
+  "exact_match": false
+}

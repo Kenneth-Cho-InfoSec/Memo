@@ -1,0 +1,41 @@
+{
+  "state_id": "SETTINGS-EXPLICIT-DARK-DEFAULTS",
+  "reference_file": "verification/reference/compact/REF-KEEP-004-settings-explicit-dark.png",
+  "rebuilt_file": "verification/rebuilt/compact/settings-explicit-dark-defaults.png",
+  "fixture": "Explicit Dark theme with default setting values.",
+  "device_profile": "compact-phone-api37",
+  "expected": "Dark Settings with app-owned surfaces",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 80566,
+    "exact_pixel_match_percent": 96.639723,
+    "mean_absolute_channel_error": 4.009195,
+    "max_channel_delta": 231
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 73066,
+    "exact_pixel_match_percent": 96.79973,
+    "mean_absolute_channel_error": 3.737766,
+    "max_channel_delta": 218
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

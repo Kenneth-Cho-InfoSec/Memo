@@ -1,0 +1,2 @@
+11-19 13:24:07.643  9802  9822 I TestRunner: started: reminderTimestampIsQueryableAndTrashSuppressesIt(dev.arcturus.memo.data.KeepRepositoryInstrumentedTest)
+11-19 13:24:07.663  9802  9822 I TestRunner: finished: reminderTimestampIsQueryableAndTrashSuppressesIt(dev.arcturus.memo.data.KeepRepositoryInstrumentedTest)

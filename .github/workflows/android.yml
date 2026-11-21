@@ -1,0 +1,71 @@
+name: Android build and parity
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Lint, unit tests, signed debug APK
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v3
+      - name: Install Android 17 build platform
+        run: sdkmanager 'platforms;android-37' 'build-tools;36.0.0'
+      - name: Lint, unit tests, and assemble debug APK
+        run: ./gradlew lintDebug testDebugUnitTest assembleDebug
+      - name: Verify debug APK signature
+        run: "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose app/build/outputs/apk/debug/app-debug.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arcturus-memo-debug-apk
+          path: app/build/outputs/apk/debug/app-debug.apk
+          if-no-files-found: error
+
+  android-17-parity:
+    name: Android 17 QEMU instrumentation and screenshot parity
+    runs-on: [self-hosted, linux, android17-qemu]
+    timeout-minutes: 45
+    env:
+      KEEP_REFERENCE_APK: ${{ vars.KEEP_REFERENCE_APK }}
+      KEEP_REFERENCE_EVIDENCE: ${{ vars.KEEP_REFERENCE_EVIDENCE }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - uses: android-actions/setup-android@v3
+      - name: Install Android 17 build platform
+        run: sdkmanager 'platforms;android-37' 'build-tools;36.0.0'
+      - name: Check protected inputs and QEMU guest
+        run: |
+          if [ -z "$KEEP_REFERENCE_APK" ] || [ ! -f "$KEEP_REFERENCE_APK" ]; then
+            echo "::error title=Missing prerequisite::Configure the private runner variable KEEP_REFERENCE_APK with the authorized APK path."
+            exit 2
+          fi
+          if [ -z "$KEEP_REFERENCE_EVIDENCE" ] || [ ! -d "$KEEP_REFERENCE_EVIDENCE" ]; then
+            echo "::error title=Missing prerequisite::Configure KEEP_REFERENCE_EVIDENCE with the private screenshot fixture directory."
+            exit 2
+          fi
+          adb devices
+          timeout 30 adb wait-for-device || { echo "::error title=Missing device::Android 17 QEMU did not become available over ADB within 30 seconds."; exit 2; }
+          test "$(adb shell getprop ro.build.version.sdk | tr -d '\r')" = 37 || { echo "::error title=Wrong guest::Android 17/API 37 is required."; exit 2; }
+      - name: Run reference install, instrumentation, and strict pixel comparison
+        run: scripts/verify-parity.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: android17-parity-evidence
+          path: |
+            verification/comparison/results/**
+            verification/rebuilt/ci-run/**
+            app/build/reports/**
+            app/build/outputs/androidTest-results/**
+          if-no-files-found: warn

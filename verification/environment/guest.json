@@ -1,0 +1,27 @@
+{
+  "android_release": "17",
+  "api_level": 37,
+  "build_fingerprint": "google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260831.015/16516427:userdebug/dev-keys",
+  "cpu_abi": "x86_64",
+  "product_model": "sdk_gphone16k_x86_64",
+  "build_id": "CP41.260831.015",
+  "locale": "en-US",
+  "timezone": "Europe/Belfast",
+  "display_size": "Physical size: 1080x2220",
+  "display_density": "Physical density: 440",
+  "font_scale": "1.0",
+  "navigation_mode_secure_setting": "2",
+  "default_input_method": "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+  "input_methods": [
+    "com.google.android.inputmethod.latin/com.android.inputmethod.latin.LatinIME",
+    "com.google.android.tts/com.google.android.apps.speech.tts.googletts.settings.asr.voiceime.VoiceInputMethodService"
+  ],
+  "orientation": "portrait (AVD config hw.initialOrientation=portrait; captures portrait)",
+  "system_night_mode": "Night mode: no",
+  "wallpaper_or_color_seed": "AVD default wallpaper was not changed; the app uses explicit fixed palettes and does not use a dynamic color seed.",
+  "profile_scope": "compact phone only; tablet, large phone, rotation, and alternate font scales not captured",
+  "adb_version": [
+    "Android Debug Bridge version 1.0.41",
+    "Version 37.0.0p1-android-tools"
+  ]
+}

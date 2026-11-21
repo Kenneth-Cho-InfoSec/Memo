@@ -1,0 +1,8 @@
+317-      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=2, android:broadcast.temporaryAppAllowlistReasonCode=302, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=0, android:broadcast.flags=8}]
+318:    RTC_WAKEUP #35: Alarm{7e63c57 type 0 origWhen 1795165200000 whenElapsed 73686573 dev.arcturus.memo}
+319:      tag=*walarm*:dev.arcturus.memo.action.FIRE_REMINDER
+320-      type=RTC_WAKEUP origWhen=2026-11-20 09:00:00.000 window=+1h0m0s0ms repeatInterval=0 count=0 flags=0x20
+--
+322-      whenElapsed=+20h27m19s18ms maxWhenElapsed=+21h27m19s18ms
+323:      operation=PendingIntent{5b46344: PendingIntentRecord{fae0294 dev.arcturus.memo broadcastIntent}}
+324-      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=2, android:broadcast.temporaryAppAllowlistReasonCode=-1, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=1, android:broadcast.flags=8}]

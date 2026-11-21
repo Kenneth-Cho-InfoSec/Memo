@@ -1,0 +1,9 @@
+Runtime evidence captured on KeepRef_Compact_API37, 2026-11-19 12:28 guest time.
+
+NotificationRecord: pkg=dev.arcturus.memo, channel=note-reminders, importance=4.
+Notification text: "Keep reminder" / "Tap to open your note".
+NotificationManager reported numEnqueuedByApp=1 and numPostedByApp=1.
+The Android notification shade showed the Keep Notes notification. Tapping it returned to MainActivity and opened the reminder note editor.
+
+Alarm evidence is in reminder-alarm-fired.txt and reminder-future-alarm-before-reboot.txt.
+Screenshots are in ../rebuilt/reminders/notification-shade.png and notification-open-editor.png.

@@ -1,0 +1,42 @@
+[
+  {
+    "state_id": "SETTINGS-SYSTEM-LIGHT-ROW-CLICK",
+    "reference_file": "REF-KEEP-121-reference-settings-sharing-restored.png",
+    "rebuilt_file": "settings-default-light-final.png",
+    "fixture": "Default settings; system night mode off; Settings opened from the drawer.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Light Settings with System default theme and sharing enabled"
+  },
+  {
+    "state_id": "THEME-PICKER-SYSTEM-LIGHT-ROW-CLICK",
+    "reference_file": "REF-KEEP-003-theme-picker-system-light.png",
+    "rebuilt_file": "theme-picker-system-light-final.png",
+    "fixture": "Default settings; picker opened by tapping the Theme row label.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Light, Dark, System default options and Cancel"
+  },
+  {
+    "state_id": "SETTINGS-SHARING-OFF-LIGHT",
+    "reference_file": "REF-KEEP-116-reference-settings-sharing-off.png",
+    "rebuilt_file": "settings-sharing-off-light-final.png",
+    "fixture": "System light mode; all default settings except Enable sharing off.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Light Settings with sharing disabled"
+  },
+  {
+    "state_id": "SETTINGS-EXPLICIT-DARK-DEFAULTS",
+    "reference_file": "REF-KEEP-004-settings-explicit-dark.png",
+    "rebuilt_file": "settings-explicit-dark-defaults.png",
+    "fixture": "Explicit Dark theme with default setting values.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Dark Settings with app-owned surfaces"
+  },
+  {
+    "state_id": "SETTINGS-TOGGLED-DARK-ROW-CLICK",
+    "reference_file": "REF-KEEP-017-settings-toggled-dark.png",
+    "rebuilt_file": "settings-toggled-dark-rowclick.png",
+    "fixture": "Dark theme; add-items, move-checked, rich-previews off; create-text on; sharing off.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Dark Settings with the same five switch values"
+  }
+]

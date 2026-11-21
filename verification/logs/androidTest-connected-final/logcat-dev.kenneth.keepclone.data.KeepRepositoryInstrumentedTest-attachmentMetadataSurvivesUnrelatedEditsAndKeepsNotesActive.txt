@@ -1,0 +1,3 @@
+11-19 13:24:07.566  9802  9822 I TestRunner: started: attachmentMetadataSurvivesUnrelatedEditsAndKeepsNotesActive(dev.arcturus.memo.data.KeepRepositoryInstrumentedTest)
+11-19 13:24:07.588  9802  9822 D CompatChangeReporter: Compat change id reported: 418924588; UID 10268; state: ENABLED
+11-19 13:24:07.642  9802  9822 I TestRunner: finished: attachmentMetadataSurvivesUnrelatedEditsAndKeepsNotesActive(dev.arcturus.memo.data.KeepRepositoryInstrumentedTest)

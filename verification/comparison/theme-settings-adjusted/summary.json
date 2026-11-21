@@ -1,0 +1,10 @@
+{
+  "pair_count": 4,
+  "failed_state_ids": [
+    "THEME-SETTINGS-SYSTEM-LIGHT-ADJUSTED",
+    "THEME-PICKER-SYSTEM-LIGHT-ADJUSTED",
+    "THEME-SETTINGS-EXPLICIT-DARK-ADJUSTED",
+    "SETTINGS-TOGGLED-DARK-ADJUSTED"
+  ],
+  "exact_match": false
+}

@@ -1,0 +1,41 @@
+{
+  "state_id": "WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE",
+  "reference_file": "verification/reference/tablet/welcome-light-landscape.png",
+  "rebuilt_file": "verification/rebuilt/tablet/welcome-light-landscape-dynamic.png",
+  "fixture": "Welcome page on the existing signed-in tablet guest; clone first-run store cleared; Android System light; en-US.",
+  "device_profile": "KeepRef_Tablet_API37; 2560x1600; 320dpi; landscape",
+  "expected": "Keep logo, welcome headline/copy and Get started action arranged for a landscape tablet.",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 2560,
+    "height": 1600,
+    "total_pixels": 4096000,
+    "differing_pixels": 4092011,
+    "exact_pixel_match_percent": 0.097388,
+    "mean_absolute_channel_error": 2.864661,
+    "max_channel_delta": 254
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    2560,
+    1560
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 2560,
+    "height": 1494,
+    "total_pixels": 3824640,
+    "differing_pixels": 3823479,
+    "exact_pixel_match_percent": 0.030356,
+    "mean_absolute_channel_error": 2.934183,
+    "max_channel_delta": 254
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

@@ -1,0 +1,6 @@
+Reference package launch diagnosis — Android 17 API 37 QEMU
+
+Initial command: adb shell am start -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -p com.google.android.keep
+Observed result: Error: Activity not started, unable to resolve Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] ... pkg=com.google.android.keep }
+
+Package manager confirmed com.google.android.keep was installed at /data/app/.../base.apk. `cmd package resolve-activity --brief -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -p com.google.android.keep` resolved com.google.android.keep/.activities.BrowseActivity. `adb shell monkey -p com.google.android.keep -c android.intent.category.LAUNCHER 1` launched the package, after which explicit `adb shell am start -n com.google.android.keep/.activities.BrowseActivity` succeeded and the resumed activity was com.google.android.keep/.activities.BrowseActivity.

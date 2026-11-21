@@ -1,0 +1,8 @@
+command: /usr/bin/python3 scripts/compare_screenshots.py --manifest verification/comparison/settings-sweep-pairs.json --reference-root verification/reference/compact --rebuilt-root verification/rebuilt/settings-sweep --output-root verification/comparison/settings-sweep --strict
+exit_code: 1
+
+FAILED SETTINGS-SYSTEM-LIGHT-ROW-CLICK: {'same_dimensions': True, 'width': 1080, 'height': 2220, 'total_pixels': 2397600, 'differing_pixels': 110527, 'exact_pixel_match_percent': 95.390098, 'mean_absolute_channel_error': 5.065864, 'max_channel_delta': 249}
+FAILED THEME-PICKER-SYSTEM-LIGHT-ROW-CLICK: {'same_dimensions': True, 'width': 1080, 'height': 2220, 'total_pixels': 2397600, 'differing_pixels': 249396, 'exact_pixel_match_percent': 89.598098, 'mean_absolute_channel_error': 6.081926, 'max_channel_delta': 226}
+FAILED SETTINGS-SHARING-OFF-LIGHT: {'same_dimensions': True, 'width': 1080, 'height': 2220, 'total_pixels': 2397600, 'differing_pixels': 120356, 'exact_pixel_match_percent': 94.980147, 'mean_absolute_channel_error': 5.086451, 'max_channel_delta': 249}
+FAILED SETTINGS-EXPLICIT-DARK-DEFAULTS: {'same_dimensions': True, 'width': 1080, 'height': 2220, 'total_pixels': 2397600, 'differing_pixels': 137450, 'exact_pixel_match_percent': 94.267184, 'mean_absolute_channel_error': 4.951242, 'max_channel_delta': 225}
+FAILED SETTINGS-TOGGLED-DARK-ROW-CLICK: {'same_dimensions': True, 'width': 1080, 'height': 2220, 'total_pixels': 2397600, 'differing_pixels': 137453, 'exact_pixel_match_percent': 94.267059, 'mean_absolute_channel_error': 5.189402, 'max_channel_delta': 225}

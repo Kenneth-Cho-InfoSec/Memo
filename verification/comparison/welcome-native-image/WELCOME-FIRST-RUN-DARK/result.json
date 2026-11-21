@@ -1,0 +1,41 @@
+{
+  "state_id": "WELCOME-FIRST-RUN-DARK",
+  "reference_file": "verification/reference/compact/welcome-reference-dark-final.png",
+  "rebuilt_file": "verification/rebuilt/compact/welcome-first-run-dark.png",
+  "fixture": "Fresh install; Android System theme; night mode on; English (US).",
+  "device_profile": "compact-phone-api37",
+  "expected": "Dark welcome card with the same copy and matching light foreground/button container.",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 41316,
+    "exact_pixel_match_percent": 98.276777,
+    "mean_absolute_channel_error": 2.654339,
+    "max_channel_delta": 242
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 39951,
+    "exact_pixel_match_percent": 98.250158,
+    "mean_absolute_channel_error": 2.692151,
+    "max_channel_delta": 222
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

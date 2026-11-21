@@ -1,0 +1,2 @@
+11-19 13:10:18.228 30588 30608 I TestRunner: started: imageAttachmentMetadataSurvivesUnrelatedNoteEdits(dev.arcturus.memo.data.KeepRepositoryInstrumentedTest)
+11-19 13:10:18.238 30588 30608 I TestRunner: finished: imageAttachmentMetadataSurvivesUnrelatedNoteEdits(dev.arcturus.memo.data.KeepRepositoryInstrumentedTest)

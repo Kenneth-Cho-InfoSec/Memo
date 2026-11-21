@@ -1,0 +1,4580 @@
+{
+  "app/build.gradle.kts": {
+    "mtime": 1795085933.2586646,
+    "seen": 1795085936.4507618,
+    "ast_hash": "f07e1cafcaa63ea43b6da5380ff30583",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/MainActivity.kt": {
+    "mtime": 1795090847.475082,
+    "seen": 1795090867.0025504,
+    "ast_hash": "965937d1206d0584493ae68ef6ba643d",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/data/KeepSettings.kt": {
+    "mtime": 1795086020.941833,
+    "seen": 1795086145.7160091,
+    "ast_hash": "39b377eb5933e43604be9bb8e118e474",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/KeepApp.kt": {
+    "mtime": 1795125020.0610902,
+    "seen": 1795125029.2028704,
+    "ast_hash": "517e7e2a3159007c10e54d7fc609e98d",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/home/KeepHomeScreen.kt": {
+    "mtime": 1795122312.293169,
+    "seen": 1795122320.4897335,
+    "ast_hash": "7a74940fd28d055cb1adbfa65460b209",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/settings/KeepSettingsScreen.kt": {
+    "mtime": 1795118848.2055538,
+    "seen": 1795119343.3720822,
+    "ast_hash": "a865247b0566ed8f7f3056c0a302a244",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/theme/KeepColors.kt": {
+    "mtime": 1795121509.825364,
+    "seen": 1795121723.3812685,
+    "ast_hash": "a77056019ab696a8815b7f8e10704acb",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/theme/KeepTheme.kt": {
+    "mtime": 1795115201.9428096,
+    "seen": 1795115291.0405211,
+    "ast_hash": "1cea79dc316d0bf19c9e0abe80d371f3",
+    "semantic_hash": ""
+  },
+  "build.gradle.kts": {
+    "mtime": 1795084270.0697129,
+    "seen": 1795084705.6159775,
+    "ast_hash": "3bce16f63fc011ae3a91462383026185",
+    "semantic_hash": ""
+  },
+  "gradlew": {
+    "mtime": 1795084380.3660235,
+    "seen": 1795084705.6159804,
+    "ast_hash": "a43be8432bac3ffd05b3769aa42fe996",
+    "semantic_hash": ""
+  },
+  "settings.gradle.kts": {
+    "mtime": 1795084270.0697129,
+    "seen": 1795084705.6159832,
+    "ast_hash": "e47cdc9958f34c123399ffbf928e1ca6",
+    "semantic_hash": ""
+  },
+  "PRODUCT.md": {
+    "mtime": 1795084214.215521,
+    "seen": 1795084705.6159866,
+    "ast_hash": "5d1d69978290372baf70178671e7ad27",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-11-19-google-keep-reimplementation.md": {
+    "mtime": 1795084795.6810434,
+    "seen": 1795084882.0512767,
+    "ast_hash": "d417e8944a4e84ebd2eed115095ddcfc",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-11-19-google-keep-reimplementation-design.md": {
+    "mtime": 1795084214.215521,
+    "seen": 1795084705.6159933,
+    "ast_hash": "5f97643ab4dc6ff4312b0df733e17a1e",
+    "semantic_hash": ""
+  },
+  "verification/environment/resource-table.txt": {
+    "mtime": 1795084446.9571064,
+    "seen": 1795084705.6159961,
+    "ast_hash": "7f5dcd51360a19f3382b81d719bcaaa5",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-002-settings-system-light.png": {
+    "mtime": 1795085762.928362,
+    "seen": 1795085849.5670156,
+    "ast_hash": "a3814fa9c25ad9eef430c95caf3d8d34",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-003-theme-picker-system-light.png": {
+    "mtime": 1795084544.640321,
+    "seen": 1795084705.6160023,
+    "ast_hash": "0b925da636afab07d6c1a2928268f89d",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-004-settings-explicit-dark.png": {
+    "mtime": 1795085733.0766668,
+    "seen": 1795085849.5670211,
+    "ast_hash": "21ad42fe9d5d61f8093ca798b89b455c",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/current-boot.png": {
+    "mtime": 1795083915.743108,
+    "seen": 1795084705.6160088,
+    "ast_hash": "8b24f085f070117ff72abd0a124ac8ea",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/current-launch.png": {
+    "mtime": 1795083923.335017,
+    "seen": 1795084705.6160116,
+    "ast_hash": "05dc2610cc7032d6c05189000cadc3d2",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-001-home-light.png": {
+    "mtime": 1795086230.3807936,
+    "seen": 1795086501.518044,
+    "ast_hash": "955471f4e02899123ba12fa9678b1afb",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-002-drawer-light.png": {
+    "mtime": 1795085035.0717754,
+    "seen": 1795085148.5814738,
+    "ast_hash": "d073239cc7d7273aeaeddba574117766",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-003-settings-system-light.png": {
+    "mtime": 1795085043.1677012,
+    "seen": 1795085148.5814784,
+    "ast_hash": "23dfca786ea5645551b7b64ab8f23b65",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-004-theme-picker-light.png": {
+    "mtime": 1795085070.4434507,
+    "seen": 1795085148.5814817,
+    "ast_hash": "05276812039a84da21534cc0a831077d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-005-settings-explicit-dark.png": {
+    "mtime": 1795085671.859292,
+    "seen": 1795085849.5669913,
+    "ast_hash": "ec7d90b22844380c6a2c259c5321df05",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-008-settings-explicit-light.png": {
+    "mtime": 1795085578.86026,
+    "seen": 1795085849.5669947,
+    "ast_hash": "c7fc8eee89648976529048e5a2405e8b",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-009-settings-system-dark.png": {
+    "mtime": 1795085586.6211786,
+    "seen": 1795085849.566998,
+    "ast_hash": "636900760640780bd6a517a1a4438554",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-010-settings-system-light.png": {
+    "mtime": 1795085594.1610997,
+    "seen": 1795085849.5670009,
+    "ast_hash": "b330f7607527a505141408eb35997df5",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-011-theme-picker-dark.png": {
+    "mtime": 1795085306.0821152,
+    "seen": 1795085534.1402674,
+    "ast_hash": "62e066e968e2cb4d56d43ea2a3ff26de",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-012-theme-state-after-light-selection.png": {
+    "mtime": 1795085345.8776987,
+    "seen": 1795085534.14027,
+    "ast_hash": "e468dd85d213e48b642c7a1699774c73",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-013-settings-system-light-restored.png": {
+    "mtime": 1795085374.1394029,
+    "seen": 1795085534.1402729,
+    "ast_hash": "84957abdeb4933b156412bb8b584773c",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/data/KeepDao.kt": {
+    "mtime": 1795092885.5529964,
+    "seen": 1795092892.431705,
+    "ast_hash": "4d1c81382b705fd6e3bc836b933a40aa",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/data/KeepDatabase.kt": {
+    "mtime": 1795092472.02709,
+    "seen": 1795092892.431708,
+    "ast_hash": "18b0a187a5fc638194eaa50728dc7739",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/data/KeepRepository.kt": {
+    "mtime": 1795086847.1984599,
+    "seen": 1795086851.5001035,
+    "ast_hash": "d0abcb9d6b4617eaebbcb02ede9d1af1",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/data/NoteEntities.kt": {
+    "mtime": 1795092472.02709,
+    "seen": 1795092892.431796,
+    "ast_hash": "0e7da0a134e5fa67f25911a634bde89b",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-015-current-settings.png": {
+    "mtime": 1795085660.7204058,
+    "seen": 1795085849.5670094,
+    "ast_hash": "bbdb01d780a4369d04fb3f057f06c2c6",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-001-home-light.png": {
+    "mtime": 1795085686.0371473,
+    "seen": 1795085849.5670125,
+    "ast_hash": "f574a352b1fde5ea485300ae028133ae",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-016-drawer-dark.png": {
+    "mtime": 1795085697.227033,
+    "seen": 1795085849.5670238,
+    "ast_hash": "84a3fcc907cc167e7b8390b89519a961",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-017-settings-toggled-dark.png": {
+    "mtime": 1795085723.4067657,
+    "seen": 1795085849.5670278,
+    "ast_hash": "85846354e831d3e66759249164043a90",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/editor/KeepNoteEditorScreen.kt": {
+    "mtime": 1795122308.967203,
+    "seen": 1795122320.4897296,
+    "ast_hash": "5ef3ee0b04cbb2252044f0d896486a52",
+    "semantic_hash": ""
+  },
+  "app/schemas/dev.kenneth.keepclone.data.KeepDatabase/1.json": {
+    "mtime": 1795085942.8835733,
+    "seen": 1795086145.7159915,
+    "ast_hash": "5a95c4108988b73edcda6ac3fd70a536",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/home/KeepSearchScreen.kt": {
+    "mtime": 1795087804.931342,
+    "seen": 1795087807.7403204,
+    "ast_hash": "ab36e82da3c23fb57a22182a7606fd7e",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/home/NotePreviewCard.kt": {
+    "mtime": 1795120572.1889396,
+    "seen": 1795121723.3812215,
+    "ast_hash": "3174b9b0f135b5e25d6fe2a03469e3f8",
+    "semantic_hash": ""
+  },
+  "verification/asset-provenance.md": {
+    "mtime": 1795106140.7399757,
+    "seen": 1795106698.630115,
+    "ast_hash": "aa2cfe46ff33df511c54a96831963933",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-hdpi/ic_lightbulb_outline_yellow500_120.png": {
+    "mtime": 1795086492.639727,
+    "seen": 1795086501.5180292,
+    "ast_hash": "7b26ede49180a15de1d8fc609aed94e0",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-mdpi/ic_lightbulb_outline_yellow500_120.png": {
+    "mtime": 1795086492.6385674,
+    "seen": 1795086501.518032,
+    "ast_hash": "ea2706f3d8b4cb32791e56fcb4b7aafa",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-xhdpi/ic_lightbulb_outline_yellow500_120.png": {
+    "mtime": 1795086492.641028,
+    "seen": 1795086501.5180352,
+    "ast_hash": "b1a2f372df14e2f82029fdacbce573b4",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-xxhdpi/ic_lightbulb_outline_yellow500_120.png": {
+    "mtime": 1795086492.642277,
+    "seen": 1795086501.5180378,
+    "ast_hash": "59e4f436948066548734b35d3665497a",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-xxxhdpi/ic_lightbulb_outline_yellow500_120.png": {
+    "mtime": 1795086492.6434052,
+    "seen": 1795086501.5180407,
+    "ast_hash": "08cf2ecf210ea2c9c14fe5f30183697c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-018-create-menu.png": {
+    "mtime": 1795086269.6213903,
+    "seen": 1795086501.5180604,
+    "ast_hash": "b2ac0cd929f48d04dfa4d586d9e6bbab",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-019-note-editor-filled.png": {
+    "mtime": 1795086295.7321217,
+    "seen": 1795086501.5180635,
+    "ast_hash": "d682b5ef673f6b38bc9972dd56dfa185",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-020-note-created.png": {
+    "mtime": 1795086312.354951,
+    "seen": 1795086501.5180664,
+    "ast_hash": "a72acc5604dee71ffc4fba8e77f04bb7",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-021-note-after-restart.png": {
+    "mtime": 1795086322.3138485,
+    "seen": 1795086501.5180693,
+    "ast_hash": "a72acc5604dee71ffc4fba8e77f04bb7",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-022-note-actions-menu.png": {
+    "mtime": 1795086336.0667071,
+    "seen": 1795086501.5180721,
+    "ast_hash": "f66aa4ba9647d68dadfc34ab45fd8f45",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-023-note-archived.png": {
+    "mtime": 1795086345.718608,
+    "seen": 1795086501.5180743,
+    "ast_hash": "adcb1b8eb5ba6897e09b634f3a9d3dd1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-025-archive.png": {
+    "mtime": 1795086360.899452,
+    "seen": 1795086501.5180771,
+    "ast_hash": "743dc4a22da8a830d7fa435db97ea18c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-026-home-asset.png": {
+    "mtime": 1795086525.2527618,
+    "seen": 1795086701.4744759,
+    "ast_hash": "7e80047fa55b64cd56e868d2528e72ed",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-027-settings-dark-updated.png": {
+    "mtime": 1795086561.9363847,
+    "seen": 1795086701.474478,
+    "ast_hash": "b550d06db7825ef5f7a1844ce2fd2f94",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-028-theme-picker-dark.png": {
+    "mtime": 1795086595.1885915,
+    "seen": 1795086701.4744813,
+    "ast_hash": "96c5fab50b52cbcd80058f44d3f9efa9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-029-settings-light.png": {
+    "mtime": 1795086599.532998,
+    "seen": 1795086701.4744842,
+    "ast_hash": "feac4c592448e7b050a4300c897a09cd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-030-home-light-final.png": {
+    "mtime": 1795086600.7609854,
+    "seen": 1795086701.474487,
+    "ast_hash": "28bb83e788b601a779ec7d0d9eaaf4ef",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-031-settings-light-confirmed.png": {
+    "mtime": 1795086668.467289,
+    "seen": 1795086701.4744895,
+    "ast_hash": "892fce01f6e0387158151f53057f4c18",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-032-home-light-confirmed.png": {
+    "mtime": 1795086669.6722765,
+    "seen": 1795086701.474492,
+    "ast_hash": "78d8250ec444b2f2c819d3462ecdac42",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-033-home-light-restart.png": {
+    "mtime": 1795086672.1572511,
+    "seen": 1795086701.474495,
+    "ast_hash": "f3d60c5ecaf45f310e1421678eb92562",
+    "semantic_hash": ""
+  },
+  "app/src/androidTest/java/dev/kenneth/keepclone/data/KeepRepositoryInstrumentedTest.kt": {
+    "mtime": 1795094633.6994255,
+    "seen": 1795094637.261663,
+    "ast_hash": "4270f8192ccd67ce4f891d261ce03b84",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-036-home-explicit-clone.png": {
+    "mtime": 1795087114.3557281,
+    "seen": 1795087187.3620703,
+    "ast_hash": "dcfc9234670950bc784ff7e2e5a6387a",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-037-create-menu.png": {
+    "mtime": 1795087126.0386088,
+    "seen": 1795087187.3620734,
+    "ast_hash": "a1672b31da0c1246ad64acac23d70e01",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-038-create-menu-parity.png": {
+    "mtime": 1795087268.2121556,
+    "seen": 1795087389.2276614,
+    "ast_hash": "1ef6b2370dbe301c0fa814d682d4d851",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-039-settings-current.png": {
+    "mtime": 1795087421.8065856,
+    "seen": 1795087499.6256433,
+    "ast_hash": "15a893e30de574d28378e97c62ecf9d6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-040-theme-picker-reordered.png": {
+    "mtime": 1795087433.0414708,
+    "seen": 1795087499.6256468,
+    "ast_hash": "8a56e7a6d3bf3e53a7df270bb7e0a755",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-041-settings-dark-final.png": {
+    "mtime": 1795087462.858179,
+    "seen": 1795087499.6256502,
+    "ast_hash": "0814160bc9c19c45ab947128c9fa60bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-042-home-dark-final.png": {
+    "mtime": 1795087479.9780433,
+    "seen": 1795087499.625653,
+    "ast_hash": "628422008f4ae01fd6942c25c175616d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-043-create-menu-dark.png": {
+    "mtime": 1795087532.1896296,
+    "seen": 1795087807.7404053,
+    "ast_hash": "02585a3f7f26a6b58caa34c3d2add224",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-044-checklist-editor-empty.png": {
+    "mtime": 1795087544.9575284,
+    "seen": 1795087807.7404091,
+    "ast_hash": "b42208a6f67a5991a3abf8d1c1a3fc2a",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-045-checklist-milk-attempt.png": {
+    "mtime": 1795087624.6968963,
+    "seen": 1795087807.7404125,
+    "ast_hash": "6ec9092e92b07a13e2f0984f3f52e779",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-046-checklist-item.png": {
+    "mtime": 1795087653.721666,
+    "seen": 1795087807.7404158,
+    "ast_hash": "767938bd0cd8380dfdb914b133cac5ce",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-047-checklist-checked.png": {
+    "mtime": 1795087664.3575819,
+    "seen": 1795087807.7404191,
+    "ast_hash": "068e8b25eed52fac39f5d23aec28abba",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-048-checklist-keyboard-hidden.png": {
+    "mtime": 1795087676.3184872,
+    "seen": 1795087807.7404225,
+    "ast_hash": "764c43a6c21f035aa9f6f61fee102716",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-049-checklist-home.png": {
+    "mtime": 1795087684.6394212,
+    "seen": 1795087807.7404258,
+    "ast_hash": "a4f8de3cf506df6e5556aaef5a456cd6",
+    "semantic_hash": ""
+  },
+  ".github/workflows/android.yml": {
+    "mtime": 1795088663.894622,
+    "seen": 1795088666.9307935,
+    "ast_hash": "",
+    "semantic_hash": ""
+  },
+  "scripts/capture_clone_parity.py": {
+    "mtime": 1795115362.6981657,
+    "seen": 1795115374.2712984,
+    "ast_hash": "9a147cd4023f0f40a3a77ab2d3e565e1",
+    "semantic_hash": ""
+  },
+  "scripts/compare_screenshots.py": {
+    "mtime": 1795088433.077962,
+    "seen": 1795088520.2955573,
+    "ast_hash": "2b72fe869e2dc739d5e74b533f94c973",
+    "semantic_hash": ""
+  },
+  "scripts/verify-parity.sh": {
+    "mtime": 1795088874.7074847,
+    "seen": 1795088929.4332104,
+    "ast_hash": "2753c3b07156467eb4b0ef3e69753bb1",
+    "semantic_hash": ""
+  },
+  "verification/comparison/pairs.json": {
+    "mtime": 1795088874.7074847,
+    "seen": 1795088929.4332426,
+    "ast_hash": "9ba5a609289c1c321af7466b1c583810",
+    "semantic_hash": ""
+  },
+  "verification/environment/guest.json": {
+    "mtime": 1795088514.5712714,
+    "seen": 1795088520.2955697,
+    "ast_hash": "2de87babb06822ad3dee3ec0244116c6",
+    "semantic_hash": ""
+  },
+  "verification/environment/qemu.json": {
+    "mtime": 1795088915.0102224,
+    "seen": 1795088929.4333074,
+    "ast_hash": "58b5a62be3dfa7c9cdb327dda96e66cf",
+    "semantic_hash": ""
+  },
+  "verification/environment/reference-apk.json": {
+    "mtime": 1795088514.604016,
+    "seen": 1795088520.2955778,
+    "ast_hash": "3ede046e6625506876f3c1dee916c19b",
+    "semantic_hash": ""
+  },
+  "verification/environment/screenshot-profiles.json": {
+    "mtime": 1795113176.1630661,
+    "seen": 1795114071.47095,
+    "ast_hash": "9d344c7994dcba1352463ea0a52c56ff",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1795119307.1758645,
+    "seen": 1795119343.3747802,
+    "ast_hash": "1592b7c00c45910dcb048e35435bc939",
+    "semantic_hash": ""
+  },
+  "verification/environment/system-services.txt": {
+    "mtime": 1795088514.2231393,
+    "seen": 1795088520.2955976,
+    "ast_hash": "60be75f847921284da04c93e635c7dd1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-050-checklist-preview-light.png": {
+    "mtime": 1795087832.8170571,
+    "seen": 1795088520.2956905,
+    "ast_hash": "0856c9776c93e062aa7a4494b6110339",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-051-settings-light.png": {
+    "mtime": 1795087918.8481789,
+    "seen": 1795088520.295694,
+    "ast_hash": "391466201fc03779ad60d40c68f60e62",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-052-settings-toggles-off.png": {
+    "mtime": 1795087922.0871458,
+    "seen": 1795088520.295697,
+    "ast_hash": "9a9a7963fcd8f29acaa66395df29a167",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-053-settings-light-selected.png": {
+    "mtime": 1795087943.1529307,
+    "seen": 1795088520.2957003,
+    "ast_hash": "facebc5d8d3f92207b846e5f337203eb",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-054-settings-dark-selected.png": {
+    "mtime": 1795087957.018789,
+    "seen": 1795088520.295703,
+    "ast_hash": "a1e70d639f138c9e98667d787c3fdcbe",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-055-settings-dark-relaunch.png": {
+    "mtime": 1795087962.3187351,
+    "seen": 1795088520.2957063,
+    "ast_hash": "a1e70d639f138c9e98667d787c3fdcbe",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-056-settings-system-day.png": {
+    "mtime": 1795087969.6986597,
+    "seen": 1795088520.2957091,
+    "ast_hash": "0a11cf539545eacacacd13431675f263",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-057-settings-system-night.png": {
+    "mtime": 1795087973.8756173,
+    "seen": 1795088520.2957125,
+    "ast_hash": "581dc1806d403db2e50659dffc828ce6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-058-checklist-editor-checked.png": {
+    "mtime": 1795088058.4027603,
+    "seen": 1795088520.2957153,
+    "ast_hash": "5ba23f3fc09866ed7f61b5cd2a30747e",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-059-checklist-home-checked.png": {
+    "mtime": 1795088061.5607283,
+    "seen": 1795088520.2957187,
+    "ast_hash": "4bb87f7bc207042a00a1598bd71e3f97",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-060-drawer-dark.png": {
+    "mtime": 1795088236.2149577,
+    "seen": 1795088520.2957215,
+    "ast_hash": "a584d4d8508b953f21f8f60a373226f7",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-061-home-system-light-final.png": {
+    "mtime": 1795088276.5655487,
+    "seen": 1795088520.2957246,
+    "ast_hash": "c13c301387f243defe9b6b3037213e2a",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-034-home-light-observed.png": {
+    "mtime": 1795086950.0244079,
+    "seen": 1795088520.2957397,
+    "ast_hash": "89953267b79ad0c6c6bf385a1df743c3",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-035-settings-system-light-observed.png": {
+    "mtime": 1795087011.2867818,
+    "seen": 1795088520.2957425,
+    "ast_hash": "f2f2975f965c712f86eb1d79c5dde697",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/DRAWER-DARK/result.json": {
+    "mtime": 1795094971.6320293,
+    "seen": 1795096932.844791,
+    "ast_hash": "5e6a5b35a3148e4f96aca850ea460106",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/HOME-EMPTY-LIGHT/result.json": {
+    "mtime": 1795094965.5251157,
+    "seen": 1795096932.8447933,
+    "ast_hash": "13d26da3f429f5c055c6f2e8905a7cbe",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-EXPLICIT-DARK/result.json": {
+    "mtime": 1795094969.1596837,
+    "seen": 1795096932.8447967,
+    "ast_hash": "107967af3db593dbbeebd5d346035f53",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-SYSTEM-LIGHT/result.json": {
+    "mtime": 1795094966.7053778,
+    "seen": 1795096932.8447995,
+    "ast_hash": "3960226cc68f376d34f30f218cf9a548",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/THEME-PICKER-SYSTEM-LIGHT/result.json": {
+    "mtime": 1795094967.9704494,
+    "seen": 1795096932.844805,
+    "ast_hash": "02b05616b78d51a9dbb9dae57d8473b7",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/summary.json": {
+    "mtime": 1795094971.6330626,
+    "seen": 1795096932.8448088,
+    "ast_hash": "7e1a9aa66b43746b6a0282d926a82ed1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/profile.json": {
+    "mtime": 1795118170.1541543,
+    "seen": 1795118780.3122964,
+    "ast_hash": "b221b4745552da7562749761a8e0f38a",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/DRAWER-DARK/diff-amplified-4x.png": {
+    "mtime": 1795094971.0420353,
+    "seen": 1795096932.8457665,
+    "ast_hash": "5ea05a71b1c70e92dda23bba65c938ff",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/DRAWER-DARK/overlay-50.png": {
+    "mtime": 1795094971.0830348,
+    "seen": 1795096932.8457694,
+    "ast_hash": "22ad4d46453f7c73f41c3cfaef700328",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/DRAWER-DARK/rebuilt.png": {
+    "mtime": 1795094745.298213,
+    "seen": 1795096932.8457727,
+    "ast_hash": "9c17936aff006967ecfcb0501f81ad57",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/DRAWER-DARK/reference.png": {
+    "mtime": 1795085697.227033,
+    "seen": 1795088666.9309583,
+    "ast_hash": "84a3fcc907cc167e7b8390b89519a961",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/HOME-EMPTY-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795094964.9630964,
+    "seen": 1795096932.845807,
+    "ast_hash": "9e5f2b7bc569054cc154bee4947a726d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/HOME-EMPTY-LIGHT/overlay-50.png": {
+    "mtime": 1795094965.0030959,
+    "seen": 1795096932.8458102,
+    "ast_hash": "24e5cd9e30d0c50ad30c20273c2f76f8",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/HOME-EMPTY-LIGHT/rebuilt.png": {
+    "mtime": 1795094702.2657363,
+    "seen": 1795096932.845813,
+    "ast_hash": "928a3e4ca5b3f162c83a3fa8861a9d7e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/HOME-EMPTY-LIGHT/reference.png": {
+    "mtime": 1795083923.335017,
+    "seen": 1795088666.9309683,
+    "ast_hash": "05dc2610cc7032d6c05189000cadc3d2",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-EXPLICIT-DARK/diff-amplified-4x.png": {
+    "mtime": 1795094968.57706,
+    "seen": 1795096932.8458612,
+    "ast_hash": "db4726cb04f4711dd40c65f5d1ab558e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-EXPLICIT-DARK/overlay-50.png": {
+    "mtime": 1795094968.6180596,
+    "seen": 1795096932.8458643,
+    "ast_hash": "72579a1755f0888ee15fcaa817a96e53",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-EXPLICIT-DARK/rebuilt.png": {
+    "mtime": 1795094722.8744488,
+    "seen": 1795096932.8458676,
+    "ast_hash": "80c624216b114f68db59b3f03cc70fd2",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-EXPLICIT-DARK/reference.png": {
+    "mtime": 1795085733.0766668,
+    "seen": 1795088666.9309788,
+    "ast_hash": "21ad42fe9d5d61f8093ca798b89b455c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-SYSTEM-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795094966.1430845,
+    "seen": 1795096932.8459032,
+    "ast_hash": "617eea89c78f53fd82bdb945fbd26512",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-SYSTEM-LIGHT/overlay-50.png": {
+    "mtime": 1795094966.1840842,
+    "seen": 1795096932.8459063,
+    "ast_hash": "bcd3b2e81b7e62b5edd79a72d775a6e1",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-SYSTEM-LIGHT/rebuilt.png": {
+    "mtime": 1795094710.3834248,
+    "seen": 1795096932.8459094,
+    "ast_hash": "a05d4d5d2d35207e013a9816621fff96",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-SYSTEM-LIGHT/reference.png": {
+    "mtime": 1795085762.928362,
+    "seen": 1795088666.9309893,
+    "ast_hash": "a3814fa9c25ad9eef430c95caf3d8d34",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/THEME-PICKER-SYSTEM-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795094967.3460724,
+    "seen": 1795096932.845981,
+    "ast_hash": "d96690d73d3cacd90b5c66d19dd54760",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/THEME-PICKER-SYSTEM-LIGHT/overlay-50.png": {
+    "mtime": 1795094967.392072,
+    "seen": 1795096932.8459837,
+    "ast_hash": "96f18988fb96c016dfe61b8c732ba833",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/THEME-PICKER-SYSTEM-LIGHT/rebuilt.png": {
+    "mtime": 1795094713.5413861,
+    "seen": 1795096932.8459866,
+    "ast_hash": "a5529d07022f44b0e2fc1d3210e8b889",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/THEME-PICKER-SYSTEM-LIGHT/reference.png": {
+    "mtime": 1795084544.640321,
+    "seen": 1795088666.9309998,
+    "ast_hash": "0b925da636afab07d6c1a2928268f89d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/drawer-dark.png": {
+    "mtime": 1795114726.5463722,
+    "seen": 1795115006.8520768,
+    "ast_hash": "a0c611d4ddd02c93de14d22baa23c071",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/home-empty-light.png": {
+    "mtime": 1795118132.6214447,
+    "seen": 1795118780.3191886,
+    "ast_hash": "711928c5a6dcb78b7b9ba313bdee02b3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/settings-dark.png": {
+    "mtime": 1795118157.983725,
+    "seen": 1795118780.3191917,
+    "ast_hash": "517b396d1c7dde9b83febfe7945f4afb",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/settings-light.png": {
+    "mtime": 1795118147.421832,
+    "seen": 1795118780.319195,
+    "ast_hash": "bc3255b1675bf862c3c92d55a8c3f8f6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/settings-system-day.png": {
+    "mtime": 1795114735.7720907,
+    "seen": 1795115006.8520932,
+    "ast_hash": "6dd953e2a3a396889d73c2659888db57",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/settings-system-light.png": {
+    "mtime": 1795118140.8827806,
+    "seen": 1795118780.319239,
+    "ast_hash": "2fcdc890c6c877ef1084435fe2750e73",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/settings-system-night.png": {
+    "mtime": 1795114740.007649,
+    "seen": 1795115006.8520994,
+    "ast_hash": "da73fb65a1ba9e5acaef0d1b650d606e",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/theme-picker-system-light.png": {
+    "mtime": 1795118144.147941,
+    "seen": 1795118780.3192732,
+    "ast_hash": "ee183d5e19fde9386cd155ddc4a3c2fb",
+    "semantic_hash": ""
+  },
+  "verification/environment/commands.txt": {
+    "mtime": 1795098718.1509295,
+    "seen": 1795099861.8349867,
+    "ast_hash": "9a0848ae2443e885b0ae707ca36e8eda",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-062-settings-toggled-dark.png": {
+    "mtime": 1795088803.3332083,
+    "seen": 1795088929.4360845,
+    "ast_hash": "5d5b442d2447b66c6353c04e02d63e52",
+    "semantic_hash": ""
+  },
+  "verification/build-artifact.json": {
+    "mtime": 1795125282.7113717,
+    "seen": 1795125333.3085349,
+    "ast_hash": "3195b9c685364e6b4c6f82c4226242bd",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-TOGGLED-DARK/result.json": {
+    "mtime": 1795094970.4022927,
+    "seen": 1795096932.8448029,
+    "ast_hash": "b9e0b2ef564ce57c3beff842240ca54a",
+    "semantic_hash": ""
+  },
+  "verification/logs/androidTest-exit-code.txt": {
+    "mtime": 1795090174.7465618,
+    "seen": 1795090585.4157906,
+    "ast_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "semantic_hash": ""
+  },
+  "verification/logs/lint-results.txt": {
+    "mtime": 1795090174.7475617,
+    "seen": 1795090585.415794,
+    "ast_hash": "b7a6094e71e9f49e20e5fa2b02446592",
+    "semantic_hash": ""
+  },
+  "verification/logs/summary.md": {
+    "mtime": 1795119452.560926,
+    "seen": 1795119582.6239138,
+    "ast_hash": "80ea4a9e5edf07d38e06c34ea868ee89",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-TOGGLED-DARK/diff-amplified-4x.png": {
+    "mtime": 1795094969.7840478,
+    "seen": 1795096932.8459427,
+    "ast_hash": "baa170d758614d1edc7f3c14868ad60a",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-TOGGLED-DARK/overlay-50.png": {
+    "mtime": 1795094969.8260474,
+    "seen": 1795096932.8459456,
+    "ast_hash": "060059fe50f90b3898347a882c92d387",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-TOGGLED-DARK/rebuilt.png": {
+    "mtime": 1795094734.054417,
+    "seen": 1795096932.845949,
+    "ast_hash": "46cec114ba371710c22357a0e80e0650",
+    "semantic_hash": ""
+  },
+  "verification/comparison/results/SETTINGS-TOGGLED-DARK/reference.png": {
+    "mtime": 1795085723.4067657,
+    "seen": 1795089349.6424682,
+    "ast_hash": "85846354e831d3e66759249164043a90",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/settings-toggled-dark.png": {
+    "mtime": 1795118170.0286689,
+    "seen": 1795118780.31927,
+    "ast_hash": "9cfc8d2a50b1457283d466b6a1527e3d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/final-installed-home.png": {
+    "mtime": 1795094048.873303,
+    "seen": 1795094317.8134239,
+    "ast_hash": "8600c3c54de7ecbb17985d4a06135a63",
+    "semantic_hash": ""
+  },
+  "verification/logs/local-screenshot-comparison-exit-code.txt": {
+    "mtime": 1795090160.5047007,
+    "seen": 1795090585.4157968,
+    "ast_hash": "b026324c6904b2a9cb4b88d6d61c81d1",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/reminders/ReminderScheduler.kt": {
+    "mtime": 1795090847.474082,
+    "seen": 1795090867.0027733,
+    "ast_hash": "50ff5479bd5e12d70799899d73baa273",
+    "semantic_hash": ""
+  },
+  "verification/logs/reminder-alarm-state.txt": {
+    "mtime": 1795090956.9100435,
+    "seen": 1795091052.9510822,
+    "ast_hash": "1a0e3427a1592264b35182a8b91facbb",
+    "semantic_hash": ""
+  },
+  "verification/logs/reminder-notification-state.txt": {
+    "mtime": 1795090956.8950436,
+    "seen": 1795091052.951085,
+    "ast_hash": "37fdf7b0d7ce854bde98dfd83b42c1a2",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/reminder-set-second.png": {
+    "mtime": 1795090957.0660422,
+    "seen": 1795091052.9540572,
+    "ast_hash": "037c15b9da0ebd27c6c6856d90852130",
+    "semantic_hash": ""
+  },
+  "app/schemas/dev.kenneth.keepclone.data.KeepDatabase/2.json": {
+    "mtime": 1795092564.566174,
+    "seen": 1795092892.4316506,
+    "ast_hash": "e15b5106eb945a02830dfa975eb18e89",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/AttachmentPreview.kt": {
+    "mtime": 1795094410.2726707,
+    "seen": 1795094637.2619743,
+    "ast_hash": "67ab17cc604b70fe698d04c4cf672315",
+    "semantic_hash": ""
+  },
+  "verification/logs/image-attachment-private-sha256.txt": {
+    "mtime": 1795092847.607372,
+    "seen": 1795092892.4327486,
+    "ast_hash": "5a6da62fbf1e9c59642f2ca43b5a1853",
+    "semantic_hash": ""
+  },
+  "verification/logs/label-autosave-regression.txt": {
+    "mtime": 1795092158.608627,
+    "seen": 1795092892.432752,
+    "ast_hash": "f07f14c6a71b41bbac8e5ce4eab7002d",
+    "semantic_hash": ""
+  },
+  "verification/logs/manual-journeys-2026-11-19.md": {
+    "mtime": 1795098646.3306527,
+    "seen": 1795099861.8354614,
+    "ast_hash": "a7a35432ad080bd0be8447f02add7958",
+    "semantic_hash": ""
+  },
+  "verification/logs/reminder-alarm-fired.txt": {
+    "mtime": 1795091341.9492774,
+    "seen": 1795092892.4328063,
+    "ast_hash": "ca8b6c15cd69a716e980efacadd6736d",
+    "semantic_hash": ""
+  },
+  "verification/logs/reminder-future-alarm-after-reboot.txt": {
+    "mtime": 1795091561.2461064,
+    "seen": 1795092892.432833,
+    "ast_hash": "5087d678946479e6609b35a70c6aaeb2",
+    "semantic_hash": ""
+  },
+  "verification/logs/reminder-future-alarm-before-reboot.txt": {
+    "mtime": 1795091509.1856217,
+    "seen": 1795092892.4328363,
+    "ast_hash": "0355865a8b22d6d13770ee4270c85d79",
+    "semantic_hash": ""
+  },
+  "verification/logs/reminder-note-after-reboot.txt": {
+    "mtime": 1795091561.3455968,
+    "seen": 1795092892.432839,
+    "ast_hash": "a2fc33c8aa731a0ac1fe4d44034dbeb7",
+    "semantic_hash": ""
+  },
+  "verification/logs/reminder-notification-observed.txt": {
+    "mtime": 1795091694.7507849,
+    "seen": 1795092892.4328418,
+    "ast_hash": "d34b53be554bc6c92c45a854e0c31e34",
+    "semantic_hash": ""
+  },
+  "verification/logs/reminder-permissions-after-reboot.txt": {
+    "mtime": 1795091561.2661061,
+    "seen": 1795092892.4328828,
+    "ast_hash": "88f8154a52b17c04f3b415b46f1e2dd6",
+    "semantic_hash": ""
+  },
+  "verification/logs/room-upsert-build-test-summary.txt": {
+    "mtime": 1795092361.017515,
+    "seen": 1795092892.4328854,
+    "ast_hash": "c7ddecfc2dd5b9d56cb6d87b27e86cbc",
+    "semantic_hash": ""
+  },
+  "verification/fixtures/keep-synthetic-image.png": {
+    "mtime": 1795092596.954607,
+    "seen": 1795092892.4337375,
+    "ast_hash": "390f33770efc40f1188814e0d29bcfea",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-064-search-filtered.png": {
+    "mtime": 1795091733.4894223,
+    "seen": 1795092892.4353797,
+    "ast_hash": "93484617c579544e7f8d1fe3252044f6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-065-label-filtered.png": {
+    "mtime": 1795092158.5350611,
+    "seen": 1795092892.4353843,
+    "ast_hash": "f255f53e26de8465ec856d59b65df7d9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-066-label-attached-editor.png": {
+    "mtime": 1795092158.5378015,
+    "seen": 1795092892.4353876,
+    "ast_hash": "87dea2aef38f1be15c9727b2217a451b",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-067-archive-action.png": {
+    "mtime": 1795092212.133663,
+    "seen": 1795092892.4353902,
+    "ast_hash": "e46f26d7ce9098a4370f04d60ae3b113",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-068-archive-destination.png": {
+    "mtime": 1795092233.2484539,
+    "seen": 1795092892.435393,
+    "ast_hash": "765d24074c705c9471c320bb12acf441",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-069-unarchive-menu.png": {
+    "mtime": 1795092246.3603241,
+    "seen": 1795092892.435396,
+    "ast_hash": "dfb40a06e17c1547dabba6526f9de80c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-070-notes-after-unarchive.png": {
+    "mtime": 1795092256.172227,
+    "seen": 1795092892.4353983,
+    "ast_hash": "a5214f3a62f67da9ca7a7444fb189a0d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-071-delete-menu.png": {
+    "mtime": 1795092268.4191058,
+    "seen": 1795092892.4354012,
+    "ast_hash": "1b5d197742b7f44ebae47bbe79298bb0",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-072-trash-destination.png": {
+    "mtime": 1795092279.6679943,
+    "seen": 1795092892.435404,
+    "ast_hash": "5e5c4cf029fd4fe93ed419e03fbe48c4",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-073-restore-menu.png": {
+    "mtime": 1795092292.0548718,
+    "seen": 1795092892.435407,
+    "ast_hash": "b6221fe958664a9024f3c451bf726851",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-074-notes-after-trash-restore.png": {
+    "mtime": 1795092308.297711,
+    "seen": 1795092892.435409,
+    "ast_hash": "95f5d887ce086afc6348ae17720b262d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-075-image-upgrade-home.png": {
+    "mtime": 1795092607.5307486,
+    "seen": 1795092892.435412,
+    "ast_hash": "90bcf8b783c38591bcd4c048dbdb2891",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-076-image-menu.png": {
+    "mtime": 1795092621.2636127,
+    "seen": 1795092892.4354148,
+    "ast_hash": "70aa2dc062cb90c88f0ca0dcbde9e321",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-082-image-picker-cancelled.png": {
+    "mtime": 1795092781.7690237,
+    "seen": 1795092892.435431,
+    "ast_hash": "3c52a98f0cd54873b354f6ff62a36b8b",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-085-image-note-editor.png": {
+    "mtime": 1795092816.0106847,
+    "seen": 1795092892.4354365,
+    "ast_hash": "01d37448f98f9b989584f1dd1cd5d1ff",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-086-image-note-home-card.png": {
+    "mtime": 1795092853.8473103,
+    "seen": 1795092892.4354389,
+    "ast_hash": "58023bff495a9d7c2b7fc870b8ba17a1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-087-image-note-after-relaunch.png": {
+    "mtime": 1795092858.2342668,
+    "seen": 1795092892.4354417,
+    "ast_hash": "58023bff495a9d7c2b7fc870b8ba17a1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/reminder-home-iteration.png": {
+    "mtime": 1795091076.9769006,
+    "seen": 1795092892.4354718,
+    "ast_hash": "5cab77b244882aef4e3a7a5f744bf07f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/reminders/after-process-restart-home.png": {
+    "mtime": 1795091374.4479556,
+    "seen": 1795092892.4355006,
+    "ast_hash": "89f598b5c8a96ea17a56abd0095986ce",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/reminders/after-reboot-home.png": {
+    "mtime": 1795091561.2314806,
+    "seen": 1795092892.4355032,
+    "ast_hash": "98368cbc31adc63970b57a305f921099",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/reminders/date-picker.png": {
+    "mtime": 1795091341.9291222,
+    "seen": 1795092892.4355056,
+    "ast_hash": "d145fd288bc752535feaa2ebf8fb1dcd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/reminders/editor-with-reminder.png": {
+    "mtime": 1795091341.9312775,
+    "seen": 1795092892.4355085,
+    "ast_hash": "a1f305a8725edf2e91fbe4b532ee0577",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/reminders/future-reminder-set.png": {
+    "mtime": 1795091509.171221,
+    "seen": 1795092892.4355114,
+    "ast_hash": "2713d75f36be65a1685d5aa25e811381",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/reminders/notification-open-editor.png": {
+    "mtime": 1795091341.9347377,
+    "seen": 1795092892.4355142,
+    "ast_hash": "833413034cdb0ac1e4d31990864549d9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/reminders/notification-shade.png": {
+    "mtime": 1795091341.9333816,
+    "seen": 1795092892.4355168,
+    "ast_hash": "3613a86356e83545fbcd6ae43677ba72",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/reminders/time-picker.png": {
+    "mtime": 1795091341.9305475,
+    "seen": 1795092892.4355195,
+    "ast_hash": "b1cc88b48a3ecd461c2c964b649138a7",
+    "semantic_hash": ""
+  },
+  "verification/logs/androidTest-image-attachment.txt": {
+    "mtime": 1795093835.1614506,
+    "seen": 1795094317.8100717,
+    "ast_hash": "66206e9d3fa1cceda0a5c672f2d29215",
+    "semantic_hash": ""
+  },
+  "verification/logs/androidTest-reminders.txt": {
+    "mtime": 1795093835.1634505,
+    "seen": 1795094317.810075,
+    "ast_hash": "8a0fc22053dcbf2be50883ff178b40ef",
+    "semantic_hash": ""
+  },
+  "verification/logs/androidTest-room-rules.txt": {
+    "mtime": 1795093835.1624506,
+    "seen": 1795094317.810078,
+    "ast_hash": "5b215dc1177a019696a0c90d80eba585",
+    "semantic_hash": ""
+  },
+  "verification/logs/image-attachment-roundtrip.txt": {
+    "mtime": 1795093117.291677,
+    "seen": 1795093198.5299582,
+    "ast_hash": "472f0d93274ac9e5ea08bd81a8750991",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-088-image-menu-retry.png": {
+    "mtime": 1795092933.7885127,
+    "seen": 1795093198.5332737,
+    "ast_hash": "496c59d72a3d113064d8e9e022bf858f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-091-image-note-editor-fixed.png": {
+    "mtime": 1795092959.404255,
+    "seen": 1795093198.533277,
+    "ast_hash": "7fd64cb0cf14b517a097bf13eb680f03",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-092-image-note-home-fixed.png": {
+    "mtime": 1795092971.1651363,
+    "seen": 1795093198.5332797,
+    "ast_hash": "05bd070b694a4992c4531b50ee0c0e60",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-093-image-note-relaunch-fixed.png": {
+    "mtime": 1795092975.5880919,
+    "seen": 1795093198.5332825,
+    "ast_hash": "05bd070b694a4992c4531b50ee0c0e60",
+    "semantic_hash": ""
+  },
+  "verification/logs/final-guest-fingerprint.txt": {
+    "mtime": 1795093959.6371996,
+    "seen": 1795094317.8100812,
+    "ast_hash": "96912689733d846e122e1b944652bbe5",
+    "semantic_hash": ""
+  },
+  "verification/logs/keepclone-signing.txt": {
+    "mtime": 1795095023.1745114,
+    "seen": 1795096932.8453014,
+    "ast_hash": "17e58774c217d1f38827169ca1a41332",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/KeepAudioRecorderScreen.kt": {
+    "mtime": 1795094306.1097176,
+    "seen": 1795094317.8092983,
+    "ast_hash": "190004e3016f842c3cb8542f5d2e0093",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/KeepDrawingScreen.kt": {
+    "mtime": 1795094220.5335777,
+    "seen": 1795094317.8093016,
+    "ast_hash": "57b8dcf47c8ba7b429dc83e0b641fe28",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-094-special-menu.png": {
+    "mtime": 1795094357.3882024,
+    "seen": 1795094637.2666297,
+    "ast_hash": "6ac1be4962d5868d1272f319790481b1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-095-drawing-canvas.png": {
+    "mtime": 1795094369.260083,
+    "seen": 1795094637.266633,
+    "ast_hash": "3a7cfbc49f4b1bcde23983b551e953e7",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-096-drawing-editor.png": {
+    "mtime": 1795094390.744867,
+    "seen": 1795094637.266636,
+    "ast_hash": "28fbf5987ab074a5d2061a249efe6f84",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-097-audio-permission-prompt.png": {
+    "mtime": 1795094423.704536,
+    "seen": 1795094637.2666388,
+    "ast_hash": "b1eee7d8f752bb795591c04194216af4",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-098-audio-permission-denied.png": {
+    "mtime": 1795094432.859444,
+    "seen": 1795094637.2666414,
+    "ast_hash": "707ae61f40bb22d2e21fb65a6d7f1e09",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-100-audio-recorder.png": {
+    "mtime": 1795094456.5082061,
+    "seen": 1795094637.2666445,
+    "ast_hash": "fb12f7c9c9ea1ae1cb4c78b09008dab3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-101-audio-recording.png": {
+    "mtime": 1795094467.6360943,
+    "seen": 1795094637.2666473,
+    "ast_hash": "93310247b79c967e469cdfeb06a234b2",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-102-audio-recording-stopped.png": {
+    "mtime": 1795094476.1100092,
+    "seen": 1795094637.2666502,
+    "ast_hash": "136a699a0e0b1fc124e419a0a6bfa9ba",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-103-audio-note-editor.png": {
+    "mtime": 1795094488.5578842,
+    "seen": 1795094637.2666523,
+    "ast_hash": "b73dfee988b8748aff8da767a42c1f90",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-104-audio-note-playing.png": {
+    "mtime": 1795094500.6397626,
+    "seen": 1795094637.2666552,
+    "ast_hash": "b9915d633a41fde25655a809ddea733a",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-105-media-home.png": {
+    "mtime": 1795094513.8206303,
+    "seen": 1795094637.266658,
+    "ast_hash": "184ed651edfeaeef6fc7371581c393a9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-106-media-home-relaunch.png": {
+    "mtime": 1795094518.1935863,
+    "seen": 1795094637.2666612,
+    "ast_hash": "184ed651edfeaeef6fc7371581c393a9",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/KeepCollaboratorsScreen.kt": {
+    "mtime": 1795096846.574009,
+    "seen": 1795096932.844305,
+    "ast_hash": "12f67f851ed6e187975fe1db6354bd3b",
+    "semantic_hash": ""
+  },
+  "verification/logs/androidTest-connected-final/logcat-dev.kenneth.keepclone.data.KeepRepositoryInstrumentedTest-attachmentMetadataSurvivesUnrelatedEditsAndKeepsNotesActive.txt": {
+    "mtime": 1795094870.2780478,
+    "seen": 1795096932.8451078,
+    "ast_hash": "1c6abe2247c67da8d3c4839aea069175",
+    "semantic_hash": ""
+  },
+  "verification/logs/androidTest-connected-final/logcat-dev.kenneth.keepclone.data.KeepRepositoryInstrumentedTest-checklistLabelsArchiveTrashAndDeletePersistThroughRoom.txt": {
+    "mtime": 1795094870.2780478,
+    "seen": 1795096932.8451111,
+    "ast_hash": "01cb7753ce9c9e7d090f6e3de6a6b61d",
+    "semantic_hash": ""
+  },
+  "verification/logs/androidTest-connected-final/logcat-dev.kenneth.keepclone.data.KeepRepositoryInstrumentedTest-reminderTimestampIsQueryableAndTrashSuppressesIt.txt": {
+    "mtime": 1795094870.2780478,
+    "seen": 1795096932.8451145,
+    "ast_hash": "c89f3063f2e4874dc0972d34dd4adef1",
+    "semantic_hash": ""
+  },
+  "verification/logs/androidTest-exit-code-final.txt": {
+    "mtime": 1795094870.2770479,
+    "seen": 1795096932.845117,
+    "ast_hash": "cfcd208495d565ef66e7dff9f98764da",
+    "semantic_hash": ""
+  },
+  "verification/logs/final-installed-package-sha256.txt": {
+    "mtime": 1795098975.8441818,
+    "seen": 1795099861.835268,
+    "ast_hash": "4f767fff1945aee5286b4a72ce93afff",
+    "semantic_hash": ""
+  },
+  "verification/logs/keep-reference-launch-recovery.txt": {
+    "mtime": 1795095505.173662,
+    "seen": 1795096932.8452983,
+    "ast_hash": "899a4ca84853c8d1899913ece600e14c",
+    "semantic_hash": ""
+  },
+  "verification/logs/lint-results-final.txt": {
+    "mtime": 1795094870.280048,
+    "seen": 1795096932.8453276,
+    "ast_hash": "dd5ddc486f42b785ad0ea64fc4663ce8",
+    "semantic_hash": ""
+  },
+  "verification/logs/reference-launch-recovery.txt": {
+    "mtime": 1795095646.9021611,
+    "seen": 1795096932.8453822,
+    "ast_hash": "1ed599f883e875f77feab8a0bd04b6a9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-107-final-apk-home.png": {
+    "mtime": 1795094886.8288815,
+    "seen": 1795096932.8483238,
+    "ast_hash": "c91f9aa81d992f4e52b7692147a7b8e1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-108-drawing-menu-final.png": {
+    "mtime": 1795095115.6705818,
+    "seen": 1795096932.8483272,
+    "ast_hash": "6d0693f4d6c161c316a3b889e5ab78a0",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-109-drawing-canvas-final.png": {
+    "mtime": 1795095124.998488,
+    "seen": 1795096932.8483303,
+    "ast_hash": "2bf74f960065d2a38dc86ffb82a8025d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-110-drawing-editor-final.png": {
+    "mtime": 1795095140.423333,
+    "seen": 1795096932.8483331,
+    "ast_hash": "c76fcaa700294d8e79f8f4179883d2ba",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-111-drawing-home-final.png": {
+    "mtime": 1795095152.7262094,
+    "seen": 1795096932.8483355,
+    "ast_hash": "dd0a34fe965b0492d21a18d192caba34",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/REF-KEEP-112-drawing-relaunch-final.png": {
+    "mtime": 1795095157.9861565,
+    "seen": 1795096932.8483386,
+    "ast_hash": "dd0a34fe965b0492d21a18d192caba34",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-115-reference-settings-before-share-toggle.png": {
+    "mtime": 1795095533.2213795,
+    "seen": 1795096932.8488176,
+    "ast_hash": "d2cc3aecfa354b800223f6d7f321ca62",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-116-reference-settings-sharing-off.png": {
+    "mtime": 1795095544.2252686,
+    "seen": 1795096932.848821,
+    "ast_hash": "1bb6db0a6ad7ffe51f40fccfd31f4b41",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-119-reference-sharing-off-editor.png": {
+    "mtime": 1795095680.6208956,
+    "seen": 1795096932.8488238,
+    "ast_hash": "895d0ba1a2ba45979620b1a1d6c4f89e",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-120-reference-note-sharing-off.png": {
+    "mtime": 1795095698.4967155,
+    "seen": 1795096932.8488266,
+    "ast_hash": "3525f1766b160e77e92d34f92cd34b84",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-121-reference-settings-sharing-restored.png": {
+    "mtime": 1795095762.0050762,
+    "seen": 1795096932.8488295,
+    "ast_hash": "74751d157a03b78269d33fb2ca1f1ab2",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-122-reference-search-synthetic-note.png": {
+    "mtime": 1795095804.0526528,
+    "seen": 1795096932.8488324,
+    "ast_hash": "07fbac28e987edecafecebf513d9332e",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-123-reference-note-sharing-on.png": {
+    "mtime": 1795095821.21748,
+    "seen": 1795096932.8488352,
+    "ast_hash": "c9a99437780e76cfa10bc8bca397264d",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-124-reference-collaborator-permission-prompt-cropped.png": {
+    "mtime": 1795095953.041153,
+    "seen": 1795096932.848838,
+    "ast_hash": "920ce80dd946c73d2a425c1b79975e1e",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-125-collaborators-after-permission-denial-redacted.png": {
+    "mtime": 1795096000.911671,
+    "seen": 1795096932.8488407,
+    "ast_hash": "db6a912a6d6cdc386e4e925dc701c026",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-127-reference-note-overflow-send-menu.png": {
+    "mtime": 1795096165.3280156,
+    "seen": 1795096932.8488436,
+    "ast_hash": "99275a17b6d5f0fb1fa80f60014c76a5",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/REF-KEEP-128-reference-note-delete-menu.png": {
+    "mtime": 1795096430.8862956,
+    "seen": 1795096932.8488576,
+    "ast_hash": "a78c162a6af96b0d56d2b02c1c218383",
+    "semantic_hash": ""
+  },
+  "app/src/androidTest/java/dev/kenneth/keepclone/data/KeepSettingsStoreInstrumentedTest.kt": {
+    "mtime": 1795097894.7012193,
+    "seen": 1795097900.4840868,
+    "ast_hash": "8cb7669bd44c9a429c0a4466d45ec0d9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/collaborator-invite-unavailable-dark.png": {
+    "mtime": 1795097629.0659397,
+    "seen": 1795097900.4900112,
+    "ast_hash": "4d86089f60931b09676cf2f88673b107",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/collaborators-dark.png": {
+    "mtime": 1795097594.5952952,
+    "seen": 1795097900.4900146,
+    "ast_hash": "9cac0617facf51275a1205e3c04d3178",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/editor-overflow-dark.png": {
+    "mtime": 1795097640.595821,
+    "seen": 1795097900.4900177,
+    "ast_hash": "4f55810a2b7f3765dc48f8faae3fd1f4",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/editor-sharing-disabled-light.png": {
+    "mtime": 1795097520.1750627,
+    "seen": 1795097900.4900203,
+    "ast_hash": "16cf9a14dfeecfbd4e2457d44dd3f608",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/editor-sharing-enabled-dark.png": {
+    "mtime": 1795097577.5794706,
+    "seen": 1795097900.4900236,
+    "ast_hash": "236556c97ec210a7b79550862c60c5a9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-dark-sharing-enabled.png": {
+    "mtime": 1795097566.4685853,
+    "seen": 1795097900.4900265,
+    "ast_hash": "d5989ecadf8099db20b150e89776d8b7",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-explicit-dark.png": {
+    "mtime": 1795097176.4466074,
+    "seen": 1795097900.4900293,
+    "ast_hash": "e42ce3df6646fba67216b8226dc79300",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-explicit-light-system-night.png": {
+    "mtime": 1795097311.6652129,
+    "seen": 1795097900.4900322,
+    "ast_hash": "e99a3e4e7e775ac5c677352833d998eb",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-explicit-light.png": {
+    "mtime": 1795097153.0638483,
+    "seen": 1795097900.490035,
+    "ast_hash": "ccef2030ce97f80f9c7b936a9f7675df",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-restored-defaults.png": {
+    "mtime": 1795097740.5377903,
+    "seen": 1795097900.4900377,
+    "ast_hash": "b7166ee9b6764d7b5588a4cfe2a3fc72",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-system-day.png": {
+    "mtime": 1795097265.021694,
+    "seen": 1795097900.49004,
+    "ast_hash": "f51863371e356cfb90a7d7c8a04beb2b",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-system-light.png": {
+    "mtime": 1795097107.4603186,
+    "seen": 1795097900.4900432,
+    "ast_hash": "1ae64a5ff7ffe46dd140360741989745",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-system-night.png": {
+    "mtime": 1795097256.9697769,
+    "seen": 1795097900.490046,
+    "ast_hash": "8ba85ab212f3bd623d18cd7123a0b0d1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-toggles-after-process-restart.png": {
+    "mtime": 1795097457.5727081,
+    "seen": 1795097900.4900491,
+    "ast_hash": "48136a361206c273900fc0d92a8c7d67",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-toggles-changed.png": {
+    "mtime": 1795097412.3601744,
+    "seen": 1795097900.4900513,
+    "ast_hash": "757f5bd5d41e5d12cf743185f89edee8",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep-pairs.json": {
+    "mtime": 1795098262.108522,
+    "seen": 1795099861.8347483,
+    "ast_hash": "dc5c8a4867efedd75c49060f7b5287ee",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-EXPLICIT-DARK-DEFAULTS/result.json": {
+    "mtime": 1795116108.2836466,
+    "seen": 1795116495.4438145,
+    "ast_hash": "2eebeff7b0d8edec6a4026375b6db7c0",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SHARING-OFF-LIGHT/result.json": {
+    "mtime": 1795116106.9896543,
+    "seen": 1795116495.4438174,
+    "ast_hash": "cf440b1aec528335a6c219b09c83bb3c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SYSTEM-LIGHT-ROW-CLICK/result.json": {
+    "mtime": 1795116104.3133497,
+    "seen": 1795116495.443821,
+    "ast_hash": "330593856d784a85b05e8966057302d7",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-TOGGLED-DARK-ROW-CLICK/result.json": {
+    "mtime": 1795116109.5533988,
+    "seen": 1795116495.443824,
+    "ast_hash": "9347ed3d38428b392581d5204a6ff58d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/THEME-PICKER-SYSTEM-LIGHT-ROW-CLICK/result.json": {
+    "mtime": 1795116105.68032,
+    "seen": 1795116495.443827,
+    "ast_hash": "786e8ca2046003fecbe470c2814e1a08",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/summary.json": {
+    "mtime": 1795116109.5535755,
+    "seen": 1795116495.4438303,
+    "ast_hash": "a9e88be0fc4b114b6175ad9d535b32f0",
+    "semantic_hash": ""
+  },
+  "verification/logs/adb-devices-final.txt": {
+    "mtime": 1795098975.3046975,
+    "seen": 1795099861.8350365,
+    "ast_hash": "4330ebf9cd576fe8a3a0bde11be01512",
+    "semantic_hash": ""
+  },
+  "verification/logs/ci-status.md": {
+    "mtime": 1795099032.672225,
+    "seen": 1795099861.8352408,
+    "ast_hash": "728ee55fd62936435880b92755e36ae0",
+    "semantic_hash": ""
+  },
+  "verification/logs/guest-fingerprint-final.txt": {
+    "mtime": 1795098975.3145387,
+    "seen": 1795099861.835271,
+    "ast_hash": "96912689733d846e122e1b944652bbe5",
+    "semantic_hash": ""
+  },
+  "verification/logs/tablet-clone-activity.txt": {
+    "mtime": 1795099379.0265956,
+    "seen": 1795099861.8357255,
+    "ast_hash": "08217c87601a377349d209514c356bd5",
+    "semantic_hash": ""
+  },
+  "verification/logs/tablet-clone-logcat.txt": {
+    "mtime": 1795099379.1040316,
+    "seen": 1795099861.835729,
+    "ast_hash": "079e602c3eb024740d824b282f024159",
+    "semantic_hash": ""
+  },
+  "verification/logs/tablet-clone-packages.txt": {
+    "mtime": 1795099379.0720453,
+    "seen": 1795099861.8357317,
+    "ast_hash": "bafb04665ee6ec06500b814125f2936a",
+    "semantic_hash": ""
+  },
+  "verification/logs/tablet-reference-activity.txt": {
+    "mtime": 1795099330.4326513,
+    "seen": 1795099861.8357346,
+    "ast_hash": "d5919cbf720a61e4c2ecd92292f2f0cd",
+    "semantic_hash": ""
+  },
+  "verification/logs/tablet-reference-logcat.txt": {
+    "mtime": 1795099330.4665287,
+    "seen": 1795099861.8357372,
+    "ast_hash": "68b329da9893e34099c7d8ad5cb9c940",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-EXPLICIT-DARK-DEFAULTS/diff-amplified-4x.png": {
+    "mtime": 1795116107.665554,
+    "seen": 1795116495.4476428,
+    "ast_hash": "103c259743ff6d958df21d1e9b294c30",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-EXPLICIT-DARK-DEFAULTS/overlay-50.png": {
+    "mtime": 1795116107.7065535,
+    "seen": 1795116495.4476461,
+    "ast_hash": "8a05b40c10ddbf19ee8ca2f2060be4e8",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-EXPLICIT-DARK-DEFAULTS/rebuilt.png": {
+    "mtime": 1795116082.2467518,
+    "seen": 1795116495.447649,
+    "ast_hash": "0c09a1b93578f852b442992b3059058c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-EXPLICIT-DARK-DEFAULTS/reference.png": {
+    "mtime": 1795085733.0766668,
+    "seen": 1795099861.836598,
+    "ast_hash": "21ad42fe9d5d61f8093ca798b89b455c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SHARING-OFF-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795116106.3585672,
+    "seen": 1795116495.4476826,
+    "ast_hash": "0fb8a9e8d2733f91aca8292113c59037",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SHARING-OFF-LIGHT/overlay-50.png": {
+    "mtime": 1795116106.399567,
+    "seen": 1795116495.447686,
+    "ast_hash": "0621c8ca8e87737b67b99c151ad92087",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SHARING-OFF-LIGHT/rebuilt.png": {
+    "mtime": 1795116074.9982457,
+    "seen": 1795116495.4476888,
+    "ast_hash": "31e453889e868813b2235cc7a516fda4",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SHARING-OFF-LIGHT/reference.png": {
+    "mtime": 1795095544.2252686,
+    "seen": 1795099861.836609,
+    "ast_hash": "1bb6db0a6ad7ffe51f40fccfd31f4b41",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SYSTEM-LIGHT-ROW-CLICK/diff-amplified-4x.png": {
+    "mtime": 1795116103.647595,
+    "seen": 1795116495.4477212,
+    "ast_hash": "7f529fd08e005ed961e2c49dae6f8158",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SYSTEM-LIGHT-ROW-CLICK/overlay-50.png": {
+    "mtime": 1795116103.6885946,
+    "seen": 1795116495.4477246,
+    "ast_hash": "67919cf07e2a9d01c38053e47ab1974f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SYSTEM-LIGHT-ROW-CLICK/rebuilt.png": {
+    "mtime": 1795116065.3531592,
+    "seen": 1795116495.4477274,
+    "ast_hash": "a5d54e24c49a027ddbe501c6053f4023",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-SYSTEM-LIGHT-ROW-CLICK/reference.png": {
+    "mtime": 1795095762.0050762,
+    "seen": 1795099861.8366177,
+    "ast_hash": "74751d157a03b78269d33fb2ca1f1ab2",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-TOGGLED-DARK-ROW-CLICK/diff-amplified-4x.png": {
+    "mtime": 1795116108.935541,
+    "seen": 1795116495.44776,
+    "ast_hash": "4ff9c6a87cb010f5744c70da1df11561",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-TOGGLED-DARK-ROW-CLICK/overlay-50.png": {
+    "mtime": 1795116108.9765406,
+    "seen": 1795116495.4477634,
+    "ast_hash": "bb66791ec392672139ccc8b337a7c3cd",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-TOGGLED-DARK-ROW-CLICK/rebuilt.png": {
+    "mtime": 1795116094.18975,
+    "seen": 1795116495.4477663,
+    "ast_hash": "62ac1998aa8cb37e261cfff125578a68",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/SETTINGS-TOGGLED-DARK-ROW-CLICK/reference.png": {
+    "mtime": 1795085723.4067657,
+    "seen": 1795099861.836627,
+    "ast_hash": "85846354e831d3e66759249164043a90",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/THEME-PICKER-SYSTEM-LIGHT-ROW-CLICK/diff-amplified-4x.png": {
+    "mtime": 1795116105.010581,
+    "seen": 1795116495.4477992,
+    "ast_hash": "af231a138788fa253d97df2a029d211b",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/THEME-PICKER-SYSTEM-LIGHT-ROW-CLICK/overlay-50.png": {
+    "mtime": 1795116105.0555806,
+    "seen": 1795116495.447802,
+    "ast_hash": "75040018d875a3f49967dd9262ef5771",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/THEME-PICKER-SYSTEM-LIGHT-ROW-CLICK/rebuilt.png": {
+    "mtime": 1795116068.577244,
+    "seen": 1795116495.4478054,
+    "ast_hash": "89ed9684de8cbefe9592b1801ee87b67",
+    "semantic_hash": ""
+  },
+  "verification/comparison/settings-sweep/THEME-PICKER-SYSTEM-LIGHT-ROW-CLICK/reference.png": {
+    "mtime": 1795084544.640321,
+    "seen": 1795099861.836635,
+    "ast_hash": "0b925da636afab07d6c1a2928268f89d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/home-after-final-install.png": {
+    "mtime": 1795098840.3586986,
+    "seen": 1795099861.8397076,
+    "ast_hash": "bb36ac0894f2cce97d874690584ade26",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-default-light-final.png": {
+    "mtime": 1795098402.9751036,
+    "seen": 1795099861.839737,
+    "ast_hash": "5e11ad2dc4d94c5208d66e746bcb27c6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-default-light-rowclick.png": {
+    "mtime": 1795098060.9225464,
+    "seen": 1795099861.8397396,
+    "ast_hash": "a71601bc0aa41674aefd26d423c49874",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-explicit-dark-defaults.png": {
+    "mtime": 1795098073.7254176,
+    "seen": 1795099861.8397424,
+    "ast_hash": "bf5cde5c9acadfc58523f68122a4a0e3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-first-row-label-tap.png": {
+    "mtime": 1795097982.8193326,
+    "seen": 1795099861.8398204,
+    "ast_hash": "0c950071be2b2d0c0722b76ed8bc9f24",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-restored-defaults-final.png": {
+    "mtime": 1795098164.521504,
+    "seen": 1795099861.8398237,
+    "ast_hash": "0cbff26e8c3e1683e3bf386725d4b3fe",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-sharing-off-light-final.png": {
+    "mtime": 1795098240.5947385,
+    "seen": 1795099861.839865,
+    "ast_hash": "8acae510c2f7e79b12ec282754f1f41b",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-switch-single-tap.png": {
+    "mtime": 1795098009.601063,
+    "seen": 1795099861.839869,
+    "ast_hash": "19b61fddd774291569c78a67c7e27d7d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/settings-toggled-dark-rowclick.png": {
+    "mtime": 1795098089.5682583,
+    "seen": 1795099861.8399491,
+    "ast_hash": "8df12532b404bf833a64ada54e7c9be0",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/theme-picker-from-label.png": {
+    "mtime": 1795097992.2792373,
+    "seen": 1795099861.840003,
+    "ast_hash": "c315122d7bb1d2930bd16d46dbcc14d7",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/theme-picker-system-light-final.png": {
+    "mtime": 1795098410.468028,
+    "seen": 1795099861.8400059,
+    "ast_hash": "8dcc333d217b3500c790f8cb2fa74085",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/settings-sweep/theme-picker-system-light-rowclick.png": {
+    "mtime": 1795098064.0905147,
+    "seen": 1795099861.8400087,
+    "ast_hash": "9770f1f311f91d6bbf610e2f9e674abf",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/CLONE-TABLET-001-home-empty-light.png": {
+    "mtime": 1795099387.3221874,
+    "seen": 1795099861.8400106,
+    "ast_hash": "2f4d0ddfb029e32d3f4efdf363545913",
+    "semantic_hash": ""
+  },
+  "verification/reference/tablet/REF-TABLET-001-first-launch.png": {
+    "mtime": 1795099279.9692712,
+    "seen": 1795099861.8405433,
+    "ast_hash": "1886d6d56486be28a85145c86bb31e3d",
+    "semantic_hash": ""
+  },
+  "verification/reference/tablet/REF-TABLET-002-after-signin-back.png": {
+    "mtime": 1795099312.754941,
+    "seen": 1795099861.8405466,
+    "ast_hash": "bf9a37c3952f0d673dd0f8787aae0a9e",
+    "semantic_hash": ""
+  },
+  "verification/environment/tablet-size-override-base.json": {
+    "mtime": 1795100258.0467162,
+    "seen": 1795100592.757074,
+    "ast_hash": "d7549703030f5fc886127c3c98f1ddfe",
+    "semantic_hash": ""
+  },
+  "verification/environment/tablet-size-override-restored.json": {
+    "mtime": 1795100272.9441714,
+    "seen": 1795100592.7570777,
+    "ast_hash": "0a09e2dafef347037d14f9b7d4c7e14c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/device-variants/home-four-notes-font-scale-1.3.png": {
+    "mtime": 1795100494.0724058,
+    "seen": 1795100592.7622285,
+    "ast_hash": "bb45238ad91bdb6940000d3c8f1dec38",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/device-variants/home-four-notes-rotated.png": {
+    "mtime": 1795100499.0275362,
+    "seen": 1795100592.762232,
+    "ast_hash": "055054d6a5cab6693317c1e44b05dc13",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/staggered-grid/create-menu.png": {
+    "mtime": 1795100071.4742532,
+    "seen": 1795100592.762312,
+    "ast_hash": "1ee148095771c3906090383ac9756383",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/staggered-grid/home-empty.png": {
+    "mtime": 1795100049.0714803,
+    "seen": 1795100592.7623148,
+    "ast_hash": "a490fc4d94004b60c008e0de1d53494b",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/staggered-grid/home-four-notes.png": {
+    "mtime": 1795100194.5880053,
+    "seen": 1795100592.762318,
+    "ast_hash": "445c979828963d0b5eed6dd07229c786",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/staggered-grid/home-one-note.png": {
+    "mtime": 1795100141.8725398,
+    "seen": 1795100592.7623208,
+    "ast_hash": "7929e8a7a3930d4d4e96de1fc95c44bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/staggered-grid/text-editor.png": {
+    "mtime": 1795100091.0660546,
+    "seen": 1795100592.7623234,
+    "ast_hash": "d5a90ce276fcc695a6ee9d49104fb66b",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/large-phone/home-empty-light.png": {
+    "mtime": 1795100336.2955692,
+    "seen": 1795100592.7623262,
+    "ast_hash": "c4b9a01a2b14e893ecab17cef9aa6aff",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/large-phone/home-one-note.png": {
+    "mtime": 1795100392.3010015,
+    "seen": 1795100592.7623293,
+    "ast_hash": "cc944761f4395135ff91e3110f39bfad",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet-size-overrides/home-four-notes-landscape.png": {
+    "mtime": 1795100263.2121868,
+    "seen": 1795100592.7632463,
+    "ast_hash": "bfd2fe3a2342270116fe8a1c2b4fed8a",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet-size-overrides/home-four-notes-portrait.png": {
+    "mtime": 1795100268.1735582,
+    "seen": 1795100592.7632492,
+    "ast_hash": "ca2bd8203073060e63c9d7dcf702a06a",
+    "semantic_hash": ""
+  },
+  "verification/comparison/responsive-adjustments-pairs.json": {
+    "mtime": 1795100738.9786756,
+    "seen": 1795101684.2527966,
+    "ast_hash": "9ad8eb19b9c76d5e68c782dad51d2c01",
+    "semantic_hash": ""
+  },
+  "verification/comparison/responsive-adjustments/DRAWER-DARK-CAPPED-SMALL-PHONE/result.json": {
+    "mtime": 1795100740.3046498,
+    "seen": 1795101684.2528,
+    "ast_hash": "8a9573f05bd2f8a2fbfc4dba78e2ab2f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/responsive-adjustments/summary.json": {
+    "mtime": 1795100740.3048415,
+    "seen": 1795101684.2528028,
+    "ast_hash": "28fd71411ed539e4b2a35f4121593ec5",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review-pairs.json": {
+    "mtime": 1795101522.0808346,
+    "seen": 1795101684.253237,
+    "ast_hash": "00c3d11e06a8e29355e6c70a2d83718f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-PICKER-SYSTEM-LIGHT-RETAKE/result.json": {
+    "mtime": 1795101528.3413184,
+    "seen": 1795101684.2532403,
+    "ast_hash": "fb8b981d5e7337c48393067aaeb63556",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-EXPLICIT-DARK-RETAKE/result.json": {
+    "mtime": 1795101529.6281765,
+    "seen": 1795101684.2532434,
+    "ast_hash": "d77728bd3ae66fe89b24adebfb72fce8",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-SYSTEM-LIGHT-RETAKE/result.json": {
+    "mtime": 1795101527.031962,
+    "seen": 1795101684.2532456,
+    "ast_hash": "bdfcc14f2a660b5b6480fe11c5d984da",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/summary.json": {
+    "mtime": 1795101529.6283185,
+    "seen": 1795101684.2532485,
+    "ast_hash": "0049a3efbfd06f845572059281f7f420",
+    "semantic_hash": ""
+  },
+  "verification/comparison/responsive-adjustments/DRAWER-DARK-CAPPED-SMALL-PHONE/diff-amplified-4x.png": {
+    "mtime": 1795100739.6954803,
+    "seen": 1795101684.2546818,
+    "ast_hash": "d4951b08e05b0e16058004247bf7694b",
+    "semantic_hash": ""
+  },
+  "verification/comparison/responsive-adjustments/DRAWER-DARK-CAPPED-SMALL-PHONE/overlay-50.png": {
+    "mtime": 1795100739.73748,
+    "seen": 1795101684.2546852,
+    "ast_hash": "9ba054f6e9e0832b4a735a54b9c0aab4",
+    "semantic_hash": ""
+  },
+  "verification/comparison/responsive-adjustments/DRAWER-DARK-CAPPED-SMALL-PHONE/rebuilt.png": {
+    "mtime": 1795100719.9296808,
+    "seen": 1795101684.2546883,
+    "ast_hash": "b5b047c4f6d2508e97b69b1901511105",
+    "semantic_hash": ""
+  },
+  "verification/comparison/responsive-adjustments/DRAWER-DARK-CAPPED-SMALL-PHONE/reference.png": {
+    "mtime": 1795085697.227033,
+    "seen": 1795101684.2546914,
+    "ast_hash": "84a3fcc907cc167e7b8390b89519a961",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-PICKER-SYSTEM-LIGHT-RETAKE/diff-amplified-4x.png": {
+    "mtime": 1795101527.7124395,
+    "seen": 1795101684.2559905,
+    "ast_hash": "b4e6f4a85f4f29660dd676b1c420967f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-PICKER-SYSTEM-LIGHT-RETAKE/overlay-50.png": {
+    "mtime": 1795101527.7584388,
+    "seen": 1795101684.2559938,
+    "ast_hash": "66d1d27a2d0d267573326caedaa21333",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-PICKER-SYSTEM-LIGHT-RETAKE/rebuilt.png": {
+    "mtime": 1795101412.713659,
+    "seen": 1795101684.2559967,
+    "ast_hash": "5eddb2e8663b20d9b24db037e6a74742",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-PICKER-SYSTEM-LIGHT-RETAKE/reference.png": {
+    "mtime": 1795084544.640321,
+    "seen": 1795101684.2559998,
+    "ast_hash": "0b925da636afab07d6c1a2928268f89d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-EXPLICIT-DARK-RETAKE/diff-amplified-4x.png": {
+    "mtime": 1795101529.0004258,
+    "seen": 1795101684.2560027,
+    "ast_hash": "f70034c5b332005eae527887f7a3a826",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-EXPLICIT-DARK-RETAKE/overlay-50.png": {
+    "mtime": 1795101529.0414252,
+    "seen": 1795101684.25601,
+    "ast_hash": "b717ba106254be2bb2537d6ead08308b",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-EXPLICIT-DARK-RETAKE/rebuilt.png": {
+    "mtime": 1795101173.6190825,
+    "seen": 1795101684.2560132,
+    "ast_hash": "89c5965ec392de8f476b82659f3d2351",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-EXPLICIT-DARK-RETAKE/reference.png": {
+    "mtime": 1795085733.0766668,
+    "seen": 1795101684.2560158,
+    "ast_hash": "21ad42fe9d5d61f8093ca798b89b455c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-SYSTEM-LIGHT-RETAKE/diff-amplified-4x.png": {
+    "mtime": 1795101526.431453,
+    "seen": 1795101684.2560186,
+    "ast_hash": "8276e4d3fafb92674180811de4eaf51c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-SYSTEM-LIGHT-RETAKE/overlay-50.png": {
+    "mtime": 1795101526.4734526,
+    "seen": 1795101684.256021,
+    "ast_hash": "fc222110aaad4c487a73c046db525471",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-SYSTEM-LIGHT-RETAKE/rebuilt.png": {
+    "mtime": 1795101454.083222,
+    "seen": 1795101684.256024,
+    "ast_hash": "7d0a88a23a8ded9ca1f1374dca5d7b82",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-review/THEME-SETTINGS-SYSTEM-LIGHT-RETAKE/reference.png": {
+    "mtime": 1795085762.928362,
+    "seen": 1795101684.2560263,
+    "ast_hash": "a3814fa9c25ad9eef430c95caf3d8d34",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/device-variants/drawer-dark-small-phone.png": {
+    "mtime": 1795100719.9296808,
+    "seen": 1795101684.258636,
+    "ast_hash": "b5b047c4f6d2508e97b69b1901511105",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/device-variants/drawer-small-phone.png": {
+    "mtime": 1795100660.7482805,
+    "seen": 1795101684.258639,
+    "ast_hash": "153d26b80757b3470f8359815286c936",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/device-variants/settings-dark.png": {
+    "mtime": 1795100708.357798,
+    "seen": 1795101684.2587004,
+    "ast_hash": "a0e3835c24a30e1c649d7bba8efdb365",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/device-variants/settings-system-light.png": {
+    "mtime": 1795100672.743159,
+    "seen": 1795101684.2587037,
+    "ast_hash": "7f9b6f1b81edb2cc00fff04e47662fae",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/device-variants/theme-picker.png": {
+    "mtime": 1795100693.9979436,
+    "seen": 1795101684.2587063,
+    "ast_hash": "f6ed9b4d3524a360ba6c58ac21ca5430",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/01-dark-settings.png": {
+    "mtime": 1795100886.0859966,
+    "seen": 1795101684.258786,
+    "ast_hash": "23a80b904895754e33ddb2a14188756f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/02-dark-theme-picker.png": {
+    "mtime": 1795100922.947623,
+    "seen": 1795101684.2587888,
+    "ast_hash": "b89f63d5b495b234f2d3513d2027461a",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/03-light-settings.png": {
+    "mtime": 1795100947.1703775,
+    "seen": 1795101684.2587917,
+    "ast_hash": "57afbf869771f51d9d0cde53ba3d4923",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/04-light-settings-toggled.png": {
+    "mtime": 1795100968.8531578,
+    "seen": 1795101684.2587943,
+    "ast_hash": "e71f84404cbca9944166f6c0c681f324",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/05-light-settings-restored.png": {
+    "mtime": 1795101002.1228206,
+    "seen": 1795101684.2587974,
+    "ast_hash": "a2230372fe85143db4f6366a06201ff1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/06-light-after-relaunch-home.png": {
+    "mtime": 1795101006.5127761,
+    "seen": 1795101684.2587996,
+    "ast_hash": "cc003e3f60b9ff91b337e469c9139f78",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/07-light-settings-after-relaunch.png": {
+    "mtime": 1795101026.360575,
+    "seen": 1795101684.2588024,
+    "ast_hash": "2d18b2c42748e58d2cd51237d1e81452",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/08-system-day.png": {
+    "mtime": 1795101039.7344394,
+    "seen": 1795101684.2588053,
+    "ast_hash": "8e39c6daf49211b560b1028ccb4b1d04",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/09-system-night.png": {
+    "mtime": 1795101040.951427,
+    "seen": 1795101684.2588081,
+    "ast_hash": "bed83e2006afdd55f7d56d10b7457523",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/10-system-day-restored.png": {
+    "mtime": 1795101044.1383948,
+    "seen": 1795101684.2588105,
+    "ast_hash": "8e39c6daf49211b560b1028ccb4b1d04",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/11-theme-picker-system-day-first-capture.png": {
+    "mtime": 1795101126.0665643,
+    "seen": 1795101684.258813,
+    "ast_hash": "4cd1ecb99e2486f61136faf6cd9674af",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/12-settings-system-day-after-relaunch-first-attempt.png": {
+    "mtime": 1795101130.0885236,
+    "seen": 1795101684.2588158,
+    "ast_hash": "1950d021cd7d0f75b6ac4f48c22d56c5",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/13-settings-system-day-first-frame.png": {
+    "mtime": 1795101154.6462746,
+    "seen": 1795101684.2588189,
+    "ast_hash": "f47f1ab484ff6b5472e8bd271e3364be",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/14-dark-selected-confirmed.png": {
+    "mtime": 1795101158.3412373,
+    "seen": 1795101684.258821,
+    "ast_hash": "89c5965ec392de8f476b82659f3d2351",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/15-dark-after-relaunch-confirmed.png": {
+    "mtime": 1795101173.6190825,
+    "seen": 1795101684.2588239,
+    "ast_hash": "89c5965ec392de8f476b82659f3d2351",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/16-dark-home.png": {
+    "mtime": 1795101191.5579007,
+    "seen": 1795101684.2588267,
+    "ast_hash": "2f009662e4b315981f7a44620f489908",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/17-system-day-confirmed.png": {
+    "mtime": 1795101197.242843,
+    "seen": 1795101684.2588296,
+    "ast_hash": "d81214782bc45abee5652e687bb337cc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/18-system-night-confirmed.png": {
+    "mtime": 1795101198.9618256,
+    "seen": 1795101684.258832,
+    "ast_hash": "45721fd045d575579490be99f8a8e459",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/19-system-day-restored-confirmed.png": {
+    "mtime": 1795101200.6758082,
+    "seen": 1795101684.2588346,
+    "ast_hash": "d81214782bc45abee5652e687bb337cc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/20-theme-picker-before-display-link-dispatch.png": {
+    "mtime": 1795101281.2769911,
+    "seen": 1795101684.2588377,
+    "ast_hash": "b9188e32c35dd0a485149dc541eb8199",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/22-display-settings-link-result.png": {
+    "mtime": 1795101330.3194942,
+    "seen": 1795101684.25884,
+    "ast_hash": "d771ca88d13472d9e28975b457bdab23",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/23-display-settings-back-transition-frame.png": {
+    "mtime": 1795101391.1598775,
+    "seen": 1795101684.258843,
+    "ast_hash": "4bf8d7005a4232f711f78a11155b193b",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/24-theme-picker-after-display-settings-back-confirmed.png": {
+    "mtime": 1795101412.713659,
+    "seen": 1795101684.2588549,
+    "ast_hash": "5eddb2e8663b20d9b24db037e6a74742",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/25-settings-final-system-day-defaults.png": {
+    "mtime": 1795101454.083222,
+    "seen": 1795101684.2588615,
+    "ast_hash": "7d0a88a23a8ded9ca1f1374dca5d7b82",
+    "semantic_hash": ""
+  },
+  "app/src/androidTest/java/dev/kenneth/keepclone/data/KeepOnboardingStoreInstrumentedTest.kt": {
+    "mtime": 1795104020.059129,
+    "seen": 1795104042.3525786,
+    "ast_hash": "a3f4fa6f1f49beb6bbd045136d67c29e",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/data/KeepOnboardingStore.kt": {
+    "mtime": 1795104020.0581288,
+    "seen": 1795104042.3528008,
+    "ast_hash": "eed9a1cd638f45e85f0deb9c1b7f3cab",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/KeepWelcomeScreen.kt": {
+    "mtime": 1795119570.90617,
+    "seen": 1795119582.620061,
+    "ast_hash": "f13f7427781fb262fc548a24d79851e6",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted-pairs.json": {
+    "mtime": 1795102418.4179502,
+    "seen": 1795104042.3541174,
+    "ast_hash": "e56d25d1b6cba1eef0ef6e4df8bd2725",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/SETTINGS-TOGGLED-DARK-ADJUSTED/result.json": {
+    "mtime": 1795102426.7858331,
+    "seen": 1795104042.3541198,
+    "ast_hash": "faf12d36c103e03ba5b746da31560ab8",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-PICKER-SYSTEM-LIGHT-ADJUSTED/result.json": {
+    "mtime": 1795102424.2410452,
+    "seen": 1795104042.3541224,
+    "ast_hash": "b60ecc27128b1afac594cd4743bd4c7c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-EXPLICIT-DARK-ADJUSTED/result.json": {
+    "mtime": 1795102425.4930828,
+    "seen": 1795104042.3541253,
+    "ast_hash": "e5cb33efdfb9aa3a9c3ebd5702664613",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-SYSTEM-LIGHT-ADJUSTED/result.json": {
+    "mtime": 1795102422.9474854,
+    "seen": 1795104042.3541284,
+    "ast_hash": "374eaaa1d24d540c96995876043d72d6",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/summary.json": {
+    "mtime": 1795102426.7860045,
+    "seen": 1795104042.3541312,
+    "ast_hash": "af8a43c0534638ddaae4b7555883da2f",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-hdpi/product_logo_keep_2026_color_192.png": {
+    "mtime": 1795104028.966714,
+    "seen": 1795104042.355562,
+    "ast_hash": "1a9c9313f44e96ec425f78487d0cb311",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-mdpi/product_logo_keep_2026_color_192.png": {
+    "mtime": 1795104028.9654627,
+    "seen": 1795104042.3555965,
+    "ast_hash": "039349099f05861cb180ab4732f43916",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-xhdpi/product_logo_keep_2026_color_192.png": {
+    "mtime": 1795104028.9679534,
+    "seen": 1795104042.3556318,
+    "ast_hash": "1acdcf39a71c4e95426bc9c3dafe84e5",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-xxhdpi/product_logo_keep_2026_color_192.png": {
+    "mtime": 1795104028.9692867,
+    "seen": 1795104042.3556664,
+    "ast_hash": "0da629202269d7a628e5e3cc101738e4",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-xxxhdpi/product_logo_keep_2026_color_192.png": {
+    "mtime": 1795104028.9700274,
+    "seen": 1795104042.355701,
+    "ast_hash": "2b828d64896e3b3cf4efcf1b22335a87",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/SETTINGS-TOGGLED-DARK-ADJUSTED/diff-amplified-4x.png": {
+    "mtime": 1795102426.145892,
+    "seen": 1795104042.3570893,
+    "ast_hash": "4d95c28fad97b6e259278dae8d5f2d49",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/SETTINGS-TOGGLED-DARK-ADJUSTED/overlay-50.png": {
+    "mtime": 1795102426.1858916,
+    "seen": 1795104042.3570926,
+    "ast_hash": "df27bf9a339d7fa84e57c8f51d1f8e7d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/SETTINGS-TOGGLED-DARK-ADJUSTED/rebuilt.png": {
+    "mtime": 1795102331.1329017,
+    "seen": 1795104042.3570955,
+    "ast_hash": "210e7be8bb0ae523e8b8a3b74dd36325",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/SETTINGS-TOGGLED-DARK-ADJUSTED/reference.png": {
+    "mtime": 1795085723.4067657,
+    "seen": 1795104042.3570976,
+    "ast_hash": "85846354e831d3e66759249164043a90",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-PICKER-SYSTEM-LIGHT-ADJUSTED/diff-amplified-4x.png": {
+    "mtime": 1795102423.6589184,
+    "seen": 1795104042.3571005,
+    "ast_hash": "55fbf7ee385f00c997d2afcc7bec8996",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-PICKER-SYSTEM-LIGHT-ADJUSTED/overlay-50.png": {
+    "mtime": 1795102423.7059178,
+    "seen": 1795104042.3571036,
+    "ast_hash": "1fde19932256db7aadad97a2fc827e2f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-PICKER-SYSTEM-LIGHT-ADJUSTED/rebuilt.png": {
+    "mtime": 1795102011.2323012,
+    "seen": 1795104042.3571064,
+    "ast_hash": "a6d7e96971da546d26584f9958e98612",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-PICKER-SYSTEM-LIGHT-ADJUSTED/reference.png": {
+    "mtime": 1795084544.640321,
+    "seen": 1795104042.3571093,
+    "ast_hash": "0b925da636afab07d6c1a2928268f89d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-EXPLICIT-DARK-ADJUSTED/diff-amplified-4x.png": {
+    "mtime": 1795102424.8889053,
+    "seen": 1795104042.3571122,
+    "ast_hash": "98c66939c5a37f15a4fe23c4bc108e89",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-EXPLICIT-DARK-ADJUSTED/overlay-50.png": {
+    "mtime": 1795102424.929905,
+    "seen": 1795104042.3571148,
+    "ast_hash": "f6ebad22e5c878ca02b9fedc2364018e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-EXPLICIT-DARK-ADJUSTED/rebuilt.png": {
+    "mtime": 1795101912.8643465,
+    "seen": 1795104042.3571174,
+    "ast_hash": "28f32ad2ce7c5ae5401368f40d55971e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-EXPLICIT-DARK-ADJUSTED/reference.png": {
+    "mtime": 1795085733.0766668,
+    "seen": 1795104042.3571198,
+    "ast_hash": "21ad42fe9d5d61f8093ca798b89b455c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-SYSTEM-LIGHT-ADJUSTED/diff-amplified-4x.png": {
+    "mtime": 1795102422.3169327,
+    "seen": 1795104042.3571227,
+    "ast_hash": "81b21b9fdd6a7ed940005505604caed5",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-SYSTEM-LIGHT-ADJUSTED/overlay-50.png": {
+    "mtime": 1795102422.3589323,
+    "seen": 1795104042.3571253,
+    "ast_hash": "d8b22f64651d3121434768036b104bbe",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-SYSTEM-LIGHT-ADJUSTED/rebuilt.png": {
+    "mtime": 1795101879.6097,
+    "seen": 1795104042.357128,
+    "ast_hash": "043542cd78708d18bbdc8c0d09c8188c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-settings-adjusted/THEME-SETTINGS-SYSTEM-LIGHT-ADJUSTED/reference.png": {
+    "mtime": 1795085762.928362,
+    "seen": 1795104042.3571308,
+    "ast_hash": "a3814fa9c25ad9eef430c95caf3d8d34",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/26-patched-system-light-settings.png": {
+    "mtime": 1795101854.855963,
+    "seen": 1795104042.3610399,
+    "ast_hash": "95531852484f9d868e963f77d1b0a484",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/27-patched-drawer.png": {
+    "mtime": 1795101877.4167233,
+    "seen": 1795104042.3610435,
+    "ast_hash": "dcae07815eee448522112fd89faf67fc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/28-patched-system-light-settings.png": {
+    "mtime": 1795101879.6097,
+    "seen": 1795104042.361046,
+    "ast_hash": "043542cd78708d18bbdc8c0d09c8188c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/29-patched-theme-picker-system-day.png": {
+    "mtime": 1795101908.685391,
+    "seen": 1795104042.361048,
+    "ast_hash": "56653a8d20ccd96edc68e8da4d57280d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/30-patched-explicit-dark-settings.png": {
+    "mtime": 1795101912.8643465,
+    "seen": 1795104042.3610508,
+    "ast_hash": "28f32ad2ce7c5ae5401368f40d55971e",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/31-patched-explicit-light-settings.png": {
+    "mtime": 1795101933.7811244,
+    "seen": 1795104042.3610537,
+    "ast_hash": "a30b8c6b0fdd7517bbdef04565127f64",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/32-patched-explicit-light-system-night.png": {
+    "mtime": 1795101937.9690797,
+    "seen": 1795104042.3610566,
+    "ast_hash": "c0394fcd64e5e1b996eb8ac323da140f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/33-patched-system-day.png": {
+    "mtime": 1795101944.2270133,
+    "seen": 1795104042.3610594,
+    "ast_hash": "d7a71aef7ee6235b0721e300b9f9f3f6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/34-patched-system-night.png": {
+    "mtime": 1795101946.4499896,
+    "seen": 1795104042.3610613,
+    "ast_hash": "0dbd451e4b43a8b95e6e96ec9037a466",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/35-patched-system-day-restored.png": {
+    "mtime": 1795101950.643945,
+    "seen": 1795104042.3610637,
+    "ast_hash": "d7a71aef7ee6235b0721e300b9f9f3f6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/36-patched-theme-picker-system-day-stable.png": {
+    "mtime": 1795102011.2323012,
+    "seen": 1795104042.3610666,
+    "ast_hash": "a6d7e96971da546d26584f9958e98612",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/37-patched-explicit-light.png": {
+    "mtime": 1795102029.6811051,
+    "seen": 1795104042.3610697,
+    "ast_hash": "dcf31a067b410e8eeb5f13adbd18ea0d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/38-explicit-light-overrides-system-night.png": {
+    "mtime": 1795102104.1783135,
+    "seen": 1795104042.3610713,
+    "ast_hash": "6c8b34ca077830c767c6557cee38954c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/39-picker-explicit-light.png": {
+    "mtime": 1795102118.524161,
+    "seen": 1795104042.3610742,
+    "ast_hash": "8213ddf1390c5027939b50aa6a497605",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/40-system-after-explicit-light.png": {
+    "mtime": 1795102135.9769757,
+    "seen": 1795104042.3610768,
+    "ast_hash": "fc218140056cf2ca5b7e58abe3de726a",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/41-system-night-final.png": {
+    "mtime": 1795102141.1799202,
+    "seen": 1795104042.3610795,
+    "ast_hash": "befbe6b8f604eb5c649464752381f3df",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/42-system-day-final.png": {
+    "mtime": 1795102143.3918967,
+    "seen": 1795104042.3610823,
+    "ast_hash": "673dcfbed0bfaa04347ac34b3a1d6d3f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/43-dark-picker-before-choice.png": {
+    "mtime": 1795102303.242198,
+    "seen": 1795104042.3610852,
+    "ast_hash": "b4c9c309cc55daa9c901bf77870f4c7f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/44-patched-dark-settings-defaults.png": {
+    "mtime": 1795102315.395069,
+    "seen": 1795104042.3610878,
+    "ast_hash": "031e6bdac010d3413415945f8fd1c536",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/45-patched-dark-settings-toggled.png": {
+    "mtime": 1795102331.1329017,
+    "seen": 1795104042.3610904,
+    "ast_hash": "210e7be8bb0ae523e8b8a3b74dd36325",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/46-patched-dark-settings-restored.png": {
+    "mtime": 1795102353.6986618,
+    "seen": 1795104042.3610933,
+    "ast_hash": "6ceaec04046942a9091c72872409e026",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/47-patched-dark-settings-after-relaunch.png": {
+    "mtime": 1795102363.1555614,
+    "seen": 1795104042.3610957,
+    "ast_hash": "6ceaec04046942a9091c72872409e026",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/49-final-screen-after-picker-error.png": {
+    "mtime": 1795102386.5643127,
+    "seen": 1795104042.3610985,
+    "ast_hash": "d748699809ef67cf70d8e9aa6f2baf5e",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-acceptance/50-final-system-day-after-dark.png": {
+    "mtime": 1795102400.8541608,
+    "seen": 1795104042.3611012,
+    "ast_hash": "a4d15b31dc755fe7f51bfd71416cda46",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/welcome-dark-short.png": {
+    "mtime": 1795103584.0748034,
+    "seen": 1795104042.3631358,
+    "ast_hash": "7b8e990c16cb62a809d6d8fb6cab78e1",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/welcome-dark-stable.png": {
+    "mtime": 1795103597.6956575,
+    "seen": 1795104042.3631392,
+    "ast_hash": "f21479a9d0524f1d07eda2d372b2f4ef",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/welcome-fresh-reference.png": {
+    "mtime": 1795103261.7081885,
+    "seen": 1795104042.3631418,
+    "ast_hash": "346d922531a6d08f35eabb2ee7b4cb67",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/welcome-get-started-result.png": {
+    "mtime": 1795103748.3160455,
+    "seen": 1795104042.3631446,
+    "ast_hash": "5e79aaa678ffc3610726e1f87e2b79ef",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/welcome-normal-first-run.png": {
+    "mtime": 1795102850.8004665,
+    "seen": 1795104042.3631475,
+    "ast_hash": "3a8253a4879bd18ae8ef6341aacb4457",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/welcome-reference-dark-final.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795104042.3631501,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/welcome-reference-dark.png": {
+    "mtime": 1795103525.158434,
+    "seen": 1795104042.363153,
+    "ast_hash": "653259da6e79eb6e7f03250b513c5e26",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/welcome-reference-light-final.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795104042.3631556,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/reference/compact/welcome-reference-light.png": {
+    "mtime": 1795103500.1217017,
+    "seen": 1795104042.363158,
+    "ast_hash": "da7f3127bfd34e076b9b26691b3223b2",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-pairs.json": {
+    "mtime": 1795104294.0540135,
+    "seen": 1795104589.0251825,
+    "ast_hash": "4602e7a03f36cc5eacfc1658756acd10",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-DARK/result.json": {
+    "mtime": 1795104670.6273577,
+    "seen": 1795104876.648557,
+    "ast_hash": "9ac668235b970553ad847845f437948e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-LIGHT/result.json": {
+    "mtime": 1795104669.3393683,
+    "seen": 1795104876.6485603,
+    "ast_hash": "13c812e3bd4ec79ef5771b3ea061b805",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/summary.json": {
+    "mtime": 1795104670.6275256,
+    "seen": 1795104876.6485636,
+    "ast_hash": "e05f9290f5e925c77bcbc39583aadc6f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-DARK/diff-amplified-4x.png": {
+    "mtime": 1795104670.0049577,
+    "seen": 1795104876.6523116,
+    "ast_hash": "d47829a7a16948262ecfb692faac166e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-DARK/overlay-50.png": {
+    "mtime": 1795104670.0529573,
+    "seen": 1795104876.6523151,
+    "ast_hash": "50acfc3ff7fde7b6834390c345cfba5d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-DARK/rebuilt.png": {
+    "mtime": 1795104629.5993686,
+    "seen": 1795104876.652317,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-DARK/reference.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795104589.0289502,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795104668.7449706,
+    "seen": 1795104876.6523502,
+    "ast_hash": "562a88b42f23a09482a20f05f8485c94",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-LIGHT/overlay-50.png": {
+    "mtime": 1795104668.79197,
+    "seen": 1795104876.6523526,
+    "ast_hash": "20e5dc467237b73dfbb7d8b91a16c74c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-LIGHT/rebuilt.png": {
+    "mtime": 1795104663.89302,
+    "seen": 1795104876.6523547,
+    "ast_hash": "66ead4590987922115f759b3099bb170",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome/WELCOME-FIRST-RUN-LIGHT/reference.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795104589.0289607,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-first-run-dark.png": {
+    "mtime": 1795111244.0550742,
+    "seen": 1795111631.80255,
+    "ast_hash": "83f8db9cff79c91420d0cfac81ec134d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-first-run-light-late.png": {
+    "mtime": 1795104182.9872763,
+    "seen": 1795104589.0337257,
+    "ast_hash": "fbc0131fab545828bd723525a7006c92",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-first-run-light.png": {
+    "mtime": 1795111217.8093448,
+    "seen": 1795111631.8025794,
+    "ast_hash": "5fe6943841e00afe94ae5f44c2b3e494",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-1.png": {
+    "mtime": 1795104311.6968129,
+    "seen": 1795104589.033731,
+    "ast_hash": "c842c5d8356bf584c98763631a601429",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-2.png": {
+    "mtime": 1795104312.2268069,
+    "seen": 1795104589.0337343,
+    "ast_hash": "0eeab6e42a0b56a96268f7eb1f280a12",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-3.png": {
+    "mtime": 1795104312.7988002,
+    "seen": 1795104589.0337372,
+    "ast_hash": "4a534410db32f9c9f2d7436ceb6ebb4d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-4.png": {
+    "mtime": 1795104313.340794,
+    "seen": 1795104589.0337398,
+    "ast_hash": "10b3699c3b76d198f0a6f8d024b492b6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-5.png": {
+    "mtime": 1795104313.8837879,
+    "seen": 1795104589.0337427,
+    "ast_hash": "10b3699c3b76d198f0a6f8d024b492b6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-6.png": {
+    "mtime": 1795104314.4247818,
+    "seen": 1795104589.0337448,
+    "ast_hash": "10b3699c3b76d198f0a6f8d024b492b6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-7.png": {
+    "mtime": 1795104314.9707756,
+    "seen": 1795104589.0337477,
+    "ast_hash": "10b3699c3b76d198f0a6f8d024b492b6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-8.png": {
+    "mtime": 1795104315.5117695,
+    "seen": 1795104589.0337505,
+    "ast_hash": "10b3699c3b76d198f0a6f8d024b492b6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-01.png": {
+    "mtime": 1795104658.663073,
+    "seen": 1795104876.6571233,
+    "ast_hash": "eb56dcf02afc3ac414e5f3d145877d79",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-02.png": {
+    "mtime": 1795104659.1860678,
+    "seen": 1795104876.6571267,
+    "ast_hash": "1f67334d91e87546f7c522bf1ddc8847",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-03.png": {
+    "mtime": 1795104659.745062,
+    "seen": 1795104876.6571295,
+    "ast_hash": "a75d760e101956e7b5ec1a3919b692a0",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-04.png": {
+    "mtime": 1795104660.2860565,
+    "seen": 1795104876.6571324,
+    "ast_hash": "a75d760e101956e7b5ec1a3919b692a0",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-05.png": {
+    "mtime": 1795104660.8200512,
+    "seen": 1795104876.657135,
+    "ast_hash": "7d988155fb3cecff29d2aa722d8628bf",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-06.png": {
+    "mtime": 1795104661.3570457,
+    "seen": 1795104876.657138,
+    "ast_hash": "66ead4590987922115f759b3099bb170",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-07.png": {
+    "mtime": 1795104661.8980403,
+    "seen": 1795104876.657141,
+    "ast_hash": "66ead4590987922115f759b3099bb170",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-08.png": {
+    "mtime": 1795104662.4390347,
+    "seen": 1795104876.657144,
+    "ast_hash": "66ead4590987922115f759b3099bb170",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-09.png": {
+    "mtime": 1795104662.9810293,
+    "seen": 1795104876.657147,
+    "ast_hash": "66ead4590987922115f759b3099bb170",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-10.png": {
+    "mtime": 1795104663.5330236,
+    "seen": 1795104876.6571503,
+    "ast_hash": "66ead4590987922115f759b3099bb170",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-11.png": {
+    "mtime": 1795104230.1677399,
+    "seen": 1795104589.033782,
+    "ast_hash": "e140600ee260ebc6ed89b2aa73766932",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-12.png": {
+    "mtime": 1795104230.754733,
+    "seen": 1795104589.0337849,
+    "ast_hash": "e140600ee260ebc6ed89b2aa73766932",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-13.png": {
+    "mtime": 1795104231.3447266,
+    "seen": 1795104589.0337873,
+    "ast_hash": "e140600ee260ebc6ed89b2aa73766932",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence/frame-14.png": {
+    "mtime": 1795104231.9347198,
+    "seen": 1795104589.03379,
+    "ast_hash": "e140600ee260ebc6ed89b2aa73766932",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-01.png": {
+    "mtime": 1795104624.359422,
+    "seen": 1795104876.6568427,
+    "ast_hash": "9d56fcca63bd5a2bd70440fd0b2ea57f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-02.png": {
+    "mtime": 1795104624.9144163,
+    "seen": 1795104876.6568563,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-03.png": {
+    "mtime": 1795104625.4614108,
+    "seen": 1795104876.656862,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-04.png": {
+    "mtime": 1795104626.0024052,
+    "seen": 1795104876.6568654,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-05.png": {
+    "mtime": 1795104626.5433998,
+    "seen": 1795104876.656869,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-06.png": {
+    "mtime": 1795104627.0843942,
+    "seen": 1795104876.6568727,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-07.png": {
+    "mtime": 1795104627.6243887,
+    "seen": 1795104876.6568766,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-08.png": {
+    "mtime": 1795104628.1683831,
+    "seen": 1795104876.6568804,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-09.png": {
+    "mtime": 1795104628.7073777,
+    "seen": 1795104876.6568847,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-sequence-dark/frame-10.png": {
+    "mtime": 1795104629.2413723,
+    "seen": 1795104876.656924,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-DARK/result.json": {
+    "mtime": 1795105024.5443523,
+    "seen": 1795105211.8902042,
+    "ast_hash": "9ac668235b970553ad847845f437948e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-LIGHT/result.json": {
+    "mtime": 1795105023.3963325,
+    "seen": 1795105211.8902094,
+    "ast_hash": "6fb38aed5c12f8240c803412462532a0",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/summary.json": {
+    "mtime": 1795105024.5450325,
+    "seen": 1795105211.8902135,
+    "ast_hash": "e05f9290f5e925c77bcbc39583aadc6f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-DARK/diff-amplified-4x.png": {
+    "mtime": 1795105023.984358,
+    "seen": 1795105211.8944533,
+    "ast_hash": "d47829a7a16948262ecfb692faac166e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-DARK/overlay-50.png": {
+    "mtime": 1795105024.0313575,
+    "seen": 1795105211.8944573,
+    "ast_hash": "50acfc3ff7fde7b6834390c345cfba5d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-DARK/rebuilt.png": {
+    "mtime": 1795104629.5993686,
+    "seen": 1795105211.8944612,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-DARK/reference.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795105211.8944647,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795105022.82437,
+    "seen": 1795105211.8944685,
+    "ast_hash": "d9294f19d149016b85f4a1b1b210b359",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-LIGHT/overlay-50.png": {
+    "mtime": 1795105022.8713694,
+    "seen": 1795105211.894472,
+    "ast_hash": "f0536cac07a2eaf24c599229b320f03a",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-LIGHT/rebuilt.png": {
+    "mtime": 1795105022.129377,
+    "seen": 1795105211.8944738,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native/WELCOME-FIRST-RUN-LIGHT/reference.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795105211.8944771,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/entry.png": {
+    "mtime": 1795105114.11744,
+    "seen": 1795105211.8995576,
+    "ast_hash": "c5d53959f02509c21e43c5d560ea92e2",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-01.png": {
+    "mtime": 1795104995.7856448,
+    "seen": 1795105211.8995626,
+    "ast_hash": "4db66abc5614eb4bdb02620fcdd8e5b3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-02.png": {
+    "mtime": 1795104996.3356392,
+    "seen": 1795105211.899566,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-03.png": {
+    "mtime": 1795104996.8796337,
+    "seen": 1795105211.8995697,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-04.png": {
+    "mtime": 1795104997.4176283,
+    "seen": 1795105211.8995724,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-05.png": {
+    "mtime": 1795104997.9626226,
+    "seen": 1795105211.8995767,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-06.png": {
+    "mtime": 1795104998.506617,
+    "seen": 1795105211.8995793,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-07.png": {
+    "mtime": 1795104999.0446117,
+    "seen": 1795105211.899582,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-08.png": {
+    "mtime": 1795104999.5866063,
+    "seen": 1795105211.8995848,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-09.png": {
+    "mtime": 1795105000.1256006,
+    "seen": 1795105211.8995883,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-light/frame-10.png": {
+    "mtime": 1795105000.6695952,
+    "seen": 1795105211.8995917,
+    "ast_hash": "61afa853aac6945d579d7527b6896f22",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-DARK/result.json": {
+    "mtime": 1795105323.0183113,
+    "seen": 1795105458.1865256,
+    "ast_hash": "9ac668235b970553ad847845f437948e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-LIGHT/result.json": {
+    "mtime": 1795105321.847941,
+    "seen": 1795105458.1865296,
+    "ast_hash": "5af0c71f6e9d69ec4fe8f101d7d20745",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/summary.json": {
+    "mtime": 1795105323.0190425,
+    "seen": 1795105458.1865335,
+    "ast_hash": "e05f9290f5e925c77bcbc39583aadc6f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-DARK/diff-amplified-4x.png": {
+    "mtime": 1795105322.432317,
+    "seen": 1795105458.190782,
+    "ast_hash": "d47829a7a16948262ecfb692faac166e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-DARK/overlay-50.png": {
+    "mtime": 1795105322.4793167,
+    "seen": 1795105458.1907852,
+    "ast_hash": "50acfc3ff7fde7b6834390c345cfba5d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-DARK/rebuilt.png": {
+    "mtime": 1795104629.5993686,
+    "seen": 1795105458.190788,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-DARK/reference.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795105458.1907914,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795105321.281329,
+    "seen": 1795105458.1907942,
+    "ast_hash": "678c2b550cc186c65ff60a2a2b1ca228",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-LIGHT/overlay-50.png": {
+    "mtime": 1795105321.3283284,
+    "seen": 1795105458.1907973,
+    "ast_hash": "08fcf22fd3eae07fa7137fed14bb5935",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-LIGHT/rebuilt.png": {
+    "mtime": 1795105320.5493362,
+    "seen": 1795105458.1907997,
+    "ast_hash": "3d5211cae1a6b507a7b67d4eb91ef346",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native2/WELCOME-FIRST-RUN-LIGHT/reference.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795105458.190803,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/entry.png": {
+    "mtime": 1795105251.6270387,
+    "seen": 1795105458.1962128,
+    "ast_hash": "148be71513d85bcba6f843d411444f8a",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/sequence/frame-1.png": {
+    "mtime": 1795105299.975546,
+    "seen": 1795105458.196216,
+    "ast_hash": "2e20f4a72d19bdc6a35ca558113b539e",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/sequence/frame-2.png": {
+    "mtime": 1795105300.5225403,
+    "seen": 1795105458.1962197,
+    "ast_hash": "369b5d7264e16942273c9df55782b44f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/sequence/frame-3.png": {
+    "mtime": 1795105301.0725348,
+    "seen": 1795105458.1962235,
+    "ast_hash": "3d5211cae1a6b507a7b67d4eb91ef346",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/sequence/frame-4.png": {
+    "mtime": 1795105301.6075294,
+    "seen": 1795105458.1962268,
+    "ast_hash": "3d5211cae1a6b507a7b67d4eb91ef346",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/sequence/frame-5.png": {
+    "mtime": 1795105302.146524,
+    "seen": 1795105458.1962306,
+    "ast_hash": "3d5211cae1a6b507a7b67d4eb91ef346",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/sequence/frame-6.png": {
+    "mtime": 1795105302.6875184,
+    "seen": 1795105458.196234,
+    "ast_hash": "3d5211cae1a6b507a7b67d4eb91ef346",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/sequence/frame-7.png": {
+    "mtime": 1795105303.2275128,
+    "seen": 1795105458.1962373,
+    "ast_hash": "3d5211cae1a6b507a7b67d4eb91ef346",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/sequence/frame-8.png": {
+    "mtime": 1795105303.7705073,
+    "seen": 1795105458.1962407,
+    "ast_hash": "3d5211cae1a6b507a7b67d4eb91ef346",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/sequence/frame-9.png": {
+    "mtime": 1795105304.3195016,
+    "seen": 1795105458.196244,
+    "ast_hash": "3d5211cae1a6b507a7b67d4eb91ef346",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native2-light/stable.png": {
+    "mtime": 1795105272.4198267,
+    "seen": 1795105458.1962469,
+    "ast_hash": "1a705cc317dd7614e2f466de898f3363",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-DARK/result.json": {
+    "mtime": 1795105487.100501,
+    "seen": 1795105510.2007186,
+    "ast_hash": "9ac668235b970553ad847845f437948e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-LIGHT/result.json": {
+    "mtime": 1795105485.8850257,
+    "seen": 1795105510.2007244,
+    "ast_hash": "ee4c866a51228728301907b6539259de",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/summary.json": {
+    "mtime": 1795105487.1006482,
+    "seen": 1795105510.2007284,
+    "ast_hash": "e05f9290f5e925c77bcbc39583aadc6f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-DARK/diff-amplified-4x.png": {
+    "mtime": 1795105486.526645,
+    "seen": 1795105510.205574,
+    "ast_hash": "d47829a7a16948262ecfb692faac166e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-DARK/overlay-50.png": {
+    "mtime": 1795105486.5736444,
+    "seen": 1795105510.205578,
+    "ast_hash": "50acfc3ff7fde7b6834390c345cfba5d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-DARK/rebuilt.png": {
+    "mtime": 1795104629.5993686,
+    "seen": 1795105510.2055814,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-DARK/reference.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795105510.2055843,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795105485.2536578,
+    "seen": 1795105510.2055883,
+    "ast_hash": "0c3991a86bfe83ad2a781678bfa862c7",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-LIGHT/overlay-50.png": {
+    "mtime": 1795105485.3166573,
+    "seen": 1795105510.205591,
+    "ast_hash": "5f847e3661251d20d7fca16b3f52514c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-LIGHT/rebuilt.png": {
+    "mtime": 1795105484.5436652,
+    "seen": 1795105510.2055938,
+    "ast_hash": "42b15e1807e5866b0689320c4a95a85c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image/WELCOME-FIRST-RUN-LIGHT/reference.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795105510.2055972,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-light/sequence/frame-1.png": {
+    "mtime": 1795105475.434758,
+    "seen": 1795105510.210837,
+    "ast_hash": "913805894e792cf1f7f4246773aa1f0f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-light/sequence/frame-2.png": {
+    "mtime": 1795105476.020752,
+    "seen": 1795105510.210841,
+    "ast_hash": "348443fa5e4522c0001e448138c91442",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-light/sequence/frame-3.png": {
+    "mtime": 1795105476.607746,
+    "seen": 1795105510.2108436,
+    "ast_hash": "42b15e1807e5866b0689320c4a95a85c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-light/sequence/frame-4.png": {
+    "mtime": 1795105477.1747403,
+    "seen": 1795105510.2108643,
+    "ast_hash": "42b15e1807e5866b0689320c4a95a85c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-light/sequence/frame-5.png": {
+    "mtime": 1795105477.7417345,
+    "seen": 1795105510.2108676,
+    "ast_hash": "42b15e1807e5866b0689320c4a95a85c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-light/sequence/frame-6.png": {
+    "mtime": 1795105478.3067286,
+    "seen": 1795105510.210871,
+    "ast_hash": "42b15e1807e5866b0689320c4a95a85c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-light/sequence/frame-7.png": {
+    "mtime": 1795105478.874723,
+    "seen": 1795105510.2108748,
+    "ast_hash": "42b15e1807e5866b0689320c4a95a85c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-light/sequence/frame-8.png": {
+    "mtime": 1795105479.4407172,
+    "seen": 1795105510.2108774,
+    "ast_hash": "42b15e1807e5866b0689320c4a95a85c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-light/sequence/frame-9.png": {
+    "mtime": 1795105480.0077114,
+    "seen": 1795105510.2108805,
+    "ast_hash": "42b15e1807e5866b0689320c4a95a85c",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-DARK/result.json": {
+    "mtime": 1795105536.1117713,
+    "seen": 1795105606.1835964,
+    "ast_hash": "9ac668235b970553ad847845f437948e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-LIGHT/result.json": {
+    "mtime": 1795105534.8712764,
+    "seen": 1795105606.1836007,
+    "ast_hash": "e6b0e1a5211f02bdde0cd4b2aa6bd67d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/summary.json": {
+    "mtime": 1795105536.1119268,
+    "seen": 1795105606.183604,
+    "ast_hash": "e05f9290f5e925c77bcbc39583aadc6f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-DARK/diff-amplified-4x.png": {
+    "mtime": 1795105535.5191457,
+    "seen": 1795105606.1878996,
+    "ast_hash": "d47829a7a16948262ecfb692faac166e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-DARK/overlay-50.png": {
+    "mtime": 1795105535.5661452,
+    "seen": 1795105606.1879034,
+    "ast_hash": "50acfc3ff7fde7b6834390c345cfba5d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-DARK/rebuilt.png": {
+    "mtime": 1795104629.5993686,
+    "seen": 1795105606.1879063,
+    "ast_hash": "4ee663915864b36e4aa403bb5996e9bc",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-DARK/reference.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795105606.1879086,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795105534.2831583,
+    "seen": 1795105606.1879117,
+    "ast_hash": "43aff510e423e3099b6cab09650c163d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-LIGHT/overlay-50.png": {
+    "mtime": 1795105534.3311577,
+    "seen": 1795105606.1879146,
+    "ast_hash": "68f65cb10f7bccc1c2354b7efb711016",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-LIGHT/rebuilt.png": {
+    "mtime": 1795105533.5941653,
+    "seen": 1795105606.1879168,
+    "ast_hash": "c224f4c8f9ec5b8f9c0f84448ae5fcdd",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-native-image-size/WELCOME-FIRST-RUN-LIGHT/reference.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795105606.18792,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-size-light/sequence/frame-1.png": {
+    "mtime": 1795105529.4232078,
+    "seen": 1795105606.1936312,
+    "ast_hash": "79cdb799837a3a5bf709b20c484220ef",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-size-light/sequence/frame-2.png": {
+    "mtime": 1795105529.9772022,
+    "seen": 1795105606.193634,
+    "ast_hash": "ecfd33f6c5afd468ecd8a45e581c11d9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-size-light/sequence/frame-3.png": {
+    "mtime": 1795105530.5361965,
+    "seen": 1795105606.1936374,
+    "ast_hash": "c224f4c8f9ec5b8f9c0f84448ae5fcdd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-size-light/sequence/frame-4.png": {
+    "mtime": 1795105531.0741909,
+    "seen": 1795105606.1936407,
+    "ast_hash": "c224f4c8f9ec5b8f9c0f84448ae5fcdd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-size-light/sequence/frame-5.png": {
+    "mtime": 1795105531.6161854,
+    "seen": 1795105606.193643,
+    "ast_hash": "c224f4c8f9ec5b8f9c0f84448ae5fcdd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-size-light/sequence/frame-6.png": {
+    "mtime": 1795105532.15618,
+    "seen": 1795105606.1936457,
+    "ast_hash": "c224f4c8f9ec5b8f9c0f84448ae5fcdd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-size-light/sequence/frame-7.png": {
+    "mtime": 1795105532.6971743,
+    "seen": 1795105606.1936486,
+    "ast_hash": "c224f4c8f9ec5b8f9c0f84448ae5fcdd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-native-image-size-light/sequence/frame-8.png": {
+    "mtime": 1795105533.235169,
+    "seen": 1795105606.1936514,
+    "ast_hash": "c224f4c8f9ec5b8f9c0f84448ae5fcdd",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-DARK/result.json": {
+    "mtime": 1795108365.358674,
+    "seen": 1795110406.6501374,
+    "ast_hash": "5af50d63f035e6e94b732ae1baf88c13",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-LIGHT/result.json": {
+    "mtime": 1795108364.115033,
+    "seen": 1795110406.6501424,
+    "ast_hash": "5d73f7536a5cf6993fd5be2c53c536cf",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/summary.json": {
+    "mtime": 1795108365.3588638,
+    "seen": 1795110406.6501467,
+    "ast_hash": "e05f9290f5e925c77bcbc39583aadc6f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-pairs.json": {
+    "mtime": 1795109066.3550968,
+    "seen": 1795110406.6506662,
+    "ast_hash": "5bc4304a37293784f2ebb4ad3fc78ff1",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/result.json": {
+    "mtime": 1795108760.3042195,
+    "seen": 1795110406.6506736,
+    "ast_hash": "c739fceebcf1ebe379bd98ec1e4f8c2a",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/summary.json": {
+    "mtime": 1795109071.2470005,
+    "seen": 1795110406.650677,
+    "ast_hash": "8ca23673ccf842ed73ccad249553e329",
+    "semantic_hash": ""
+  },
+  "app/src/main/res/drawable-ldpi/product_logo_keep_2026_color_192.png": {
+    "mtime": 1795106003.485121,
+    "seen": 1795106698.6312246,
+    "ast_hash": "c52e9146e4da64ea976a2b47ce59a9e6",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-DARK/diff-amplified-4x.png": {
+    "mtime": 1795108364.7542555,
+    "seen": 1795110406.6554284,
+    "ast_hash": "937cf925cf7bdd420aef4617e8352acb",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-DARK/overlay-50.png": {
+    "mtime": 1795108364.802255,
+    "seen": 1795110406.6554322,
+    "ast_hash": "0b71fdada7fad9c6c813850179b777c4",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-DARK/rebuilt.png": {
+    "mtime": 1795108360.8082957,
+    "seen": 1795110406.655436,
+    "ast_hash": "b6f2d1beaa7c66a35434dfeac553fada",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-DARK/reference.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795106698.6338043,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795108363.512268,
+    "seen": 1795110406.6554751,
+    "ast_hash": "dc4ee4472f60613ea90cda912df85da2",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-LIGHT/overlay-50.png": {
+    "mtime": 1795108363.5602677,
+    "seen": 1795110406.655478,
+    "ast_hash": "07e34b9b8006b288eb2d40a767283b8f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-LIGHT/rebuilt.png": {
+    "mtime": 1795108303.450881,
+    "seen": 1795110406.6554813,
+    "ast_hash": "a6785276a011c99d3fc5a1e363dd5aa3",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-final/WELCOME-FIRST-RUN-LIGHT/reference.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795106698.6338172,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/diff-amplified-4x.png": {
+    "mtime": 1795108759.090232,
+    "seen": 1795110406.6570053,
+    "ast_hash": "a25aa0b908ace3eb527296a3ced53818",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/overlay-50.png": {
+    "mtime": 1795108759.1692312,
+    "seen": 1795110406.6570108,
+    "ast_hash": "bc162bb44aa542e878d01be68a527033",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/rebuilt.png": {
+    "mtime": 1795108732.6735015,
+    "seen": 1795110406.6570158,
+    "ast_hash": "225def7dda8998ba8b02ab722b7ef9b4",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/reference.png": {
+    "mtime": 1795106372.801602,
+    "seen": 1795106698.6347966,
+    "ast_hash": "1e2a27c5e4b2165952d6cb3fa9dea022",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-dark/sequence/frame-1.png": {
+    "mtime": 1795105632.5761566,
+    "seen": 1795106698.6396058,
+    "ast_hash": "279662fc80e0d6a17de1a9a490c7fd2f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-dark/sequence/frame-2.png": {
+    "mtime": 1795105633.114151,
+    "seen": 1795106698.6396096,
+    "ast_hash": "a1580d1abac17d7644200b398ebf945f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-dark/sequence/frame-3.png": {
+    "mtime": 1795105633.6571455,
+    "seen": 1795106698.639613,
+    "ast_hash": "d9c3e744e61f2870ce6e776335e9b6c3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-dark/sequence/frame-4.png": {
+    "mtime": 1795105634.1911402,
+    "seen": 1795106698.6396163,
+    "ast_hash": "d9c3e744e61f2870ce6e776335e9b6c3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-dark/sequence/frame-5.png": {
+    "mtime": 1795105634.7311347,
+    "seen": 1795106698.639619,
+    "ast_hash": "d9c3e744e61f2870ce6e776335e9b6c3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-dark/sequence/frame-6.png": {
+    "mtime": 1795105635.269129,
+    "seen": 1795106698.6396224,
+    "ast_hash": "d9c3e744e61f2870ce6e776335e9b6c3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-dark/sequence/frame-7.png": {
+    "mtime": 1795105635.8071237,
+    "seen": 1795106698.6396258,
+    "ast_hash": "d9c3e744e61f2870ce6e776335e9b6c3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-dark/sequence/frame-8.png": {
+    "mtime": 1795105636.341118,
+    "seen": 1795106698.639629,
+    "ast_hash": "d9c3e744e61f2870ce6e776335e9b6c3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/after-cta.png": {
+    "mtime": 1795105962.2097974,
+    "seen": 1795106698.6396315,
+    "ast_hash": "9e1af9e5fe3210149b721d3303a248c2",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/after-relaunch.png": {
+    "mtime": 1795105827.6751683,
+    "seen": 1795106698.6396358,
+    "ast_hash": "e25c27e1ec6faa7a6f77b94d88f26da3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/back-exit.png": {
+    "mtime": 1795106035.9010465,
+    "seen": 1795106698.6396391,
+    "ast_hash": "c8bf5a3e39e7fc625e0f649be95e89d7",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/sequence/frame-1.png": {
+    "mtime": 1795105622.3872604,
+    "seen": 1795106698.639643,
+    "ast_hash": "4688e2880ef2d23602ad42ca9b952979",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/sequence/frame-2.png": {
+    "mtime": 1795105622.9512546,
+    "seen": 1795106698.639646,
+    "ast_hash": "6767c2e0bdf41ad5213d421c3c103f36",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/sequence/frame-3.png": {
+    "mtime": 1795105623.509249,
+    "seen": 1795106698.6396487,
+    "ast_hash": "38bf7610e57b4897d6ca6efb384aa361",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/sequence/frame-4.png": {
+    "mtime": 1795105624.0582433,
+    "seen": 1795106698.639652,
+    "ast_hash": "38bf7610e57b4897d6ca6efb384aa361",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/sequence/frame-5.png": {
+    "mtime": 1795105624.5972378,
+    "seen": 1795106698.6396554,
+    "ast_hash": "38bf7610e57b4897d6ca6efb384aa361",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/sequence/frame-6.png": {
+    "mtime": 1795105625.1302323,
+    "seen": 1795106698.6396587,
+    "ast_hash": "38bf7610e57b4897d6ca6efb384aa361",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/sequence/frame-7.png": {
+    "mtime": 1795105625.669227,
+    "seen": 1795106698.6396616,
+    "ast_hash": "38bf7610e57b4897d6ca6efb384aa361",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/sequence/frame-8.png": {
+    "mtime": 1795105626.2102215,
+    "seen": 1795106698.6396644,
+    "ast_hash": "38bf7610e57b4897d6ca6efb384aa361",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-final-light/swipe-dismiss.png": {
+    "mtime": 1795105856.8808708,
+    "seen": 1795106698.6396677,
+    "ast_hash": "14fea8f481afefd036c5c516f7263fd4",
+    "semantic_hash": ""
+  },
+  "verification/reference/tablet/welcome-light-landscape.png": {
+    "mtime": 1795106372.801602,
+    "seen": 1795106698.6438627,
+    "ast_hash": "1e2a27c5e4b2165952d6cb3fa9dea022",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-dynamic/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/result.json": {
+    "mtime": 1795106776.1406274,
+    "seen": 1795107489.4678595,
+    "ast_hash": "cdf42900596120b96de198d68a75701f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-dynamic/summary.json": {
+    "mtime": 1795106776.1407866,
+    "seen": 1795107489.467865,
+    "ast_hash": "d453bbde8e3e9ec1269317a43b7e3662",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-dynamic/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/diff-amplified-4x.png": {
+    "mtime": 1795106775.107487,
+    "seen": 1795107489.4729276,
+    "ast_hash": "fdc85d106615ff95d3500a8d29ba0095",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-dynamic/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/overlay-50.png": {
+    "mtime": 1795106775.1794863,
+    "seen": 1795107489.4729302,
+    "ast_hash": "140394e537d2ac2ca3a83dbcc3f6cbf1",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-dynamic/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/rebuilt.png": {
+    "mtime": 1795106758.690655,
+    "seen": 1795107489.4729333,
+    "ast_hash": "7b7962cae29de4484d007fd64c8e87bb",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-dynamic/WELCOME-FIRST-RUN-LIGHT-TABLET-LANDSCAPE/reference.png": {
+    "mtime": 1795106372.801602,
+    "seen": 1795107489.4729362,
+    "ast_hash": "1e2a27c5e4b2165952d6cb3fa9dea022",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-dark-landscape-dynamic.png": {
+    "mtime": 1795108738.490442,
+    "seen": 1795110406.6683195,
+    "ast_hash": "a2a3712a0566a3cdfb544bc112ff99bd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-light-landscape-dynamic.png": {
+    "mtime": 1795109447.2450023,
+    "seen": 1795110406.668328,
+    "ast_hash": "b1db1093161c30b7571c4914145cc45d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/result.json": {
+    "mtime": 1795109071.2467105,
+    "seen": 1795110406.6506698,
+    "ast_hash": "cdb1708f34ec937b9e68a9cf27d4594a",
+    "semantic_hash": ""
+  },
+  "verification/logs/welcome-implementation-2026-11-19.md": {
+    "mtime": 1795116945.1809971,
+    "seen": 1795118098.1354234,
+    "ast_hash": "d70df7e84efa55c140b675221eaf902b",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/diff-amplified-4x.png": {
+    "mtime": 1795109068.9910698,
+    "seen": 1795110406.6569881,
+    "ast_hash": "a25aa0b908ace3eb527296a3ced53818",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/overlay-50.png": {
+    "mtime": 1795109069.1620681,
+    "seen": 1795110406.6569924,
+    "ast_hash": "bc162bb44aa542e878d01be68a527033",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/rebuilt.png": {
+    "mtime": 1795108732.6735015,
+    "seen": 1795110406.6569963,
+    "ast_hash": "225def7dda8998ba8b02ab722b7ef9b4",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/reference.png": {
+    "mtime": 1795106372.801602,
+    "seen": 1795110406.6569996,
+    "ast_hash": "1e2a27c5e4b2165952d6cb3fa9dea022",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-dark-portrait.png": {
+    "mtime": 1795108744.1733842,
+    "seen": 1795110406.6683235,
+    "ast_hash": "d9f0d146f8aae19ac961de8702b64393",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-light-portrait.png": {
+    "mtime": 1795108704.7117867,
+    "seen": 1795110406.6683311,
+    "ast_hash": "3c0ff4d2ccc56ea621ef73cc6dd301cb",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-DARK/result.json": {
+    "mtime": 1795111255.4451466,
+    "seen": 1795111631.7913911,
+    "ast_hash": "37e1388fb89135f3be3c70b74763f5a9",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-LIGHT/result.json": {
+    "mtime": 1795111254.1882634,
+    "seen": 1795111631.7913957,
+    "ast_hash": "4f44cb2d053e5f4e03dbe9f808f0825f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/summary.json": {
+    "mtime": 1795111255.4453382,
+    "seen": 1795111631.791399,
+    "ast_hash": "e05f9290f5e925c77bcbc39583aadc6f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-DARK/diff-amplified-4x.png": {
+    "mtime": 1795111254.8589628,
+    "seen": 1795111631.7960086,
+    "ast_hash": "9d7d60a036efa1a6abba9dfe5307330b",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-DARK/overlay-50.png": {
+    "mtime": 1795111254.9069624,
+    "seen": 1795111631.796012,
+    "ast_hash": "562e2c1f58424abe903bc7c2c948e297",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-DARK/rebuilt.png": {
+    "mtime": 1795111244.0550742,
+    "seen": 1795111631.7960153,
+    "ast_hash": "83f8db9cff79c91420d0cfac81ec134d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-DARK/reference.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795111129.1948655,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795111253.6009758,
+    "seen": 1795111631.7960482,
+    "ast_hash": "8bf825dd24a51d399e70fc7f2be68a38",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-LIGHT/overlay-50.png": {
+    "mtime": 1795111253.6489754,
+    "seen": 1795111631.7960515,
+    "ast_hash": "a51c8dae4fd7e94a7c2ab65fc738a127",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-LIGHT/rebuilt.png": {
+    "mtime": 1795111217.8093448,
+    "seen": 1795111631.7960544,
+    "ast_hash": "5fe6943841e00afe94ae5f44c2b3e494",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-measured/WELCOME-FIRST-RUN-LIGHT/reference.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795111129.1948767,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale-pairs.json": {
+    "mtime": 1795111707.1990757,
+    "seen": 1795112516.3430228,
+    "ast_hash": "105c44dd7f5320669c592f07cc3f86ba",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-DARK/result.json": {
+    "mtime": 1795111709.679652,
+    "seen": 1795112516.3430262,
+    "ast_hash": "8d0cc06d421ada5df3ec504257b72237",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-LIGHT/result.json": {
+    "mtime": 1795111708.4980016,
+    "seen": 1795112516.3430295,
+    "ast_hash": "769aa0f1fecfc6984883f73b543b3c53",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/regions.json": {
+    "mtime": 1795111744.64382,
+    "seen": 1795112516.3430324,
+    "ast_hash": "80b919673ca7c14022cb34fd0bc486f0",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/summary.json": {
+    "mtime": 1795111709.6798081,
+    "seen": 1795112516.3430357,
+    "ast_hash": "e05f9290f5e925c77bcbc39583aadc6f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-measured/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/result.json": {
+    "mtime": 1795112393.2253008,
+    "seen": 1795112516.3430977,
+    "ast_hash": "8d01d7316ed81fb45f4a5e5da20d0c42",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-measured/summary.json": {
+    "mtime": 1795112393.2254438,
+    "seen": 1795112516.343101,
+    "ast_hash": "8ca23673ccf842ed73ccad249553e329",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-scale-pairs.json": {
+    "mtime": 1795112287.80892,
+    "seen": 1795112516.343128,
+    "ast_hash": "4f60d02e05b5555c53304843aef40eaa",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-scale/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/result.json": {
+    "mtime": 1795112290.0540154,
+    "seen": 1795112516.343131,
+    "ast_hash": "8d01d7316ed81fb45f4a5e5da20d0c42",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-scale/summary.json": {
+    "mtime": 1795112290.0541577,
+    "seen": 1795112516.343134,
+    "ast_hash": "8ca23673ccf842ed73ccad249553e329",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-DARK/diff-amplified-4x.png": {
+    "mtime": 1795111709.110055,
+    "seen": 1795112516.3487763,
+    "ast_hash": "1d512e3a4f863252d15c6a1949e07ecd",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-DARK/overlay-50.png": {
+    "mtime": 1795111709.1570544,
+    "seen": 1795112516.3487804,
+    "ast_hash": "c04d3923947c8a7a2bb9109213a1aab4",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-DARK/rebuilt.png": {
+    "mtime": 1795111705.1980972,
+    "seen": 1795112516.3487833,
+    "ast_hash": "c6a1cabf26e7e5fc301bf6e767c62035",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-DARK/reference.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795112516.3487864,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795111707.907068,
+    "seen": 1795112516.3487895,
+    "ast_hash": "6bf6befeebaaa6111c619196fc0e8fe0",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-LIGHT/overlay-50.png": {
+    "mtime": 1795111707.9540675,
+    "seen": 1795112516.3487926,
+    "ast_hash": "a285239ea20a64bc27599f17aa6bf988",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-LIGHT/rebuilt.png": {
+    "mtime": 1795111692.0322397,
+    "seen": 1795112516.3487957,
+    "ast_hash": "2e4f2bda5737fd1fa6ae2f45633d7095",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-scale/WELCOME-FIRST-RUN-LIGHT/reference.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795112516.3487985,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-measured/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/diff-amplified-4x.png": {
+    "mtime": 1795112392.159667,
+    "seen": 1795112516.3489406,
+    "ast_hash": "c476a5844d99a6ef9d57843132b96047",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-measured/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/overlay-50.png": {
+    "mtime": 1795112392.2326663,
+    "seen": 1795112516.348944,
+    "ast_hash": "3dc4992f8f8ba62f0402eebb7636123e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-measured/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/rebuilt.png": {
+    "mtime": 1795112264.9796748,
+    "seen": 1795112516.3489466,
+    "ast_hash": "e9aad4770ebed19e4f23a369c0cf8701",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-measured/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/reference.png": {
+    "mtime": 1795106372.801602,
+    "seen": 1795112516.34895,
+    "ast_hash": "1e2a27c5e4b2165952d6cb3fa9dea022",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-scale/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/diff-amplified-4x.png": {
+    "mtime": 1795112289.0267825,
+    "seen": 1795112516.3489528,
+    "ast_hash": "c476a5844d99a6ef9d57843132b96047",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-scale/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/overlay-50.png": {
+    "mtime": 1795112289.0987818,
+    "seen": 1795112516.348956,
+    "ast_hash": "3dc4992f8f8ba62f0402eebb7636123e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-scale/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/rebuilt.png": {
+    "mtime": 1795112264.9796748,
+    "seen": 1795112516.3489585,
+    "ast_hash": "e9aad4770ebed19e4f23a369c0cf8701",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-scale/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/reference.png": {
+    "mtime": 1795106372.801602,
+    "seen": 1795112516.3489616,
+    "ast_hash": "1e2a27c5e4b2165952d6cb3fa9dea022",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-scale-dark.png": {
+    "mtime": 1795111705.1980972,
+    "seen": 1795112516.3559062,
+    "ast_hash": "c6a1cabf26e7e5fc301bf6e767c62035",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-scale-light.png": {
+    "mtime": 1795111692.0322397,
+    "seen": 1795112516.3559098,
+    "ast_hash": "2e4f2bda5737fd1fa6ae2f45633d7095",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-scale-light-landscape.png": {
+    "mtime": 1795112570.4115531,
+    "seen": 1795114071.4853272,
+    "ast_hash": "702f869afb94082666d0724e33180f2e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-final/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/result.json": {
+    "mtime": 1795112577.4265976,
+    "seen": 1795114071.4705222,
+    "ast_hash": "b549ac0726645d1a3d3466f3d0da4f5f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-final/summary.json": {
+    "mtime": 1795112577.4267437,
+    "seen": 1795114071.4705255,
+    "ast_hash": "8ca23673ccf842ed73ccad249553e329",
+    "semantic_hash": ""
+  },
+  "verification/logs/final-package-verification-2026-11-19.txt": {
+    "mtime": 1795117170.4646952,
+    "seen": 1795118098.13483,
+    "ast_hash": "b1276947132981d8b1d42104f6b6915b",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-final/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/diff-amplified-4x.png": {
+    "mtime": 1795112576.3456748,
+    "seen": 1795114071.4762967,
+    "ast_hash": "339ac5301d42976b067e3c761fb52c78",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-final/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/overlay-50.png": {
+    "mtime": 1795112576.417674,
+    "seen": 1795114071.4763,
+    "ast_hash": "fb7cf9fcbba612ad8199650b85af7e48",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-final/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/rebuilt.png": {
+    "mtime": 1795112570.4115531,
+    "seen": 1795114071.4763029,
+    "ast_hash": "702f869afb94082666d0724e33180f2e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-tablet-final/WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE/reference.png": {
+    "mtime": 1795106372.801602,
+    "seen": 1795114071.476306,
+    "ast_hash": "1e2a27c5e4b2165952d6cb3fa9dea022",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-scale-dark-landscape.png": {
+    "mtime": 1795112606.2903678,
+    "seen": 1795114071.48532,
+    "ast_hash": "2dd1ab6e3781169749f72e3b875ac337",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-scale-dark-portrait-final.png": {
+    "mtime": 1795112975.7227812,
+    "seen": 1795114071.4853234,
+    "ast_hash": "816662f86056446391cd617c309cf951",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-scale-light-portrait-final.png": {
+    "mtime": 1795112972.7313876,
+    "seen": 1795114071.4853306,
+    "ast_hash": "8627a85240164b5c590b9484eb9fce78",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-scale-orientation-lock-attempt-dark-2560x1600.png": {
+    "mtime": 1795112666.3469875,
+    "seen": 1795114071.485334,
+    "ast_hash": "7706a408a953df1ac8df8e6b9b4f0e26",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/tablet/welcome-scale-orientation-lock-attempt-light-2560x1600.png": {
+    "mtime": 1795112663.3634906,
+    "seen": 1795114071.4853368,
+    "ast_hash": "63ffcaae94775f8bd4bb249428874468",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/ci-run/settings-sharing-off-light.png": {
+    "mtime": 1795118150.66445,
+    "seen": 1795118780.319197,
+    "ast_hash": "77beff920636341513c85cb83bd94659",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-default-light-final.png": {
+    "mtime": 1795116065.3531592,
+    "seen": 1795116495.4555707,
+    "ast_hash": "a5d54e24c49a027ddbe501c6053f4023",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-explicit-dark-defaults.png": {
+    "mtime": 1795116082.2467518,
+    "seen": 1795116495.455574,
+    "ast_hash": "0c09a1b93578f852b442992b3059058c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-sharing-off-light-final.png": {
+    "mtime": 1795116074.9982457,
+    "seen": 1795116495.4555779,
+    "ast_hash": "31e453889e868813b2235cc7a516fda4",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/settings-toggled-dark-rowclick.png": {
+    "mtime": 1795116094.18975,
+    "seen": 1795116495.4555807,
+    "ast_hash": "62ac1998aa8cb37e261cfff125578a68",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/theme-picker-system-light-final.png": {
+    "mtime": 1795116068.577244,
+    "seen": 1795116495.4557335,
+    "ast_hash": "89ed9684de8cbefe9592b1801ee87b67",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-picker-current-pairs.json": {
+    "mtime": 1795117831.146945,
+    "seen": 1795118098.13273,
+    "ast_hash": "2fab03946f1f067fd17ea1e2e9971de1",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-picker-current/THEME-PICKER-SYSTEM-LIGHT/result.json": {
+    "mtime": 1795118176.5468314,
+    "seen": 1795118780.310519,
+    "ast_hash": "c60ec2424dfc509cc5e10018501f44ee",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-picker-current/summary.json": {
+    "mtime": 1795118176.5470989,
+    "seen": 1795118780.3105228,
+    "ast_hash": "5d110f9aacd858f8dbd9b32f3df5d9b8",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset-pairs.json": {
+    "mtime": 1795116614.9843707,
+    "seen": 1795118098.1331792,
+    "ast_hash": "28f80ac460036079bbdae79e4755776f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-DARK/result.json": {
+    "mtime": 1795116736.9903393,
+    "seen": 1795118098.133183,
+    "ast_hash": "805cc64172dce689c72d55bee4b967d4",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-LIGHT/result.json": {
+    "mtime": 1795116735.8265479,
+    "seen": 1795118098.1331847,
+    "ast_hash": "d6e0cff0ca060bf501a9f34c03f9c623",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/summary.json": {
+    "mtime": 1795116736.9905329,
+    "seen": 1795118098.133188,
+    "ast_hash": "e05f9290f5e925c77bcbc39583aadc6f",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-picker-current/THEME-PICKER-SYSTEM-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795118175.867423,
+    "seen": 1795118780.315333,
+    "ast_hash": "7baa4d6bcf9f27e58c42d670621cf623",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-picker-current/THEME-PICKER-SYSTEM-LIGHT/overlay-50.png": {
+    "mtime": 1795118175.9334223,
+    "seen": 1795118780.3153367,
+    "ast_hash": "634f9ed173ecbfc136b7bde20f6e7369",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-picker-current/THEME-PICKER-SYSTEM-LIGHT/rebuilt.png": {
+    "mtime": 1795118144.147941,
+    "seen": 1795118780.3153396,
+    "ast_hash": "ee183d5e19fde9386cd155ddc4a3c2fb",
+    "semantic_hash": ""
+  },
+  "verification/comparison/theme-picker-current/THEME-PICKER-SYSTEM-LIGHT/reference.png": {
+    "mtime": 1795084544.640321,
+    "seen": 1795118098.137141,
+    "ast_hash": "0b925da636afab07d6c1a2928268f89d",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-DARK/diff-amplified-4x.png": {
+    "mtime": 1795116736.42813,
+    "seen": 1795118098.1381793,
+    "ast_hash": "cf56d4cf1c293646a02f9c52e4efb67e",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-DARK/overlay-50.png": {
+    "mtime": 1795116736.4741294,
+    "seen": 1795118098.1381822,
+    "ast_hash": "87b08df36e61b19218b4d3f4fa7bb7b1",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-DARK/rebuilt.png": {
+    "mtime": 1795116728.6422093,
+    "seen": 1795118098.138185,
+    "ast_hash": "be2e67eccd528890a71d5c412bdc67ab",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-DARK/reference.png": {
+    "mtime": 1795103684.4927287,
+    "seen": 1795118098.138188,
+    "ast_hash": "f6ea32c727fb1d2fddc1667a5cfe9734",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-LIGHT/diff-amplified-4x.png": {
+    "mtime": 1795116735.2551417,
+    "seen": 1795118098.1381905,
+    "ast_hash": "4596b24e61335e1294a8e5e2c70a8509",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-LIGHT/overlay-50.png": {
+    "mtime": 1795116735.3021414,
+    "seen": 1795118098.1381931,
+    "ast_hash": "6ffa305a41d015b987ba6d6a164610c9",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-LIGHT/rebuilt.png": {
+    "mtime": 1795116690.5685985,
+    "seen": 1795118098.1381965,
+    "ast_hash": "5a06e4b648ced5dae743c10b62d48e8b",
+    "semantic_hash": ""
+  },
+  "verification/comparison/welcome-inset/WELCOME-FIRST-RUN-LIGHT/reference.png": {
+    "mtime": 1795103728.7942545,
+    "seen": 1795118098.1381993,
+    "ast_hash": "dec54d8d19b2152cc37a10ff924c578d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-inset-after-cta.png": {
+    "mtime": 1795116848.379986,
+    "seen": 1795118098.1455832,
+    "ast_hash": "02e29ea42a0bf74d55d00782aca7d56c",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-inset-dark.png": {
+    "mtime": 1795116728.6422093,
+    "seen": 1795118098.1455872,
+    "ast_hash": "be2e67eccd528890a71d5c412bdc67ab",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/welcome-inset-light.png": {
+    "mtime": 1795116690.5685985,
+    "seen": 1795118098.14559,
+    "ast_hash": "5a06e4b648ced5dae743c10b62d48e8b",
+    "semantic_hash": ""
+  },
+  "verification/logs/oled-dark-build-2026-11-19.md": {
+    "mtime": 1795119452.5607517,
+    "seen": 1795119582.6236656,
+    "ast_hash": "9603c7dc5164ab3bc9dc7a343b2fb8f9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/oled-dark-after-restart.png": {
+    "mtime": 1795119011.4848855,
+    "seen": 1795119343.384658,
+    "ast_hash": "a49371f2b2eb6fff965d169d5242ce69",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/oled-dark-drawer.png": {
+    "mtime": 1795118910.040922,
+    "seen": 1795119343.3846614,
+    "ast_hash": "47271a15f9294acbdc64405bf021b735",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/oled-dark-settings-final.png": {
+    "mtime": 1795119318.074753,
+    "seen": 1795119343.3846643,
+    "ast_hash": "e46a4cd158936ddbc4a4f9bc289b4992",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/oled-dark-settings.png": {
+    "mtime": 1795118915.512866,
+    "seen": 1795119343.384667,
+    "ast_hash": "03418d41ad954c11b30e1c6db1a24b47",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/oled-dark-start.png": {
+    "mtime": 1795118877.4962544,
+    "seen": 1795119343.3846703,
+    "ast_hash": "1e472df470d4413fd8034ed3a12f1bef",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/oled-dark-theme-dialog.png": {
+    "mtime": 1795118948.009534,
+    "seen": 1795119343.384673,
+    "ast_hash": "b01b84338cd5c05d35c64d72aa20dd28",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/oled-theme-light-check.png": {
+    "mtime": 1795118958.3214285,
+    "seen": 1795119343.3846755,
+    "ast_hash": "c43e2a4ff1ca2d5e5f359ec1a293fce2",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact/oled-dark-dist-install.png": {
+    "mtime": 1795119414.7527652,
+    "seen": 1795119582.632655,
+    "ast_hash": "ede76555169ee2d9a12b8262cf71dff0",
+    "semantic_hash": ""
+  },
+  "scripts/extract_keep_background_vectors.py": {
+    "mtime": 1795121272.6117866,
+    "seen": 1795121723.3814077,
+    "ast_hash": "4a5536ada4738c12632ee0845f9b529d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/pixel8/note-editor-initial.png": {
+    "mtime": 1795121319.3323095,
+    "seen": 1795121723.3982873,
+    "ast_hash": "3c0704b692d052c236cf0aec1b1f0001",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/pixel8/note-editor.png": {
+    "mtime": 1795121331.7701824,
+    "seen": 1795121723.3982909,
+    "ast_hash": "dab322093e952eff22d75630852de51a",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/pixel8/note-overflow.png": {
+    "mtime": 1795121415.2903295,
+    "seen": 1795121723.3982933,
+    "ast_hash": "a426fa7a167e22395db66cda74005013",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/pixel8/note-palette.png": {
+    "mtime": 1795121363.1348622,
+    "seen": 1795121723.398296,
+    "ast_hash": "9a71c135bd323d72c3187a5778742f7e",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/pixel8/oled-dark-home.png": {
+    "mtime": 1795119768.8391476,
+    "seen": 1795121723.398299,
+    "ast_hash": "f88ce9512abdea1488a9db5c3156436c",
+    "semantic_hash": ""
+  },
+  "app/src/main/java/dev/kenneth/keepclone/ui/KeepMotion.kt": {
+    "mtime": 1795122104.0202959,
+    "seen": 1795122287.2497761,
+    "ast_hash": "b7ca69383794b5f0bf39e6007541bc51",
+    "semantic_hash": ""
+  },
+  "verification/logs/animations-qemu-2026-11-19.md": {
+    "mtime": 1795125282.7120612,
+    "seen": 1795125333.3113513,
+    "ast_hash": "6823f2ab3c33319d59e41f2f2dd4d38e",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/create-menu-motion-frame.png": {
+    "mtime": 1795122673.3595219,
+    "seen": 1795125029.2127442,
+    "ast_hash": "fba986f3e5cada96453f7ade924f9448",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/editor-motion-landscape-1.png": {
+    "mtime": 1795123341.3884332,
+    "seen": 1795125029.2127476,
+    "ast_hash": "b9072ad4d16d49f9a26082dc582da4d9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/editor-motion-landscape-2.png": {
+    "mtime": 1795123341.6553261,
+    "seen": 1795125029.2127504,
+    "ast_hash": "b9072ad4d16d49f9a26082dc582da4d9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/editor-motion-landscape-3.png": {
+    "mtime": 1795123341.9215956,
+    "seen": 1795125029.212753,
+    "ast_hash": "b9072ad4d16d49f9a26082dc582da4d9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/editor-motion-landscape-4.png": {
+    "mtime": 1795123342.3586595,
+    "seen": 1795125029.2127562,
+    "ast_hash": "7c5008f1baa35b349d7118f4d7cf30c1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/home-before-record-qemu.png": {
+    "mtime": 1795123268.8168528,
+    "seen": 1795125029.212759,
+    "ast_hash": "93cda6b2dc8012741e32ef5aad95f0f9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/home-motion-tablet-qemu.png": {
+    "mtime": 1795122593.2662995,
+    "seen": 1795125029.2127614,
+    "ast_hash": "6b214063b1fe132b9b8a8fd5277d2309",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/home-note-after-editor-qemu.png": {
+    "mtime": 1795122996.3379893,
+    "seen": 1795125029.2127645,
+    "ast_hash": "ab2b2c8b21d1a3c8c2c48df1f6b0558a",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/home-note-after-relaunch-qemu.png": {
+    "mtime": 1795122998.046976,
+    "seen": 1795125029.2127678,
+    "ast_hash": "d68af1e44bccf922ee3bfe1a06ade9a2",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/note-caret-colored-dark-tablet-qemu.png": {
+    "mtime": 1795122954.8773146,
+    "seen": 1795125029.2127705,
+    "ast_hash": "f7e1f25d1ecd5b73b4af61fa873db2cf",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/note-caret-dark-tablet-qemu.png": {
+    "mtime": 1795122804.0454972,
+    "seen": 1795125029.2127733,
+    "ast_hash": "acaa3439effaeab7d6407e9155cc9b69",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/note-color-dark-tablet-qemu.png": {
+    "mtime": 1795122806.6924765,
+    "seen": 1795125029.2127762,
+    "ast_hash": "8596cd97c249f3de6af26b160ff91fb9",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/note-editor-dark-tablet-qemu.png": {
+    "mtime": 1795122768.9207726,
+    "seen": 1795125029.212779,
+    "ast_hash": "8573fef8b34333ef4778b4ac752bd73d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/note-editor-landscape-qemu.png": {
+    "mtime": 1795123308.1894596,
+    "seen": 1795125029.212782,
+    "ast_hash": "97c6acfee736fd4ddd5b508b8d2d9127",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/note-editor-tablet-qemu.png": {
+    "mtime": 1795122684.1044376,
+    "seen": 1795125029.2127845,
+    "ast_hash": "1f24265fa22daf8ea44084b1aed3d3ae",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/note-overflow-tablet-qemu.png": {
+    "mtime": 1795122726.8831022,
+    "seen": 1795125029.2127872,
+    "ast_hash": "95c602fc82c1b9bee400643f55ac3be3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/note-palette-dark-tablet-qemu.png": {
+    "mtime": 1795122805.6264849,
+    "seen": 1795125029.21279,
+    "ast_hash": "c2af0614c377eed0592e88e5429d11cc",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/note-palette-tablet-qemu.png": {
+    "mtime": 1795122714.8571966,
+    "seen": 1795125029.2127924,
+    "ast_hash": "87637b1b06f2d64e6d5209eb2d7781a6",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/palette-enter-080ms.png": {
+    "mtime": 1795122859.1350653,
+    "seen": 1795125029.2127955,
+    "ast_hash": "429428807716739ab5629dc18ec80720",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/palette-enter-200ms.png": {
+    "mtime": 1795122859.5120623,
+    "seen": 1795125029.212798,
+    "ast_hash": "93398bf0ddd6824623c73eed2adf0eae",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/palette-enter-340ms.png": {
+    "mtime": 1795122859.8850594,
+    "seen": 1795125029.212801,
+    "ast_hash": "443bff54cd2e4def50653ef37915e14d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/palette-enter-540ms.png": {
+    "mtime": 1795122860.3330557,
+    "seen": 1795125029.2128038,
+    "ast_hash": "443bff54cd2e4def50653ef37915e14d",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/palette-exit-080ms.png": {
+    "mtime": 1795122860.6610532,
+    "seen": 1795125029.2128067,
+    "ast_hash": "739362388747d6797c55474479c469ac",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/palette-exit-250ms.png": {
+    "mtime": 1795122861.0510502,
+    "seen": 1795125029.2128093,
+    "ast_hash": "2bb61c00118e3958682a1f165e355998",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/palette-exit-470ms.png": {
+    "mtime": 1795122861.4960468,
+    "seen": 1795125029.2128117,
+    "ast_hash": "976577a0e5b0ea0d076e24ae37c823ee",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/pixel8/installed-after-motion-build.png": {
+    "mtime": 1795124875.5235555,
+    "seen": 1795125029.2203536,
+    "ast_hash": "5c8f2e67ba21621e8c99161e44cd87dd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/keepclone-editor-motion-landscape-qemu.mp4": {
+    "mtime": 1795123336.713169,
+    "seen": 1795125029.2226017,
+    "ast_hash": "a7939438465d0a2091f19303294bd6fd",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-editor-check.png": {
+    "mtime": 1795125099.6822832,
+    "seen": 1795125333.319184,
+    "ast_hash": "37f011e00e3f6a98ed7e0f41fefc442f",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-frame-0.15.png": {
+    "mtime": 1795125081.6366546,
+    "seen": 1795125333.3191879,
+    "ast_hash": "7a601f94c1ac82fcf4172b4bd99626c1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-frame-0.35.png": {
+    "mtime": 1795125081.9123313,
+    "seen": 1795125333.3191907,
+    "ast_hash": "7a601f94c1ac82fcf4172b4bd99626c1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-frame-0.55.png": {
+    "mtime": 1795125082.188142,
+    "seen": 1795125333.3191936,
+    "ast_hash": "7a601f94c1ac82fcf4172b4bd99626c1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-frame-0.8.png": {
+    "mtime": 1795125082.4560921,
+    "seen": 1795125333.3191965,
+    "ast_hash": "7a601f94c1ac82fcf4172b4bd99626c1",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-frame-1.1.png": {
+    "mtime": 1795125082.7497072,
+    "seen": 1795125333.3191996,
+    "ast_hash": "9af68b45ab162ec07127e8f6fb4963b2",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-home-before-qemu.png": {
+    "mtime": 1795125046.4438229,
+    "seen": 1795125333.319203,
+    "ast_hash": "578208e05805a2a5602e1d269ef3e3bb",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-open-early.png": {
+    "mtime": 1795125123.9910367,
+    "seen": 1795125333.319205,
+    "ast_hash": "454a59da9e0c904a749c212592554ce3",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-open-late.png": {
+    "mtime": 1795125124.7280293,
+    "seen": 1795125333.3192084,
+    "ast_hash": "362a27c7bcff7465a69c669c5372c688",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-open-mid.png": {
+    "mtime": 1795125124.3080335,
+    "seen": 1795125333.3192112,
+    "ast_hash": "362a27c7bcff7465a69c669c5372c688",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-open-settled.png": {
+    "mtime": 1795125125.2530239,
+    "seen": 1795125333.3192146,
+    "ast_hash": "362a27c7bcff7465a69c669c5372c688",
+    "semantic_hash": ""
+  },
+  "verification/rebuilt/compact-qemu/route-slide-test-qemu.mp4": {
+    "mtime": 1795125074.0755427,
+    "seen": 1795125333.3292506,
+    "ast_hash": "4b9e332b931d5d0db118cea75cf65a9b",
+    "semantic_hash": ""
+  }
+}

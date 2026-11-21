@@ -1,0 +1,9 @@
+11-19 13:10:18.110 30588 30608 I TestRunner: started: reminderTimestampIsQueryableAndTrashSuppressesIt(dev.arcturus.memo.data.KeepRepositoryInstrumentedTest)
+11-19 13:10:18.131 30588 30608 D CompatChangeReporter: Compat change id reported: 418924588; UID 10266; state: ENABLED
+11-19 13:10:18.163   659   761 I RoleService: Granting default roles...
+11-19 13:10:18.165   659  8164 W SignedPackage: Package doesn't have required signing certificate: com.google.android.retaildemo
+11-19 13:10:18.172   659  8164 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms.supervision, role: android.app.role.SYSTEM_SUPERVISION, user: 0
+11-19 13:10:18.173   659  8164 I Role    : com.google.android.gms not qualified for android.app.role.SYSTEM_CALL_STREAMING due to missing RequiredComponent{mFlags='0', mIntentFilterData=IntentFilterData{mAction='android.telecom.CallStreamingService', mCategories='[]', mDataScheme='null', mDataType='null'}, mMetaData=[], mPermission='android.permission.BIND_CALL_STREAMING_SERVICE', mQueryFlags=0} Requirement{mFeatureFlag=null, mMinTargetSdkVersion=1}
+11-19 13:10:18.173   659  8164 E RoleControllerServiceImpl: Default/fallback role holder package doesn't qualify for the role, package: com.google.android.gms, role: android.app.role.SYSTEM_CALL_STREAMING, user: 0
+11-19 13:10:18.174   659  8164 W SignedPackage: Package doesn't have required signing certificate: com.google.android.apps.work.clouddpc
+11-19 13:10:18.180 30588 30608 I TestRunner: finished: reminderTimestampIsQueryableAndTrashSuppressesIt(dev.arcturus.memo.data.KeepRepositoryInstrumentedTest)

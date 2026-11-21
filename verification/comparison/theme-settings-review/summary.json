@@ -1,0 +1,9 @@
+{
+  "pair_count": 3,
+  "failed_state_ids": [
+    "THEME-SETTINGS-SYSTEM-LIGHT-RETAKE",
+    "THEME-PICKER-SYSTEM-LIGHT-RETAKE",
+    "THEME-SETTINGS-EXPLICIT-DARK-RETAKE"
+  ],
+  "exact_match": false
+}

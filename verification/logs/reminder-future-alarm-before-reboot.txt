@@ -1,0 +1,18 @@
+305-      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=2, android:broadcast.temporaryAppAllowlistReasonCode=302, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=0, android:broadcast.flags=8}]
+306:    RTC_WAKEUP #33: Alarm{5471776 type 0 origWhen 1795165200000 whenElapsed 80267558 dev.arcturus.memo}
+307:      tag=*walarm*:dev.arcturus.memo.action.FIRE_REMINDER
+308-      type=RTC_WAKEUP origWhen=2026-11-20 09:00:00.000 window=+1h0m0s0ms repeatInterval=0 count=0 flags=0x20
+--
+310-      whenElapsed=+20h28m11s521ms maxWhenElapsed=+21h28m11s521ms
+311:      operation=PendingIntent{3af2177: PendingIntentRecord{6cdb1e4 dev.arcturus.memo broadcastIntent}}
+312-      idle-options=Bundle[{android.pendingIntent.backgroundActivityAllowed=2, android:broadcast.temporaryAppAllowlistReasonCode=-1, android:broadcast.temporaryAppAllowlistDuration=10000, android:broadcast.temporaryAppAllowlistReason=, android:broadcast.temporaryAppAllowlistType=1, android:broadcast.flags=8}]
+--
+473-    com.google.android.gms, u0: -4m44s553ms, -4m56s395ms, -10m15s53ms, -14m53s626ms, -19m32s823ms, -24m51s479ms, -27m29s874ms, -30m10s136ms, -35m28s785ms, -36m39s550ms, -36m44s559ms, -39m57s176ms, -39m58s671ms, -43m29s880ms, -45m15s831ms, -49m8s252ms, -50m34s488ms, -51m29s886ms, -52m39s556ms, -52m44s565ms, -55m29s891ms, -55m53s160ms, -1h0m39s563ms, -1h0m44s571ms, -1h1m11s801ms, -1h4m39s570ms, -1h4m42s966ms, 
+474:    dev.arcturus.memo, u0: -2m9s334ms, -2m24s638ms, 
+475-  
+--
+674-      *walarm*:GCM_CONN_ALARM
+675:  u0a261:dev.arcturus.memo +16ms running, 2 wakeups:
+676-    +16ms 2 wakes 2 alarms, last -2m9s334ms:
+677:      *walarm*:dev.arcturus.memo.action.FIRE_REMINDER
+678-  

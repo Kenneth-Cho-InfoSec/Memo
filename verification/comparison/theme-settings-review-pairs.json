@@ -1,0 +1,26 @@
+[
+  {
+    "state_id": "THEME-SETTINGS-SYSTEM-LIGHT-RETAKE",
+    "reference_file": "REF-KEEP-002-settings-system-light.png",
+    "rebuilt_file": "settings-acceptance/25-settings-final-system-day-defaults.png",
+    "fixture": "Default preference values, System theme selected, Android night mode off.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Light Settings under System-day with defaults restored."
+  },
+  {
+    "state_id": "THEME-PICKER-SYSTEM-LIGHT-RETAKE",
+    "reference_file": "REF-KEEP-003-theme-picker-system-light.png",
+    "rebuilt_file": "settings-acceptance/24-theme-picker-after-display-settings-back-confirmed.png",
+    "fixture": "Theme picker open, System default selected, Android night mode off.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Light, Dark, System default choices and Cancel."
+  },
+  {
+    "state_id": "THEME-SETTINGS-EXPLICIT-DARK-RETAKE",
+    "reference_file": "REF-KEEP-004-settings-explicit-dark.png",
+    "rebuilt_file": "settings-acceptance/15-dark-after-relaunch-confirmed.png",
+    "fixture": "Default preference values, explicit Dark selected after force-stop and relaunch.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Dark Settings; theme selection persisted across process restart."
+  }
+]

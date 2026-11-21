@@ -1,0 +1,11 @@
+{
+  "pair_count": 5,
+  "failed_state_ids": [
+    "SETTINGS-SYSTEM-LIGHT-ROW-CLICK",
+    "THEME-PICKER-SYSTEM-LIGHT-ROW-CLICK",
+    "SETTINGS-SHARING-OFF-LIGHT",
+    "SETTINGS-EXPLICIT-DARK-DEFAULTS",
+    "SETTINGS-TOGGLED-DARK-ROW-CLICK"
+  ],
+  "exact_match": false
+}

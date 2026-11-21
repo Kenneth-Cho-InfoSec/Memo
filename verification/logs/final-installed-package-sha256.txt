@@ -1,0 +1,2 @@
+489c86262e1ff13a913963eb2cbb136365aa3da59b98c9fa986b0ed267d097f5  installed:/data/app/~~0oO4JWrjtIiEawaxC80gQA==/dev.arcturus.memo-wVLAi3DoghSiZTmFdHPdMw==/base.apk
+match_with_dist: True

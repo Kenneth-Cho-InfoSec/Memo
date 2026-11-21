@@ -1,0 +1,90 @@
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets UP-TO-DATE
+> Task :app:compressDebugAssets UP-TO-DATE
+> Task :app:generateDebugGlobalSynthetics UP-TO-DATE
+> Task :app:checkDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexDebug UP-TO-DATE
+> Task :app:mergeLibDexDebug UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths UP-TO-DATE
+> Task :app:compileDebugNavigationResources UP-TO-DATE
+> Task :app:mergeDebugResources UP-TO-DATE
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:processDebugResources UP-TO-DATE
+> Task :app:mergeDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeDebugNativeLibs UP-TO-DATE
+> Task :app:stripDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningDebug UP-TO-DATE
+> Task :app:writeDebugAppMetadata UP-TO-DATE
+> Task :app:writeDebugSigningConfigVersions UP-TO-DATE
+> Task :app:preDebugAndroidTestBuild SKIPPED
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:kspDebugKotlin
+
+> Task :app:compileDebugKotlin
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/KeepApp.kt:83:52 Unnecessary non-null assertion (!!) on a non-null receiver of type 'File'.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/KeepApp.kt:84:30 Unnecessary non-null assertion (!!) on a non-null receiver of type 'File'.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/KeepApp.kt:131:20 'var statusBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/KeepApp.kt:132:20 'var navigationBarColor: Int' is deprecated. Deprecated in Java.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/KeepAudioRecorderScreen.kt:143:35 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/KeepDrawingScreen.kt:89:35 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/KeepDrawingScreen.kt:94:39 'val Icons.Filled.Undo: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Undo.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/editor/KeepNoteEditorScreen.kt:245:35 'val Icons.Filled.ArrowBack: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.ArrowBack.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/editor/KeepNoteEditorScreen.kt:297:39 'val Icons.Filled.Label: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Label.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/home/KeepHomeScreen.kt:271:30 'val Icons.Filled.StickyNote2: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.StickyNote2.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/home/KeepHomeScreen.kt:316:39 'val Icons.Filled.Sort: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Sort.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/home/KeepHomeScreen.kt:345:50 'val Icons.Filled.StickyNote2: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.StickyNote2.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/home/KeepHomeScreen.kt:348:79 'val Icons.Filled.Label: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.Label.
+w: file:///home/kenneth/google-keep-reimplementation/app/src/main/java/dev/arcturus/memo/ui/home/KeepHomeScreen.kt:352:60 'val Icons.Filled.HelpOutline: ImageVector' is deprecated. Use the AutoMirrored version at Icons.AutoMirrored.Filled.HelpOutline.
+
+> Task :app:compileDebugJavaWithJavac UP-TO-DATE
+> Task :app:compressDebugJavaRes
+> Task :app:mergeDebugJavaResource UP-TO-DATE
+> Task :app:dexBuilderDebug
+> Task :app:generateDebugLintReportModel
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:mergeProjectDexDebug
+> Task :app:generateDebugAndroidTestLintModel
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:packageDebug
+> Task :app:createDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleDebug
+> Task :app:kspDebugUnitTestKotlin SKIPPED
+> Task :app:compileDebugUnitTestKotlin NO-SOURCE
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:compressDebugUnitTestJavaRes NO-SOURCE
+> Task :app:extractDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:testDebugUnitTest NO-SOURCE
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebugAndroidTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:lintReportDebug
+Wrote HTML report to file:///home/kenneth/google-keep-reimplementation/app/build/reports/lint-results-debug.html
+Wrote SARIF report to file:///home/kenneth/google-keep-reimplementation/app/build/reports/lint-results-debug.sarif
+
+> Task :app:lintDebug
+
+[Incubating] Problems report is available at: file:///home/kenneth/google-keep-reimplementation/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 10s
+52 actionable tasks: 16 executed, 36 up-to-date
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.6.0/userguide/configuration_cache_enabling.html

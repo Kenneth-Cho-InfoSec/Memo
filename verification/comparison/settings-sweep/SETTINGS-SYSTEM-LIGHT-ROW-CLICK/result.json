@@ -1,0 +1,41 @@
+{
+  "state_id": "SETTINGS-SYSTEM-LIGHT-ROW-CLICK",
+  "reference_file": "verification/reference/compact/REF-KEEP-121-reference-settings-sharing-restored.png",
+  "rebuilt_file": "verification/rebuilt/compact/settings-default-light-final.png",
+  "fixture": "Default settings; system night mode off; Settings opened from the drawer.",
+  "device_profile": "compact-phone-api37",
+  "expected": "Light Settings with System default theme and sharing enabled",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 80924,
+    "exact_pixel_match_percent": 96.624791,
+    "mean_absolute_channel_error": 4.166831,
+    "max_channel_delta": 249
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 75227,
+    "exact_pixel_match_percent": 96.705079,
+    "mean_absolute_channel_error": 4.031054,
+    "max_channel_delta": 244
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

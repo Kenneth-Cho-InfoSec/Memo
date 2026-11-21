@@ -1,0 +1,21 @@
+Fresh artifact verification — 2026-11-19
+Build and tests: verification/logs/welcome-cta-inset-build-test-2026-11-19.log
+Install commands:
+adb -s emulator-5554 install -r dist/keepclone-debug.apk
+adb -s emulator-5556 install -r dist/keepclone-debug.apk
+Install results: Success on both Android 17/API 37 guests.
+
+APK SHA-256:
+7cb5a8cd5e80ba1ac5afe0224799c5be3c3b5e0e3e2ba1527d9920e9d61c23e5  dist/keepclone-debug.apk
+
+Package metadata:
+package: name='dev.arcturus.memo' versionCode='1' versionName='1.0.0' platformBuildVersionName='17' platformBuildVersionCode='37' compileSdkVersion='37' compileSdkVersionCodename='17'
+
+Signing certificate:
+
+Connected instrumentation result counts:
+TEST-KeepRef_Tablet_API37(AVD) - 17.xml tests=5 failures=0 errors=0
+TEST-KeepRef_Compact_API37(AVD) - 17.xml tests=5 failures=0 errors=0
+
+
+V2 certificate SHA-256 digest: e033ac9918b9c9d8c8364bd1738ca8d6b43003aa264c53662670858a1b2118d7

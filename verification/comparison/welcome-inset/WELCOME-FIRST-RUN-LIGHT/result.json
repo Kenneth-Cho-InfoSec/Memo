@@ -1,0 +1,41 @@
+{
+  "state_id": "WELCOME-FIRST-RUN-LIGHT",
+  "reference_file": "verification/reference/compact/welcome-reference-light-final.png",
+  "rebuilt_file": "verification/rebuilt/compact/welcome-inset-light.png",
+  "fixture": "Fresh clone launch; Android System theme; night mode off; English (US).",
+  "device_profile": "compact-phone-api37",
+  "expected": "Capture anything welcome page with Keep logo, explanatory copy, and Get started action.",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 23831,
+    "exact_pixel_match_percent": 99.006048,
+    "mean_absolute_channel_error": 0.842918,
+    "max_channel_delta": 254
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 18237,
+    "exact_pixel_match_percent": 99.201225,
+    "mean_absolute_channel_error": 0.549968,
+    "max_channel_delta": 202
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

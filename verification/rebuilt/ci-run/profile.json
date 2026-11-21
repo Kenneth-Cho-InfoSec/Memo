@@ -1,0 +1,12 @@
+{
+  "device": "KeepRef_Compact_API37",
+  "api": 37,
+  "abi": "x86_64",
+  "wm_size": "Physical size: 1080x2220",
+  "wm_density": "Physical density: 440",
+  "font_scale": "1.0",
+  "locale": "en-US",
+  "timezone": "Europe/Belfast",
+  "night_mode_after_capture": "Night mode: no",
+  "captures": 7
+}

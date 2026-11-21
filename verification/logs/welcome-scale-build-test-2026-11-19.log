@@ -1,0 +1,19 @@
+Command:
+env JAVA_HOME=/home/kenneth/.local/share/jdk/temurin-17.0.21 ANDROID_HOME=/home/kenneth/Android/Sdk ANDROID_SDK_ROOT=/home/kenneth/Android/Sdk PATH=/home/kenneth/.local/share/jdk/temurin-17.0.21/bin:/home/kenneth/Android/Sdk/platform-tools:/home/kenneth/Android/Sdk/emulator:/usr/bin:/bin ./gradlew assembleDebug lintDebug testDebugUnitTest connectedDebugAndroidTest
+
+Result: BUILD SUCCESSFUL in 12s.
+- assembleDebug: passed
+- lintDebug: passed
+- testDebugUnitTest: NO-SOURCE
+- connectedDebugAndroidTest: 5/5 passed on KeepRef_Compact_API37 (emulator-5554, Android 17/API 37)
+- connectedDebugAndroidTest: 5/5 passed on KeepRef_Tablet_API37 (emulator-5556, Android 17/API 37)
+- The five instrumented tests cover onboarding preference persistence, repository checklist/labels/archive/trash, reminder query behavior, attachment metadata, and settings persistence.
+
+Current compact welcome pairs (unmasked):
+- Light: 98.973641% app-content exact; 98.793669% full-frame exact.
+- Dark: 98.974079% app-content exact; 98.792042% full-frame exact.
+- Both strict comparisons remain failed because text and CTA label pixels differ.
+
+Current tablet welcome captures: light/dark in landscape at 2560x1600 and portrait at logical 1600x2560 with the reversible wm size override. The tablet light landscape reference pair is 94.965330% app-content exact and remains failed.
+- Reference dark tablet capture unavailable. Starting the reference WelcomeActivity from shell failed with SecurityException: activity is not exported.
+- All comparison PNGs are unmasked.

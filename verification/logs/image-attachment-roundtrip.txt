@@ -1,0 +1,11 @@
+Image attachment guest journey (Android 17 API 37, compact profile, 1080x2220, 440 dpi)
+
+- Upgraded installed dev.arcturus.memo in place from Room schema version 1 to 2. SQLite reported user_version=2; the existing synthetic Regression label cross-reference survived.
+- Opened Home > Add > Image. Dismissed the platform Photo Picker notices, selected only the generated Keep-Synthetic.png fixture (yellow/blue thumbnail; accessibility date Nov 19, 2026 12:49 PM), and confirmed with Done.
+- Picker callback copied the bytes to files/attachments/<UUID>.png, stored attachmentType=Image and the private path in Room, and rendered the image in the editor.
+- Back to Home retained the image-only note. Force-stop and relaunch retained the Room row, private image, and home card preview.
+- Private file SHA-256 and verification/fixtures/keep-synthetic-image.png SHA-256 are identical (see image-attachment-private-sha256.txt).
+- A canceled picker returned to Home without creating a new note. Only the generated fixture was selected. Picker screenshots are omitted from the bundle because the system grid also displayed unrelated guest media.
+- Local-only result: reference Keep image creation was not paired to avoid changing signed-in reference data.
+
+Captures: REF-KEEP-091-image-note-editor-fixed.png; REF-KEEP-092-image-note-home-fixed.png; REF-KEEP-093-image-note-relaunch-fixed.png, with matching accessibility XML files.

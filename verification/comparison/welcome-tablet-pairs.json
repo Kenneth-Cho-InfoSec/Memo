@@ -1,0 +1,10 @@
+[
+  {
+    "state_id": "WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE",
+    "reference_file": "tablet/welcome-light-landscape.png",
+    "rebuilt_file": "tablet/welcome-light-landscape-dynamic.png",
+    "fixture": "Original WelcomeActivity direct component launch on the signed-in tablet; clone first-run flag cleared; Android System light; en-US.",
+    "device_profile": "KeepRef_Tablet_API37; 2560x1600; 320dpi; landscape",
+    "expected": "Keep logo, welcome headline/copy and Get started action arranged for a landscape tablet."
+  }
+]

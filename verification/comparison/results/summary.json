@@ -1,0 +1,12 @@
+{
+  "pair_count": 6,
+  "failed_state_ids": [
+    "HOME-EMPTY-LIGHT",
+    "SETTINGS-SYSTEM-LIGHT",
+    "THEME-PICKER-SYSTEM-LIGHT",
+    "SETTINGS-EXPLICIT-DARK",
+    "SETTINGS-TOGGLED-DARK",
+    "DRAWER-DARK"
+  ],
+  "exact_match": false
+}

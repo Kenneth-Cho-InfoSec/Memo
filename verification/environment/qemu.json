@@ -1,0 +1,19 @@
+{
+  "avd_name": "KeepRef_Compact_API37",
+  "launch_command": "/home/kenneth/Android/Sdk/emulator/emulator -avd KeepRef_Compact_API37 -gpu host -no-audio -no-boot-anim -no-snapshot",
+  "emulator_version": "Android emulator version 37.2.13.0 (build_id 16740729) (CL:N/A)",
+  "config_path": "/home/kenneth/.android/avd/KeepRef_Compact_API37.avd/config.ini",
+  "play_store_enabled": false,
+  "configured_device": "Google Pixel 3a",
+  "configured_abi": "x86_64",
+  "cpu_cores": 4,
+  "lcd_px": [
+    1080,
+    2220
+  ],
+  "lcd_density_dpi": 440,
+  "system_services_count": 256,
+  "system_services_file": "verification/environment/system-services.txt",
+  "runtime_gpu_backend": "host (emulator process argument -gpu host)",
+  "avd_hw_gpu_enabled": false
+}

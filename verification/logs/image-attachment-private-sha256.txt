@@ -1,0 +1,2 @@
+9c8425c9d26c56eaa7e3c8d8dad2129c4d5ece863971667a20cb73e547c0a7fe  files/attachments/a54b98a0-b832-490f-aa67-2d5bb39d6d2b.png
+9c8425c9d26c56eaa7e3c8d8dad2129c4d5ece863971667a20cb73e547c0a7fe  verification/fixtures/keep-synthetic-image.png

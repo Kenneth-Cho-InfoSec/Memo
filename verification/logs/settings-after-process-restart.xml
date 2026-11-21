@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+    <string name="theme_mode">Light</string>
+    <string name="sort_mode">Last edited</string>
+    <boolean name="move_checked_items_to_bottom" value="false" />
+    <boolean name="enable_sharing" value="false" />
+    <boolean name="add_new_items_to_bottom" value="false" />
+    <boolean name="create_text_notes_by_default" value="true" />
+    <boolean name="display_rich_link_previews" value="false" />
+    <boolean name="grid_view" value="true" />
+</map>

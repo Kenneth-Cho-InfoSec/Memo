@@ -1,0 +1,34 @@
+[
+  {
+    "state_id": "THEME-SETTINGS-SYSTEM-LIGHT-ADJUSTED",
+    "reference_file": "REF-KEEP-002-settings-system-light.png",
+    "rebuilt_file": "settings-acceptance/28-patched-system-light-settings.png",
+    "fixture": "Default preference values; System selected; Android night mode off.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Light Settings under System-day with default switches."
+  },
+  {
+    "state_id": "THEME-PICKER-SYSTEM-LIGHT-ADJUSTED",
+    "reference_file": "REF-KEEP-003-theme-picker-system-light.png",
+    "rebuilt_file": "settings-acceptance/36-patched-theme-picker-system-day-stable.png",
+    "fixture": "Theme picker open; System default selected; Android night mode off.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Light, Dark, System default choices, helper link, and Cancel."
+  },
+  {
+    "state_id": "THEME-SETTINGS-EXPLICIT-DARK-ADJUSTED",
+    "reference_file": "REF-KEEP-004-settings-explicit-dark.png",
+    "rebuilt_file": "settings-acceptance/30-patched-explicit-dark-settings.png",
+    "fixture": "Default preference values; explicit Dark selected.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Dark Settings with default switches."
+  },
+  {
+    "state_id": "SETTINGS-TOGGLED-DARK-ADJUSTED",
+    "reference_file": "REF-KEEP-017-settings-toggled-dark.png",
+    "rebuilt_file": "settings-acceptance/45-patched-dark-settings-toggled.png",
+    "fixture": "Explicit Dark; first three settings off, Create text notes by default on, Enable sharing off.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Dark Settings with switch values false,false,false,true,false."
+  }
+]

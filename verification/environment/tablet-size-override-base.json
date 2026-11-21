@@ -1,0 +1,14 @@
+{
+  "device": "KeepRef_Compact_API37 (tablet-size display override; not a physical Pixel Tablet AVD)",
+  "android_release": "17",
+  "api_level": "37",
+  "fingerprint": "google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260831.015/16516427:userdebug/dev-keys",
+  "locale": "en-US",
+  "timezone": "Europe/Belfast",
+  "font_scale": "1.0",
+  "night_mode": "Night mode: no",
+  "density_original": "Physical density: 440",
+  "size_original": "Physical size: 1080x2220",
+  "orientation_original": "0",
+  "navigation_mode": "2"
+}

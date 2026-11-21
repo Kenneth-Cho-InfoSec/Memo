@@ -1,0 +1,21 @@
+Reference install (single APK):
+adb install -r "/home/kenneth/Downloads/com.google.android.keep_5.26.461.01.90-220684604_minAPI29(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk"
+
+Final local build, lint, unit-test task, and Android 17 instrumentation:
+env JAVA_HOME=/home/kenneth/Android/jdk-21 ANDROID_HOME=/home/kenneth/Android/Sdk PATH=/home/kenneth/Android/jdk-21/bin:/home/kenneth/Android/Sdk/platform-tools:$PATH ./gradlew assembleDebug lintDebug testDebugUnitTest connectedDebugAndroidTest
+
+Install the distinct clone package and launch it:
+adb install -r dist/keepclone-debug.apk
+adb shell am start -n dev.arcturus.memo/.MainActivity
+
+Capture clone states on the compact API 37 guest:
+python3 scripts/capture_clone_parity.py
+
+Compare against private reference fixtures (raw images are retained; app-content strict comparison):
+python3 scripts/compare_screenshots.py --reference-root verification/reference/compact --rebuilt-root verification/rebuilt/ci-run --output-root verification/comparison/results --strict
+
+Full hardware parity preflight for CI:
+KEEP_REFERENCE_APK=/private/runner/Keep.apk KEEP_REFERENCE_EVIDENCE=/private/runner/keep-reference/compact scripts/verify-parity.sh
+
+Settings theme/toggle parity set (compact API 37 guest):
+python3 scripts/compare_screenshots.py --manifest verification/comparison/settings-sweep-pairs.json --reference-root verification/reference/compact --rebuilt-root verification/rebuilt/settings-sweep --output-root verification/comparison/settings-sweep --strict

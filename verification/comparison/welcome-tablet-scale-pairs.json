@@ -1,0 +1,10 @@
+[
+  {
+    "state_id": "WELCOME-DIRECT-LAUNCH-LIGHT-TABLET-LANDSCAPE",
+    "reference_file": "welcome-light-landscape.png",
+    "rebuilt_file": "welcome-scale-light-landscape.png",
+    "fixture": "Signed-in tablet; reference WelcomeActivity directly launched; System light; English (US).",
+    "device_profile": "tablet-landscape-api37",
+    "expected": "Keep welcome logo, headline, body, and Get started CTA."
+  }
+]

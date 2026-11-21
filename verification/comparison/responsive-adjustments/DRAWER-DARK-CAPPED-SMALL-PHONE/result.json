@@ -1,0 +1,41 @@
+{
+  "state_id": "DRAWER-DARK-CAPPED-SMALL-PHONE",
+  "reference_file": "verification/reference/compact/REF-KEEP-016-drawer-dark.png",
+  "rebuilt_file": "verification/rebuilt/compact/device-variants/drawer-dark-small-phone.png",
+  "fixture": "Dark theme; Notes selected; compact Pixel 3a 1080x2220, 440dpi.",
+  "device_profile": "compact-phone-api37",
+  "expected": "Reference drawer width and selected Notes state.",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 761478,
+    "exact_pixel_match_percent": 68.23999,
+    "mean_absolute_channel_error": 4.782527,
+    "max_channel_delta": 242
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 682927,
+    "exact_pixel_match_percent": 70.087994,
+    "mean_absolute_channel_error": 4.336262,
+    "max_channel_delta": 242
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

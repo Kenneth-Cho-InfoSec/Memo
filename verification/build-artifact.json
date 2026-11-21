@@ -1,0 +1,90 @@
+{
+  "path": "dist/keepclone-debug.apk",
+  "sha256": "7886da35fa1c5c781ffc74b4583a2b3368164ae965bab83404edebacdfe15c00",
+  "size_bytes": 64857099,
+  "package_id": "dev.arcturus.memo",
+  "version_name": "1.0.0",
+  "version_code": 1,
+  "target_sdk": 37,
+  "debug_signed": true,
+  "signing_certificate_sha256": "e033ac9918b9c9d8c8364bd1738ca8d6b43003aa264c53662670858a1b2118d7",
+  "aapt_badging_first_line": "package: name='dev.arcturus.memo' versionCode='1' versionName='1.0.0' platformBuildVersionName='17' platformBuildVersionCode='37' compileSdkVersion='37' compileSdkVersionCodename='17'",
+  "build_jdk": "21.0.13",
+  "build_date": "2026-11-19",
+  "build_command": "JAVA_HOME=/home/kenneth/Android/jdk-21 ANDROID_HOME=/home/kenneth/Android/Sdk ANDROID_SDK_ROOT=/home/kenneth/Android/Sdk PATH=/home/kenneth/Android/jdk-21/bin:/home/kenneth/Android/Sdk/platform-tools:$PATH ./gradlew :app:assembleDebug --console=plain",
+  "connected_test_result": "Latest debug APK installed and launched on KeepRef_Tablet_API37 (Android 17/API 37, x86_64). QEMU screen-sequence captures confirmed the requested right-to-left horizontal screen transition when opening a note; pulled installed base.apk SHA-256 matches dist APK. Pixel 8 was not listed by ADB during this verification.",
+  "welcome_app_content_exact_percent": {
+    "light": 99.201225,
+    "dark": 99.201356
+  },
+  "welcome_full_frame_exact_percent": {
+    "light": 99.006048,
+    "dark": 99.000209
+  },
+  "welcome_tablet_light_app_content_exact_percent": 94.96533,
+  "welcome_tablet_light_full_frame_exact_percent": 94.902295,
+  "final_verification_log": "verification/logs/animations-qemu-2026-11-19.md",
+  "hosted_github_actions": "pending; hosted runner not available from this workspace",
+  "oled_dark_verification": {
+    "device": "emulator-5554; Android 17/API 37; 1080x2220; 440 dpi; font scale 1.0; Europe/Belfast",
+    "background_sample_rgb": [
+      0,
+      0,
+      0
+    ],
+    "light_mode_checked": true,
+    "dark_mode_persisted_after_force_stop": true,
+    "captures": [
+      "verification/rebuilt/compact/oled-dark-settings-final.png",
+      "verification/rebuilt/compact/oled-dark-after-restart.png",
+      "verification/rebuilt/compact/oled-theme-light-check.png",
+      "verification/rebuilt/compact/oled-dark-drawer.png",
+      "verification/rebuilt/compact/oled-dark-settings-final.xml",
+      "verification/rebuilt/compact/oled-dark-dist-install.png"
+    ],
+    "pixel_8_adb_attached": false
+  },
+  "animation_qemu_verification": {
+    "avd": "KeepRef_Tablet_API37",
+    "adb_serial": "emulator-5556",
+    "guest_fingerprint": "google/sdk_gphone16k_x86_64/emu64xa16k:17/CP41.260831.015/16516427:userdebug/dev-keys",
+    "physical_display": "2560x1600 @ 320dpi; rotation 1; logical app surface 1600x2560",
+    "night_mode": "yes; app ThemeMode.System",
+    "installed_apk_sha256": "7886da35fa1c5c781ffc74b4583a2b3368164ae965bab83404edebacdfe15c00",
+    "install_verified_by_pulled_base_apk": true,
+    "app_crash_signature_in_last_2000_logcat_lines": false,
+    "captured_states": [
+      "welcome",
+      "home",
+      "create-menu",
+      "note-editor",
+      "note-palette",
+      "note-overflow",
+      "dark-note-caret",
+      "colored-note-caret",
+      "force-stop-relaunch-persistence",
+      "note-open-horizontal-slide"
+    ],
+    "full_frame_timed_reference_parity": "not run",
+    "motion_recording": {
+      "path": "verification/rebuilt/compact-qemu/keepclone-editor-motion-landscape-qemu.mp4",
+      "codec": "H.264",
+      "resolution": "2560x1600",
+      "duration_seconds": 4.366733
+    },
+    "route_transition": {
+      "duration_ms": 300,
+      "forward": "new route slides in from the right while the current route exits left",
+      "back": "directions reverse",
+      "user_requested_deviation_from_reference": "Reference APK uses scale/fade fragment motion; user requested a horizontal slide for route opening.",
+      "qemu_evidence": [
+        "verification/rebuilt/compact-qemu/route-slide-open-early.png",
+        "verification/rebuilt/compact-qemu/route-slide-open-mid.png",
+        "verification/rebuilt/compact-qemu/route-slide-open-late.png",
+        "verification/rebuilt/compact-qemu/route-slide-open-settled.png"
+      ],
+      "installed_apk_hash_verified": true,
+      "pixel_8_install": "not run; Pixel 8 absent from adb devices"
+    }
+  }
+}

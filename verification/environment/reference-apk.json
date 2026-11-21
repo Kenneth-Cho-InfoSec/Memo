@@ -1,0 +1,11 @@
+{
+  "path": "/home/kenneth/Downloads/com.google.android.keep_5.26.461.01.90-220684604_minAPI29(arm64-v8a,armeabi-v7a,x86,x86_64)(nodpi)_apkmirror.com.apk",
+  "package_id": "com.google.android.keep",
+  "version_name": "5.26.461.01.90",
+  "version_code": 220684604,
+  "apk_sha256": "081bb71dcd4a233f8704a760668ae97c3bb5a5feb81a59cd50a34f393378f7b1",
+  "apk_shape": "single universal APK installed with adb install (not a split set)",
+  "signing_certificate_sha256_android_33_plus": "e6a1604a39f8c655231f3554870554edabd68c2b837550bdc9bb85a94b65adc5",
+  "signing_certificate_sha256_android_24_to_32": "f0fd6c5b410f25cb25c3b53346c8972fae30f8ee7411df910480ad6b2d60db83",
+  "reference_app_user_data": "Kept isolated from clone fixtures; no user note content or credentials copied."
+}

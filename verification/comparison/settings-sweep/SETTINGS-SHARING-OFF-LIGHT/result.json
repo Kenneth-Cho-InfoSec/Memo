@@ -1,0 +1,41 @@
+{
+  "state_id": "SETTINGS-SHARING-OFF-LIGHT",
+  "reference_file": "verification/reference/compact/REF-KEEP-116-reference-settings-sharing-off.png",
+  "rebuilt_file": "verification/rebuilt/compact/settings-sharing-off-light-final.png",
+  "fixture": "System light mode; all default settings except Enable sharing off.",
+  "device_profile": "compact-phone-api37",
+  "expected": "Light Settings with sharing disabled",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 82811,
+    "exact_pixel_match_percent": 96.546088,
+    "mean_absolute_channel_error": 4.223462,
+    "max_channel_delta": 249
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 77392,
+    "exact_pixel_match_percent": 96.610253,
+    "mean_absolute_channel_error": 4.120816,
+    "max_channel_delta": 244
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

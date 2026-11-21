@@ -1,0 +1,10 @@
+.gradle/
+**/build/
+local.properties
+.idea/
+.impeccable/
+captures/
+*.iml
+
+# Build artifacts
+dist/

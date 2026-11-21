@@ -1,0 +1,41 @@
+{
+  "state_id": "DRAWER-DARK",
+  "reference_file": "/home/kenneth/google-keep-reimplementation/verification/reference/compact/REF-KEEP-016-drawer-dark.png",
+  "rebuilt_file": "verification/rebuilt/ci-run/drawer-dark.png",
+  "fixture": "Explicit Dark theme; Notes destination selected.",
+  "device_profile": "compact-phone-api37",
+  "expected": "Dark navigation drawer over Notes home",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 761448,
+    "exact_pixel_match_percent": 68.241241,
+    "mean_absolute_channel_error": 4.763468,
+    "max_channel_delta": 242
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 683057,
+    "exact_pixel_match_percent": 70.0823,
+    "mean_absolute_channel_error": 4.347655,
+    "max_channel_delta": 242
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

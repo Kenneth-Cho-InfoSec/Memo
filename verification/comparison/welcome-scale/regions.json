@@ -1,0 +1,56 @@
+{
+  "light": {
+    "app": {
+      "pixels": 2230200,
+      "differing": 23433,
+      "exact_percent": 98.949287
+    },
+    "title": {
+      "pixels": 96120,
+      "differing": 4779,
+      "exact_percent": 95.02809
+    },
+    "body": {
+      "pixels": 116640,
+      "differing": 11600,
+      "exact_percent": 90.05487
+    },
+    "button": {
+      "pixels": 44480,
+      "differing": 7054,
+      "exact_percent": 84.141187
+    },
+    "logo": {
+      "pixels": 204000,
+      "differing": 0,
+      "exact_percent": 100.0
+    }
+  },
+  "dark": {
+    "app": {
+      "pixels": 2230200,
+      "differing": 23423,
+      "exact_percent": 98.949735
+    },
+    "title": {
+      "pixels": 96120,
+      "differing": 4778,
+      "exact_percent": 95.02913
+    },
+    "body": {
+      "pixels": 116640,
+      "differing": 11597,
+      "exact_percent": 90.057442
+    },
+    "button": {
+      "pixels": 44480,
+      "differing": 7048,
+      "exact_percent": 84.154676
+    },
+    "logo": {
+      "pixels": 204000,
+      "differing": 0,
+      "exact_percent": 100.0
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "state_id": "THEME-PICKER-SYSTEM-LIGHT-ROW-CLICK",
+  "reference_file": "verification/reference/compact/REF-KEEP-003-theme-picker-system-light.png",
+  "rebuilt_file": "verification/rebuilt/compact/theme-picker-system-light-final.png",
+  "fixture": "Default settings; picker opened by tapping the Theme row label.",
+  "device_profile": "compact-phone-api37",
+  "expected": "Light, Dark, System default options and Cancel",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 138037,
+    "exact_pixel_match_percent": 94.242701,
+    "mean_absolute_channel_error": 3.232994,
+    "max_channel_delta": 231
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 131176,
+    "exact_pixel_match_percent": 94.254529,
+    "mean_absolute_channel_error": 3.138323,
+    "max_channel_delta": 222
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

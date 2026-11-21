@@ -1,0 +1,39 @@
+  * Task{f3642e8 #11 type=standard A=10231:dev.arcturus.memo U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+    topResumedActivity=ActivityRecord{99812363 u0 dev.arcturus.memo/.MainActivity t11}
+    * Hist  #0: ActivityRecord{99812363 u0 dev.arcturus.memo/.MainActivity t11}
+      packageName=dev.arcturus.memo processName=dev.arcturus.memo
+      app=ProcessRecord{5b0a080 5127:dev.arcturus.memo/u0a231}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=dev.arcturus.memo/.MainActivity }
+      rootOfTask=true task=Task{f3642e8 #11 type=standard A=10231:dev.arcturus.memo}
+      taskAffinity=10231:dev.arcturus.memo
+      mActivityComponent=dev.arcturus.memo/.MainActivity
+      baseDir=/data/app/~~ERUwAAqUUCsIH74FaQNkig==/dev.arcturus.memo-aSPAxGYrrjpSEPIJYzLWaQ==/base.apk
+      dataDir=/data/user/0/dev.arcturus.memo
+      windows=[Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}]
+    Resumed: ActivityRecord{99812363 u0 dev.arcturus.memo/.MainActivity t11}
+  ResumedActivity: ActivityRecord{99812363 u0 dev.arcturus.memo/.MainActivity t11}
+  topDisplayFocusedRootTask=Task{f3642e8 #11 type=standard A=10231:dev.arcturus.memo}
+  mImeLayeringTarget=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+  mImeInputTarget=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+  mImeControlTarget=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+  mImeParent=ActivityRecord{99812363 u0 dev.arcturus.memo/.MainActivity t11}
+  mCurrentFocus=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+  mFocusedApp=ActivityRecord{99812363 u0 dev.arcturus.memo/.MainActivity t11}
+  mObscuringWindow=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+      mPreferredTopFocusableRootTask=Task{f3642e8 #11 type=standard A=10231:dev.arcturus.memo}
+      mLastFocusedRootTask=Task{f3642e8 #11 type=standard A=10231:dev.arcturus.memo}
+      * Task{f3642e8 #11 type=standard A=10231:dev.arcturus.memo U=0 visible=true visibleRequested=true mode=fullscreen translucent=false sz=1}
+        * ActivityRecord{99812363 u0 dev.arcturus.memo/.MainActivity t11}
+    mFocusedWindow=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+    mTopFullscreenOpaqueWindowState=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+    mSystemUiControllingWindow=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+    mSystemBarColorApps={ActivityRecord{99812363 u0 dev.arcturus.memo/.MainActivity t11}}
+    mNavBarColorWindowCandidate=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+    mNavBarBackgroundWindowCandidate=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+      Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+      Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}:
+        mControlTarget=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+        mControlTarget=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+        mControlTarget=Window{3eed00 u0 dev.arcturus.memo/dev.arcturus.memo.MainActivity}
+        (fullscreen) Task{f3642e8 #11 type=standard A=10231:dev.arcturus.memo}
+  VisibleActivityProcess:[ ProcessRecord{5b0a080 5127:dev.arcturus.memo/u0a231}]

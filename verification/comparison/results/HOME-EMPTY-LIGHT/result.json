@@ -1,0 +1,41 @@
+{
+  "state_id": "HOME-EMPTY-LIGHT",
+  "reference_file": "/home/kenneth/google-keep-reimplementation/verification/reference/compact/current-launch.png",
+  "rebuilt_file": "verification/rebuilt/ci-run/home-empty-light.png",
+  "fixture": "Fresh clone data; original reference home was captured before any test note was created.",
+  "device_profile": "compact-phone-api37",
+  "expected": "Empty Notes home in light/System-day mode",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 120391,
+    "exact_pixel_match_percent": 94.978687,
+    "mean_absolute_channel_error": 1.903227,
+    "max_channel_delta": 255
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 102737,
+    "exact_pixel_match_percent": 95.500149,
+    "mean_absolute_channel_error": 1.851028,
+    "max_channel_delta": 255
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

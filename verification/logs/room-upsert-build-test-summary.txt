@@ -1,0 +1,3 @@
+Command: env JAVA_HOME=/home/kenneth/Android/jdk-21 ANDROID_HOME=/home/kenneth/Android/Sdk PATH=/home/kenneth/Android/jdk-21/bin:/home/kenneth/Android/Sdk/platform-tools:$PATH ./gradlew assembleDebug lintDebug testDebugUnitTest connectedDebugAndroidTest
+Result: BUILD SUCCESSFUL on 2026-11-19. lintDebug passed; testDebugUnitTest had no source tests; connectedDebugAndroidTest passed 2 tests with 0 failures.
+The connected run was on KeepRef_Compact_API37 (Android 17/API 37, x86_64). It uninstalled the app-under-test; the newly built debug APK was installed again before the manual UI regression journey.

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="5" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-11-19T19:36:06" hostname="localhost">
+  <testsuite name="dev.arcturus.memo.data.KeepOnboardingStoreInstrumentedTest" tests="1" failures="0" errors="0" skipped="0" time="0.002" timestamp="2026-11-19T19:36:06" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5556" />
+    </properties>
+    <testcase name="welcomeCompletionSurvivesStoreReload" classname="dev.arcturus.memo.data.KeepOnboardingStoreInstrumentedTest" time="0.002" />
+  </testsuite>
+  <testsuite name="dev.arcturus.memo.data.KeepRepositoryInstrumentedTest" tests="3" failures="0" errors="0" skipped="0" time="0.194" timestamp="2026-11-19T19:36:06" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5556" />
+    </properties>
+    <testcase name="attachmentMetadataSurvivesUnrelatedEditsAndKeepsNotesActive" classname="dev.arcturus.memo.data.KeepRepositoryInstrumentedTest" time="0.110" />
+    <testcase name="reminderTimestampIsQueryableAndTrashSuppressesIt" classname="dev.arcturus.memo.data.KeepRepositoryInstrumentedTest" time="0.022" />
+    <testcase name="checklistLabelsArchiveTrashAndDeletePersistThroughRoom" classname="dev.arcturus.memo.data.KeepRepositoryInstrumentedTest" time="0.062" />
+  </testsuite>
+  <testsuite name="dev.arcturus.memo.data.KeepSettingsStoreInstrumentedTest" tests="1" failures="0" errors="0" skipped="0" time="0.012" timestamp="2026-11-19T19:36:06" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5556" />
+    </properties>
+    <testcase name="everyPreferenceSurvivesStoreReload" classname="dev.arcturus.memo.data.KeepSettingsStoreInstrumentedTest" time="0.012" />
+  </testsuite>
+</testsuites>

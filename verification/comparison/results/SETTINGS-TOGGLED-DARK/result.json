@@ -1,0 +1,41 @@
+{
+  "state_id": "SETTINGS-TOGGLED-DARK",
+  "reference_file": "/home/kenneth/google-keep-reimplementation/verification/reference/compact/REF-KEEP-017-settings-toggled-dark.png",
+  "rebuilt_file": "verification/rebuilt/ci-run/settings-toggled-dark.png",
+  "fixture": "Add-items, move-checked, rich-previews off; create-text on; sharing off.",
+  "device_profile": "compact-phone-api37",
+  "expected": "Dark settings screen with the same five switch values",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 137211,
+    "exact_pixel_match_percent": 94.277152,
+    "mean_absolute_channel_error": 5.180296,
+    "max_channel_delta": 225
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 134824,
+    "exact_pixel_match_percent": 94.094748,
+    "mean_absolute_channel_error": 5.286891,
+    "max_channel_delta": 218
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "state_id": "THEME-PICKER-SYSTEM-LIGHT",
+    "reference_file": "REF-KEEP-003-theme-picker-system-light.png",
+    "rebuilt_file": "theme-picker-system-light.png",
+    "fixture": "System Light, compact Android 17/API 37, en-US, font scale 1.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Theme chooser with Light, Dark, System default, display settings help link, and Cancel."
+  }
+]

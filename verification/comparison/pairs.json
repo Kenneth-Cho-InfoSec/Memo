@@ -1,0 +1,50 @@
+[
+  {
+    "state_id": "HOME-EMPTY-LIGHT",
+    "reference_file": "current-launch.png",
+    "rebuilt_file": "home-empty-light.png",
+    "fixture": "Fresh clone data; original reference home was captured before any test note was created.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Empty Notes home in light/System-day mode"
+  },
+  {
+    "state_id": "SETTINGS-SYSTEM-LIGHT",
+    "reference_file": "REF-KEEP-002-settings-system-light.png",
+    "rebuilt_file": "settings-system-light.png",
+    "fixture": "Default settings; system night mode off.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Settings screen with Theme set to System default"
+  },
+  {
+    "state_id": "THEME-PICKER-SYSTEM-LIGHT",
+    "reference_file": "REF-KEEP-003-theme-picker-system-light.png",
+    "rebuilt_file": "theme-picker-system-light.png",
+    "fixture": "Theme picker opened from default settings.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Light, Dark, System default options and Cancel"
+  },
+  {
+    "state_id": "SETTINGS-EXPLICIT-DARK",
+    "reference_file": "REF-KEEP-004-settings-explicit-dark.png",
+    "rebuilt_file": "settings-dark.png",
+    "fixture": "Explicit Dark theme; default setting toggles.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Settings screen with dark app-owned surfaces"
+  },
+  {
+    "state_id": "SETTINGS-TOGGLED-DARK",
+    "reference_file": "REF-KEEP-017-settings-toggled-dark.png",
+    "rebuilt_file": "settings-toggled-dark.png",
+    "fixture": "Add-items, move-checked, rich-previews off; create-text on; sharing off.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Dark settings screen with the same five switch values"
+  },
+  {
+    "state_id": "DRAWER-DARK",
+    "reference_file": "REF-KEEP-016-drawer-dark.png",
+    "rebuilt_file": "drawer-dark.png",
+    "fixture": "Explicit Dark theme; Notes destination selected.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Dark navigation drawer over Notes home"
+  }
+]

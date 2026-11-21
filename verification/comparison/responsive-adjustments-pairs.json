@@ -1,0 +1,10 @@
+[
+  {
+    "state_id": "DRAWER-DARK-CAPPED-SMALL-PHONE",
+    "reference_file": "REF-KEEP-016-drawer-dark.png",
+    "rebuilt_file": "drawer-dark-small-phone.png",
+    "fixture": "Dark theme; Notes selected; compact Pixel 3a 1080x2220, 440dpi.",
+    "device_profile": "compact-phone-api37",
+    "expected": "Reference drawer width and selected Notes state."
+  }
+]

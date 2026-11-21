@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuites tests="3" failures="0" errors="0" skipped="0" time="0.000" timestamp="2026-11-19T13:24:07" hostname="localhost">
+  <testsuite name="dev.arcturus.memo.data.KeepRepositoryInstrumentedTest" tests="3" failures="0" errors="0" skipped="0" time="0.135" timestamp="2026-11-19T13:24:07" hostname="localhost">
+    <properties>
+      <property name="device" value="emulator-5554" />
+    </properties>
+    <testcase name="attachmentMetadataSurvivesUnrelatedEditsAndKeepsNotesActive" classname="dev.arcturus.memo.data.KeepRepositoryInstrumentedTest" time="0.064" />
+    <testcase name="reminderTimestampIsQueryableAndTrashSuppressesIt" classname="dev.arcturus.memo.data.KeepRepositoryInstrumentedTest" time="0.018" />
+    <testcase name="checklistLabelsArchiveTrashAndDeletePersistThroughRoom" classname="dev.arcturus.memo.data.KeepRepositoryInstrumentedTest" time="0.053" />
+  </testsuite>
+</testsuites>

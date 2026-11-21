@@ -1,0 +1,41 @@
+{
+  "state_id": "THEME-SETTINGS-SYSTEM-LIGHT-ADJUSTED",
+  "reference_file": "verification/reference/compact/REF-KEEP-002-settings-system-light.png",
+  "rebuilt_file": "verification/rebuilt/compact/settings-acceptance/28-patched-system-light-settings.png",
+  "fixture": "Default preference values; System selected; Android night mode off.",
+  "device_profile": "compact-phone-api37",
+  "expected": "Light Settings under System-day with default switches.",
+  "comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2220,
+    "total_pixels": 2397600,
+    "differing_pixels": 101238,
+    "exact_pixel_match_percent": 95.777528,
+    "mean_absolute_channel_error": 3.997718,
+    "max_channel_delta": 249
+  },
+  "masking": {
+    "applied": false,
+    "excluded_regions": []
+  },
+  "app_content_region_px": [
+    0,
+    66,
+    1080,
+    2180
+  ],
+  "app_content_comparison": {
+    "same_dimensions": true,
+    "width": 1080,
+    "height": 2114,
+    "total_pixels": 2283120,
+    "differing_pixels": 98146,
+    "exact_pixel_match_percent": 95.701233,
+    "mean_absolute_channel_error": 3.982261,
+    "max_channel_delta": 244
+  },
+  "strict_app_content_exact": false,
+  "full_frame_exact": false,
+  "disposition": "failed"
+}

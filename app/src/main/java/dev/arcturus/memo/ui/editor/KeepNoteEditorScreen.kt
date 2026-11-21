@@ -157,7 +157,9 @@ fun KeepNoteEditorScreen(
 ) {
     val note by repository.note(noteId).collectAsState(initial = null)
     val relations by repository.noteWithRelations(noteId).collectAsState(initial = null)
-    val items by repository.checklistItems(noteId).collectAsState(initial = emptyList())
+    val itemsState by repository.checklistItems(noteId).collectAsState(initial = null)
+    val items = itemsState.orEmpty()
+    val itemsLoaded = itemsState != null
     val dark = isDark
     val colors = if (dark) KeepDarkColors else KeepLightColors
     val scope = rememberCoroutineScope()
@@ -213,6 +215,12 @@ fun KeepNoteEditorScreen(
     val sortedItems = if (moveCheckedItemsToBottom) {
         items.sortedWith(compareBy<ChecklistItemEntity> { it.isChecked }.thenBy { it.position })
     } else items.sortedBy { it.position }
+
+    LaunchedEffect(itemsLoaded, checklistMode, sortedItems.isEmpty()) {
+        if (itemsLoaded && checklistMode && sortedItems.isEmpty()) {
+            checklistMode = false
+        }
+    }
 
     fun setReminder(timestamp: Long?) {
         reminderAt = timestamp
@@ -346,6 +354,20 @@ fun KeepNoteEditorScreen(
         val currentItems = items.sortedBy { it.position }
         body = ChecklistConversion.itemsToBodyText(currentItems.map { it.text })
         checklistMode = false
+    }
+
+    fun removeChecklistItem(itemId: String) {
+        val remaining = sortedItems.filterNot { it.id == itemId }
+        if (remaining.isEmpty()) {
+            body = ""
+            checklistMode = false
+            scope.launch { repository.deleteItems(current.id) }
+        } else {
+            val index = sortedItems.indexOfFirst { it.id == itemId }
+            val adjacent = sortedItems.getOrNull(index - 1) ?: sortedItems.getOrNull(index + 1)
+            pendingFocusItemId = adjacent?.id
+            scope.launch { repository.deleteItem(itemId) }
+        }
     }
 
     var exportPickerOpen by remember { mutableStateOf(false) }
@@ -605,12 +627,7 @@ fun KeepNoteEditorScreen(
 
                         fun deleteEmptyItem(): Boolean {
                             if (itemValue.text.isNotEmpty()) return false
-                            val index = sortedItems.indexOfFirst { it.id == item.id }
-                            val previous = sortedItems.getOrNull(index - 1)
-                            scope.launch {
-                                repository.deleteItem(item.id)
-                                if (previous != null) pendingFocusItemId = previous.id
-                            }
+                            removeChecklistItem(item.id)
                             return true
                         }
 
@@ -653,14 +670,7 @@ fun KeepNoteEditorScreen(
                                     }
                                 },
                             )
-                            IconButton(onClick = {
-                                val index = sortedItems.indexOfFirst { it.id == item.id }
-                                val adjacent = sortedItems.getOrNull(index - 1) ?: sortedItems.getOrNull(index + 1)
-                                scope.launch {
-                                    repository.deleteItem(item.id)
-                                    pendingFocusItemId = adjacent?.id
-                                }
-                            }) {
+                            IconButton(onClick = { removeChecklistItem(item.id) }) {
                                 Icon(
                                     Icons.Filled.Close,
                                     contentDescription = "Delete list item",

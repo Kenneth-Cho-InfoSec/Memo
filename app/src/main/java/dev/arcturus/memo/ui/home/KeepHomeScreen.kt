@@ -378,7 +378,7 @@ private fun HomeToolbar(
             shape = CircleShape,
         ) {
             Row(verticalAlignment = Alignment.CenterVertically) {
-                Text("Search Arcturus Memo", modifier = Modifier.weight(1f).padding(start = 24.dp), fontSize = 16.sp, color = colors.secondaryForeground)
+                Text("Search Memo", modifier = Modifier.weight(1f).padding(start = 24.dp), fontSize = 16.sp, color = colors.secondaryForeground)
                 IconButton(onClick = onGrid, modifier = Modifier.size(48.dp)) {
                     Icon(if (gridView) Icons.Filled.GridView else Icons.Filled.ViewAgenda, contentDescription = if (gridView) "Grid view" else "List view", tint = colors.secondaryForeground)
                 }
@@ -386,10 +386,6 @@ private fun HomeToolbar(
                     Icon(Icons.Filled.Sort, contentDescription = "Sort notes", tint = colors.secondaryForeground)
                 }
             }
-        }
-        Spacer(Modifier.width(8.dp))
-        Surface(modifier = Modifier.size(32.dp), shape = CircleShape, color = Color(0xFF008577)) {
-            Box(contentAlignment = Alignment.Center) { Text("K", color = Color.White, fontSize = 19.sp, fontWeight = FontWeight.Medium) }
         }
     }
 }

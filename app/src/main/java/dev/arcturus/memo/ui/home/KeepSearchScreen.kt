@@ -56,7 +56,7 @@ fun KeepSearchScreen(notes: List<NoteEntity>, repository: KeepRepository, isDark
                 textStyle = TextStyle(color = colors.foreground, fontSize = 18.sp),
                 decorationBox = { inner ->
                     Row(verticalAlignment = Alignment.CenterVertically) {
-                        if (query.isEmpty()) Text("Search Arcturus Memo", color = colors.secondaryForeground, fontSize = 18.sp)
+                        if (query.isEmpty()) Text("Search Memo", color = colors.secondaryForeground, fontSize = 18.sp)
                         inner()
                     }
                 },

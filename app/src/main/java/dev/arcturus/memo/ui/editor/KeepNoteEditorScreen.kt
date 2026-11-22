@@ -746,26 +746,28 @@ fun KeepNoteEditorScreen(
                     }
                     item {
                         Column(modifier = Modifier.fillParentMaxHeight()) {
-                            Text(
-                                "+ List item",
-                                modifier = Modifier.fillMaxWidth().clickable {
-                                    scope.launch {
-                                        val newId = UUID.randomUUID().toString()
-                                        repository.saveItem(
-                                            ChecklistItemEntity(
-                                                id = newId,
-                                                noteId = current.id,
-                                                text = "",
-                                                isCheckbox = true,
-                                                position = (items.maxOfOrNull { it.position } ?: -1) + 1,
-                                            ),
-                                        )
-                                        pendingFocusItemId = newId
-                                    }
-                                }.padding(start = 60.dp, top = 14.dp, bottom = 14.dp),
-                                color = colors.secondaryForeground,
-                                fontSize = 16.sp,
-                            )
+                            if (sortedItems.isEmpty() || sortedItems.last().isCheckbox) {
+                                Text(
+                                    "+ List item",
+                                    modifier = Modifier.fillMaxWidth().clickable {
+                                        scope.launch {
+                                            val newId = UUID.randomUUID().toString()
+                                            repository.saveItem(
+                                                ChecklistItemEntity(
+                                                    id = newId,
+                                                    noteId = current.id,
+                                                    text = "",
+                                                    isCheckbox = true,
+                                                    position = (items.maxOfOrNull { it.position } ?: -1) + 1,
+                                                ),
+                                            )
+                                            pendingFocusItemId = newId
+                                        }
+                                    }.padding(start = 60.dp, top = 14.dp, bottom = 14.dp),
+                                    color = colors.secondaryForeground,
+                                    fontSize = 16.sp,
+                                )
+                            }
                             Box(
                                 modifier = Modifier.fillMaxWidth().weight(1f).clickable(
                                     interactionSource = remember { MutableInteractionSource() },

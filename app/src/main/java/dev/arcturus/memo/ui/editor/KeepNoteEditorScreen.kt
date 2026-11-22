@@ -768,7 +768,7 @@ fun KeepNoteEditorScreen(
                                     fontSize = 16.sp,
                                 )
                             }
-                            if (sortedItems.any { it.isCheckbox }) {
+                            if (sortedItems.lastOrNull()?.isCheckbox == true) {
                                 Box(
                                     modifier = Modifier.fillMaxWidth().weight(1f).clickable(
                                         interactionSource = remember { MutableInteractionSource() },

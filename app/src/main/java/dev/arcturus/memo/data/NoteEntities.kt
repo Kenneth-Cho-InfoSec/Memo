@@ -44,6 +44,7 @@ data class ChecklistItemEntity(
     val text: String,
     val isChecked: Boolean = false,
     val position: Int,
+    val isCheckbox: Boolean = true,
 )
 
 @Entity(tableName = "labels", indices = [Index(value = ["name"], unique = true)])

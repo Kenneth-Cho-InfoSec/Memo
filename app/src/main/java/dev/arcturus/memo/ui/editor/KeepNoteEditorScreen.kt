@@ -218,9 +218,29 @@ fun KeepNoteEditorScreen(
         items.sortedWith(compareBy<ChecklistItemEntity> { it.isChecked }.thenBy { it.position })
     } else items.sortedBy { it.position }
 
-    LaunchedEffect(itemsLoaded, checklistMode, sortedItems.isEmpty()) {
-        if (itemsLoaded && checklistMode && sortedItems.isEmpty()) {
+    // If a checklist loses all items, fall back to text mode so the note body
+    // remains editable. Guard with a settled check: only when items have loaded
+    // AND the note is not in the middle of being converted (body was cleared by
+    // showCheckboxes and replacement items may not have arrived yet).
+    LaunchedEffect(itemsLoaded, checklistMode, sortedItems.isEmpty(), body) {
+        if (itemsLoaded && checklistMode && sortedItems.isEmpty() && body.isNotBlank()) {
+            // Body has content but no items - inconsistent; keep text mode.
             checklistMode = false
+        }
+    }
+
+    LaunchedEffect(itemsLoaded, sortedItems.isNotEmpty()) {
+        if (itemsLoaded && sortedItems.isNotEmpty() && !checklistMode) {
+            checklistMode = true
+            if (body.isBlank()) body = ""
+        }
+    }
+
+    LaunchedEffect(itemsLoaded, checklistMode, sortedItems) {
+        if (itemsLoaded && checklistMode && sortedItems.isNotEmpty() && sortedItems.none { it.isCheckbox }) {
+            body = ChecklistConversion.itemsToBodyText(sortedItems.map { it.text })
+            checklistMode = false
+            scope.launch { repository.deleteItems(current.id) }
         }
     }
 
@@ -284,14 +304,18 @@ fun KeepNoteEditorScreen(
         }
     }
 
-    LaunchedEffect(title, body, colorName, pinned, reminderAt, checklistMode, notificationPermissionGranted) {
+    fun effectiveBody() = if (checklistMode) sortedItems.joinToString("\n") { it.text } else body
+    fun effectiveIsChecklist() = if (checklistMode) sortedItems.any { it.isCheckbox } else false
+
+    val itemsSyncKey = sortedItems.joinToString("\u0001") { "${it.id}\u0002${it.text}\u0002${it.isChecked}\u0002${it.isCheckbox}" }
+    LaunchedEffect(title, body, colorName, pinned, reminderAt, checklistMode, notificationPermissionGranted, itemsSyncKey) {
         delay(250)
         val updated = current.copy(
             title = title,
-            body = body,
+            body = effectiveBody(),
             colorName = colorName,
             isPinned = pinned,
-            isChecklist = checklistMode,
+            isChecklist = effectiveIsChecklist(),
             reminderAt = reminderAt,
         )
         repository.saveNote(updated)
@@ -300,25 +324,27 @@ fun KeepNoteEditorScreen(
 
     fun draftNote() = current.copy(
         title = title,
-        body = body,
+        body = effectiveBody(),
         colorName = colorName,
         isPinned = pinned,
-        isChecklist = checklistMode,
+        isChecklist = effectiveIsChecklist(),
         reminderAt = reminderAt,
     )
 
     fun closeEditor() {
         scope.launch {
-            if (title.isBlank() && body.isBlank() && items.isEmpty() && !checklistMode && current.attachmentPath == null) {
+            val bodyValue = effectiveBody()
+            val isList = effectiveIsChecklist()
+            if (title.isBlank() && bodyValue.isBlank() && items.isEmpty() && !isList && current.attachmentPath == null) {
                 repository.deleteNote(current.id)
                 ReminderScheduler.cancel(context, current.id)
             } else {
                 val updated = current.copy(
                     title = title,
-                    body = body,
+                    body = bodyValue,
                     colorName = colorName,
                     isPinned = pinned,
-                    isChecklist = checklistMode,
+                    isChecklist = isList,
                     reminderAt = reminderAt,
                 )
                 repository.saveNote(updated)
@@ -330,23 +356,37 @@ fun KeepNoteEditorScreen(
     BackHandler(onBack = ::closeEditor)
 
     fun showCheckboxes() {
-        val lines = ChecklistConversion.bodyToLineTexts(body)
         val existingItems = items.sortedBy { it.position }
-        val existingBody = ChecklistConversion.itemsToBodyText(existingItems.map { it.text })
-        val newItems = if (existingItems.isEmpty() || existingBody != body) {
-            lines.mapIndexed { index, text ->
-                ChecklistItemEntity(
+        val newItems = mutableListOf<ChecklistItemEntity>()
+        if (existingItems.isEmpty()) {
+            if (body.isNotBlank()) {
+                newItems += ChecklistItemEntity(
                     id = UUID.randomUUID().toString(),
                     noteId = current.id,
-                    text = text,
-                    isChecked = false,
-                    position = index,
+                    text = body,
+                    isCheckbox = false,
+                    position = 0,
                 )
             }
+            newItems += ChecklistItemEntity(
+                id = UUID.randomUUID().toString(),
+                noteId = current.id,
+                text = "",
+                isCheckbox = true,
+                position = newItems.size,
+            )
         } else {
-            existingItems.mapIndexed { index, item -> item.copy(position = index) }
+            newItems += existingItems.mapIndexed { index, item -> item.copy(position = index) }
+            newItems += ChecklistItemEntity(
+                id = UUID.randomUUID().toString(),
+                noteId = current.id,
+                text = "",
+                isCheckbox = true,
+                position = newItems.size,
+            )
         }
-        pendingFocusItemId = newItems.firstOrNull()?.id
+        val focusId = newItems.lastOrNull { it.isCheckbox }?.id
+        pendingFocusItemId = focusId
         body = ""
         checklistMode = true
         scope.launch { repository.replaceItems(current.id, newItems) }
@@ -356,6 +396,7 @@ fun KeepNoteEditorScreen(
         val currentItems = items.sortedBy { it.position }
         body = ChecklistConversion.itemsToBodyText(currentItems.map { it.text })
         checklistMode = false
+        scope.launch { repository.deleteItems(current.id) }
     }
 
     fun removeChecklistItem(itemId: String) {
@@ -620,6 +661,7 @@ fun KeepNoteEditorScreen(
                                     noteId = current.id,
                                     text = after,
                                     position = insertAt,
+                                    isCheckbox = item.isCheckbox,
                                 ),
                             )
                             scope.launch {
@@ -635,10 +677,12 @@ fun KeepNoteEditorScreen(
                         }
 
                         Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.animateItem().fillMaxWidth()) {
-                            Checkbox(
-                                checked = item.isChecked,
-                                onCheckedChange = { checked -> scope.launch { repository.checkItem(item.id, checked) } },
-                            )
+                            if (item.isCheckbox) {
+                                Checkbox(
+                                    checked = item.isChecked,
+                                    onCheckedChange = { checked -> scope.launch { repository.checkItem(item.id, checked) } },
+                                )
+                            }
                             val fieldInteraction = remember { MutableInteractionSource() }
                             Box(
                                 modifier = Modifier.weight(1f).then(
@@ -654,7 +698,7 @@ fun KeepNoteEditorScreen(
                                         itemValue = value
                                         scope.launch { repository.saveItem(item.copy(text = value.text)) }
                                     },
-                                    modifier = Modifier.fillMaxWidth().padding(vertical = 12.dp)
+                                    modifier = Modifier.fillMaxWidth().padding(vertical = if (item.isCheckbox) 12.dp else 8.dp)
                                         .focusRequester(itemFocus)
                                         .onFocusChanged { itemFocused = it.isFocused }
                                         .onPreviewKeyEvent { event ->
@@ -671,14 +715,20 @@ fun KeepNoteEditorScreen(
                                     textStyle = TextStyle(
                                         color = editorText,
                                         fontSize = 16.sp,
-                                        textDecoration = if (item.isChecked) androidx.compose.ui.text.style.TextDecoration.LineThrough else null,
+                                        textDecoration = if (item.isCheckbox && item.isChecked) androidx.compose.ui.text.style.TextDecoration.LineThrough else null,
                                     ),
                                     cursorBrush = SolidColor(editorCursor),
                                     keyboardOptions = KeyboardOptions(imeAction = ImeAction.Next),
                                     keyboardActions = KeyboardActions(onNext = { splitItemAtCursor() }),
                                     decorationBox = { inner ->
                                         Box {
-                                            if (itemValue.text.isEmpty()) Text("List item", color = editorText.copy(alpha = 0.5f), fontSize = 16.sp)
+                                            if (itemValue.text.isEmpty()) {
+                                                Text(
+                                                    if (item.isCheckbox) "List item" else "Note",
+                                                    color = editorText.copy(alpha = 0.5f),
+                                                    fontSize = 16.sp,
+                                                )
+                                            }
                                             inner()
                                         }
                                     },
@@ -687,7 +737,7 @@ fun KeepNoteEditorScreen(
                             IconButton(onClick = { removeChecklistItem(item.id) }) {
                                 Icon(
                                     Icons.Filled.Close,
-                                    contentDescription = "Delete list item",
+                                    contentDescription = if (item.isCheckbox) "Delete list item" else "Delete text block",
                                     tint = colors.secondaryForeground,
                                     modifier = Modifier.size(20.dp),
                                 )
@@ -695,27 +745,44 @@ fun KeepNoteEditorScreen(
                         }
                     }
                     item {
-                        Text(
-                            "+ List item",
-                            modifier = Modifier.fillMaxWidth().clickable {
-                                scope.launch {
-                                    repository.saveItem(
-                                        ChecklistItemEntity(
-                                            id = UUID.randomUUID().toString(),
-                                            noteId = current.id,
-                                            text = "",
-                                            position = if (addNewItemsToBottom) {
-                                                (items.maxOfOrNull { it.position } ?: -1) + 1
-                                            } else {
-                                                (items.minOfOrNull { it.position } ?: 0) - 1
-                                            },
-                                        ),
-                                    )
-                                }
-                            }.padding(start = 60.dp, top = 14.dp, bottom = 14.dp),
-                            color = colors.secondaryForeground,
-                            fontSize = 16.sp,
-                        )
+                        Column {
+                            Text(
+                                "+ List item",
+                                modifier = Modifier.fillMaxWidth().clickable {
+                                    scope.launch {
+                                        repository.saveItem(
+                                            ChecklistItemEntity(
+                                                id = UUID.randomUUID().toString(),
+                                                noteId = current.id,
+                                                text = "",
+                                                isCheckbox = true,
+                                                position = (items.maxOfOrNull { it.position } ?: -1) + 1,
+                                            ),
+                                        )
+                                    }
+                                }.padding(start = 60.dp, top = 14.dp, bottom = 8.dp),
+                                color = colors.secondaryForeground,
+                                fontSize = 16.sp,
+                            )
+                            Text(
+                                "+ Text",
+                                modifier = Modifier.fillMaxWidth().clickable {
+                                    scope.launch {
+                                        repository.saveItem(
+                                            ChecklistItemEntity(
+                                                id = UUID.randomUUID().toString(),
+                                                noteId = current.id,
+                                                text = "",
+                                                isCheckbox = false,
+                                                position = (items.maxOfOrNull { it.position } ?: -1) + 1,
+                                            ),
+                                        )
+                                    }
+                                }.padding(start = 16.dp, top = 8.dp, bottom = 14.dp),
+                                color = colors.secondaryForeground,
+                                fontSize = 16.sp,
+                            )
+                        }
                     }
                 }
             } else {

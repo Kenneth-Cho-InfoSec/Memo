@@ -86,7 +86,40 @@ fun NotePreviewCard(note: NoteEntity, repository: KeepRepository, isDark: Boolea
             if (note.title.isNotBlank()) {
                 Text(note.title, color = foreground, fontSize = 16.sp, fontWeight = FontWeight.Medium, maxLines = 5)
             }
-            if (note.body.isNotBlank()) {
+            if (note.isChecklist) {
+                val items = checklistItems.take(4)
+                if (items.isEmpty()) {
+                    Text(
+                        "Note",
+                        modifier = Modifier.padding(top = if (note.title.isNotBlank()) 8.dp else 0.dp),
+                        color = foreground.copy(alpha = 0.65f),
+                        fontSize = 14.sp,
+                    )
+                } else {
+                    items.forEachIndexed { index, item ->
+                        val top = if (index == 0 && note.title.isNotBlank()) 8.dp else 2.dp
+                        if (item.isCheckbox) {
+                            Text(
+                                text = (if (item.isChecked) "☑  " else "☐  ") + item.text,
+                                modifier = Modifier.padding(top = top),
+                                color = foreground.copy(alpha = if (item.isChecked) 0.65f else 1f),
+                                fontSize = 14.sp,
+                                maxLines = 2,
+                                textDecoration = if (item.isChecked) TextDecoration.LineThrough else TextDecoration.None,
+                            )
+                        } else {
+                            Text(
+                                text = item.text,
+                                modifier = Modifier.padding(top = top),
+                                color = foreground,
+                                fontSize = 14.sp,
+                                maxLines = 3,
+                            )
+                        }
+                    }
+                    if (checklistItems.size > 4) Text("+${checklistItems.size - 4} more", color = foreground.copy(alpha = 0.65f), fontSize = 12.sp)
+                }
+            } else if (note.body.isNotBlank()) {
                 Text(
                     note.body,
                     modifier = Modifier.padding(top = if (note.title.isNotBlank()) 8.dp else 0.dp),
@@ -94,33 +127,10 @@ fun NotePreviewCard(note: NoteEntity, repository: KeepRepository, isDark: Boolea
                     fontSize = 14.sp,
                     maxLines = 10,
                 )
-            }
-            if (note.isChecklist) {
-                val items = checklistItems.take(3)
-                if (items.isEmpty()) {
-                    Text(
-                        "☐  List item",
-                        modifier = Modifier.padding(top = if (note.title.isNotBlank() || note.body.isNotBlank()) 8.dp else 0.dp),
-                        color = foreground,
-                        fontSize = 14.sp,
-                    )
-                } else {
-                    items.forEachIndexed { index, item ->
-                        Text(
-                            text = (if (item.isChecked) "☑  " else "☐  ") + item.text,
-                            modifier = Modifier.padding(top = if (index == 0 && (note.title.isNotBlank() || note.body.isNotBlank())) 8.dp else 2.dp),
-                            color = foreground.copy(alpha = if (item.isChecked) 0.65f else 1f),
-                            fontSize = 14.sp,
-                            maxLines = 2,
-                            textDecoration = if (item.isChecked) TextDecoration.LineThrough else TextDecoration.None,
-                        )
-                    }
-                    if (checklistItems.size > 3) Text("+${checklistItems.size - 3} more", color = foreground.copy(alpha = 0.65f), fontSize = 12.sp)
-                }
-                } else if (note.title.isBlank() && note.body.isBlank() && note.attachmentPath == null) {
-                    Text("Note", color = foreground, fontSize = 14.sp)
-                }
+            } else if (note.title.isBlank() && note.attachmentPath == null) {
+                Text("Note", color = foreground, fontSize = 14.sp)
             }
         }
     }
+}
 }

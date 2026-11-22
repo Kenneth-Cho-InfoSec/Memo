@@ -99,8 +99,10 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
+import androidx.compose.ui.focus.onFocusChanged
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -596,6 +598,7 @@ fun KeepNoteEditorScreen(
                             }
                         }
                         val itemFocus = remember(item.id) { FocusRequester() }
+                        var itemFocused by remember(item.id) { mutableStateOf(false) }
                         LaunchedEffect(pendingFocusItemId) {
                             if (pendingFocusItemId == item.id) {
                                 itemFocus.requestFocus()
@@ -636,40 +639,51 @@ fun KeepNoteEditorScreen(
                                 checked = item.isChecked,
                                 onCheckedChange = { checked -> scope.launch { repository.checkItem(item.id, checked) } },
                             )
-                            BasicTextField(
-                                value = itemValue,
-                                onValueChange = { value ->
-                                    itemValue = value
-                                    scope.launch { repository.saveItem(item.copy(text = value.text)) }
-                                },
-                                modifier = Modifier.weight(1f).padding(vertical = 12.dp)
-                                    .focusRequester(itemFocus)
-                                    .onPreviewKeyEvent { event ->
-                                        if (event.type != KeyEventType.KeyDown) return@onPreviewKeyEvent false
-                                        when (event.key) {
-                                            Key.Enter, Key.NumPadEnter -> {
-                                                splitItemAtCursor()
-                                                true
+                            val fieldInteraction = remember { MutableInteractionSource() }
+                            Box(
+                                modifier = Modifier.weight(1f).then(
+                                    if (!itemFocused) Modifier.clickable(
+                                        interactionSource = fieldInteraction,
+                                        indication = null,
+                                    ) { itemFocus.requestFocus() } else Modifier
+                                ),
+                            ) {
+                                BasicTextField(
+                                    value = itemValue,
+                                    onValueChange = { value ->
+                                        itemValue = value
+                                        scope.launch { repository.saveItem(item.copy(text = value.text)) }
+                                    },
+                                    modifier = Modifier.fillMaxWidth().padding(vertical = 12.dp)
+                                        .focusRequester(itemFocus)
+                                        .onFocusChanged { itemFocused = it.isFocused }
+                                        .onPreviewKeyEvent { event ->
+                                            if (event.type != KeyEventType.KeyDown) return@onPreviewKeyEvent false
+                                            when (event.key) {
+                                                Key.Enter, Key.NumPadEnter -> {
+                                                    splitItemAtCursor()
+                                                    true
+                                                }
+                                                Key.Backspace -> deleteEmptyItem()
+                                                else -> false
                                             }
-                                            Key.Backspace -> deleteEmptyItem()
-                                            else -> false
+                                        },
+                                    textStyle = TextStyle(
+                                        color = editorText,
+                                        fontSize = 16.sp,
+                                        textDecoration = if (item.isChecked) androidx.compose.ui.text.style.TextDecoration.LineThrough else null,
+                                    ),
+                                    cursorBrush = SolidColor(editorCursor),
+                                    keyboardOptions = KeyboardOptions(imeAction = ImeAction.Next),
+                                    keyboardActions = KeyboardActions(onNext = { splitItemAtCursor() }),
+                                    decorationBox = { inner ->
+                                        Box {
+                                            if (itemValue.text.isEmpty()) Text("List item", color = editorText.copy(alpha = 0.5f), fontSize = 16.sp)
+                                            inner()
                                         }
                                     },
-                                textStyle = TextStyle(
-                                    color = editorText,
-                                    fontSize = 16.sp,
-                                    textDecoration = if (item.isChecked) androidx.compose.ui.text.style.TextDecoration.LineThrough else null,
-                                ),
-                                cursorBrush = SolidColor(editorCursor),
-                                keyboardOptions = KeyboardOptions(imeAction = ImeAction.Next),
-                                keyboardActions = KeyboardActions(onNext = { splitItemAtCursor() }),
-                                decorationBox = { inner ->
-                                    Box {
-                                        if (itemValue.text.isEmpty()) Text("List item", color = editorText.copy(alpha = 0.5f), fontSize = 16.sp)
-                                        inner()
-                                    }
-                                },
-                            )
+                                )
+                            }
                             IconButton(onClick = { removeChecklistItem(item.id) }) {
                                 Icon(
                                     Icons.Filled.Close,

@@ -745,42 +745,46 @@ fun KeepNoteEditorScreen(
                         }
                     }
                     item {
-                        Column {
+                        Column(modifier = Modifier.fillParentMaxHeight()) {
                             Text(
                                 "+ List item",
                                 modifier = Modifier.fillMaxWidth().clickable {
                                     scope.launch {
+                                        val newId = UUID.randomUUID().toString()
                                         repository.saveItem(
                                             ChecklistItemEntity(
-                                                id = UUID.randomUUID().toString(),
+                                                id = newId,
                                                 noteId = current.id,
                                                 text = "",
                                                 isCheckbox = true,
                                                 position = (items.maxOfOrNull { it.position } ?: -1) + 1,
                                             ),
                                         )
+                                        pendingFocusItemId = newId
                                     }
-                                }.padding(start = 60.dp, top = 14.dp, bottom = 8.dp),
+                                }.padding(start = 60.dp, top = 14.dp, bottom = 14.dp),
                                 color = colors.secondaryForeground,
                                 fontSize = 16.sp,
                             )
-                            Text(
-                                "+ Text",
-                                modifier = Modifier.fillMaxWidth().clickable {
+                            Box(
+                                modifier = Modifier.fillMaxWidth().weight(1f).clickable(
+                                    interactionSource = remember { MutableInteractionSource() },
+                                    indication = null,
+                                ) {
                                     scope.launch {
+                                        val newId = UUID.randomUUID().toString()
                                         repository.saveItem(
                                             ChecklistItemEntity(
-                                                id = UUID.randomUUID().toString(),
+                                                id = newId,
                                                 noteId = current.id,
                                                 text = "",
                                                 isCheckbox = false,
                                                 position = (items.maxOfOrNull { it.position } ?: -1) + 1,
                                             ),
                                         )
+                                        pendingFocusItemId = newId
                                     }
-                                }.padding(start = 16.dp, top = 8.dp, bottom = 14.dp),
-                                color = colors.secondaryForeground,
-                                fontSize = 16.sp,
+                                },
                             )
                         }
                     }

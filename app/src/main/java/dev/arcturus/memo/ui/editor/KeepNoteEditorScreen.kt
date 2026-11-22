@@ -768,26 +768,30 @@ fun KeepNoteEditorScreen(
                                     fontSize = 16.sp,
                                 )
                             }
-                            Box(
-                                modifier = Modifier.fillMaxWidth().weight(1f).clickable(
-                                    interactionSource = remember { MutableInteractionSource() },
-                                    indication = null,
-                                ) {
-                                    scope.launch {
-                                        val newId = UUID.randomUUID().toString()
-                                        repository.saveItem(
-                                            ChecklistItemEntity(
-                                                id = newId,
-                                                noteId = current.id,
-                                                text = "",
-                                                isCheckbox = false,
-                                                position = (items.maxOfOrNull { it.position } ?: -1) + 1,
-                                            ),
-                                        )
-                                        pendingFocusItemId = newId
-                                    }
-                                },
-                            )
+                            if (sortedItems.any { it.isCheckbox }) {
+                                Box(
+                                    modifier = Modifier.fillMaxWidth().weight(1f).clickable(
+                                        interactionSource = remember { MutableInteractionSource() },
+                                        indication = null,
+                                    ) {
+                                        scope.launch {
+                                            val newId = UUID.randomUUID().toString()
+                                            repository.saveItem(
+                                                ChecklistItemEntity(
+                                                    id = newId,
+                                                    noteId = current.id,
+                                                    text = "",
+                                                    isCheckbox = false,
+                                                    position = (items.maxOfOrNull { it.position } ?: -1) + 1,
+                                                ),
+                                            )
+                                            pendingFocusItemId = newId
+                                        }
+                                    },
+                                )
+                            } else {
+                                Spacer(Modifier.weight(1f))
+                            }
                         }
                     }
                 }

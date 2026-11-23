@@ -19,12 +19,40 @@ android {
         applicationId = "dev.arcturus.memo"
         minSdk = 29
         targetSdk = 37
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "0.2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         ndk {
             abiFilters += "arm64-v8a"
+        }
+    }
+
+    signingConfigs {
+        getByName("debug") {
+            // uses default debug keystore
+        }
+        create("release") {
+            val releaseStore = System.getenv("ARCTURUS_RELEASE_STORE_FILE")
+            if (!releaseStore.isNullOrBlank()) {
+                storeFile = file(releaseStore)
+                storePassword = System.getenv("ARCTURUS_RELEASE_STORE_PASSWORD")
+                keyAlias = System.getenv("ARCTURUS_RELEASE_KEY_ALIAS")
+                keyPassword = System.getenv("ARCTURUS_RELEASE_KEY_PASSWORD")
+            } else {
+                val debug = getByName("debug")
+                storeFile = debug.storeFile
+                storePassword = debug.storePassword
+                keyAlias = debug.keyAlias
+                keyPassword = debug.keyPassword
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 

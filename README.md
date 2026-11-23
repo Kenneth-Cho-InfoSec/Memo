@@ -1,20 +1,20 @@
 # Arcturus Memo
 
-Arcturus Memo is a local-first Android note-taking app built with Kotlin and Jetpack Compose. It supports fast capture, rich note organization, reminders, attachments, and an integrated A64 Studio assembly workspace — all stored on-device.
+Arcturus Memo is a local-first Android note-taking app built with Kotlin and Jetpack Compose. It supports fast capture, rich note organization, reminders, attachments, and an integrated A64 Studio assembly workspace - all stored on-device.
 
 ## Highlights
 
-- **Quick capture** — Create text notes, checklists, drawings, audio notes, image notes, or assembly-code notes from the home `+` menu.
-- **Mixed notes** — Combine plain text blocks and checkbox items in the same note. Add checkboxes inline, continue typing text below a list, and keep note content editable as your structure changes.
-- **Checklist controls** — Add, check, reorder, and remove list items. Checked items can be moved to the bottom based on settings.
-- **Organization** — Pin important notes, add labels, archive notes, move notes to trash, restore them, or delete them permanently.
-- **Search** — Quickly find notes from the dedicated search screen.
-- **Reminders** — Set note reminders and receive local notifications.
-- **Attachments & capture** — Attach images from the Android photo picker, create drawing notes saved as private PNG files, and record audio notes saved as private audio files for playback.
-- **Export & sharing** — Export notes as TXT, PDF, DOC/HTML, or HTML. Share note content through Android sharing.
-- **Editor actions** — Pin/unpin, archive/unarchive, share, export, reminder, label, color/background, formatting, and collaborator options are available from the note editor.
-- **Themes & settings** — Light, Dark, and System theme support with an OLED-friendly dark appearance. Settings persist locally for checklist behavior, sharing, and note defaults.
-- **Assembly workspace** — Open **Assembly Code** from the `+` menu to launch the integrated A64 Studio workspace inside Arcturus Memo for ARM64 assembly editing and tooling.
+- **Quick capture** - Create text notes, checklists, drawings, audio notes, image notes, or assembly-code notes from the home `+` menu.
+- **Mixed notes** - Combine plain text blocks and checkbox items in the same note. Add checkboxes inline, continue typing text below a list, and keep note content editable as your structure changes.
+- **Checklist controls** - Add, check, reorder, and remove list items. Checked items can be moved to the bottom based on settings.
+- **Organization** - Pin important notes, add labels, archive notes, move notes to trash, restore them, or delete them permanently.
+- **Search** - Quickly find notes from the dedicated search screen.
+- **Reminders** - Set note reminders and receive local notifications.
+- **Attachments & capture** - Attach images from the Android photo picker, create drawing notes saved as private PNG files, and record audio notes saved as private audio files for playback.
+- **Export & sharing** - Export notes as TXT, PDF, DOC/HTML, or HTML. Share note content through Android sharing.
+- **Editor actions** - Pin/unpin, archive/unarchive, share, export, reminder, label, color/background, formatting, and collaborator options are available from the note editor.
+- **Themes & settings** - Light, Dark, and System theme support with an OLED-friendly dark appearance. Settings persist locally for checklist behavior, sharing, and note defaults.
+- **Assembly workspace** - Open **Assembly Code** from the `+` menu to launch the integrated A64 Studio workspace inside Arcturus Memo for ARM64 assembly editing and tooling.
 
 ## Build and install
 

@@ -30,5 +30,11 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
+        <service
+            android:name="dev.a64studio.worker.AssemblerService"
+            android:exported="false"
+            android:process=":worker"
+            android:stopWithTask="false" />
     </application>
 </manifest>

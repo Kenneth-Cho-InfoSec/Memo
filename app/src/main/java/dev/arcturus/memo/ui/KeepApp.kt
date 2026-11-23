@@ -45,6 +45,10 @@ import dev.arcturus.memo.ui.settings.KeepSettingsScreen
 import dev.arcturus.memo.ui.theme.KeepDarkColors
 import dev.arcturus.memo.ui.theme.KeepLightColors
 import dev.arcturus.memo.ui.theme.KeepTheme
+import androidx.lifecycle.viewmodel.compose.viewModel
+import dev.a64studio.ui.A64Theme
+import dev.a64studio.ui.StudioApp
+import dev.a64studio.ui.StudioViewModel
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -54,7 +58,7 @@ import kotlinx.coroutines.flow.first
 import java.io.File
 import java.util.UUID
 
-private enum class KeepRoute { Welcome, Home, Settings, Search, Editor, Collaborators, Drawing, Audio }
+private enum class KeepRoute { Welcome, Home, Settings, Search, Editor, Collaborators, Drawing, Audio, Assembly }
 
 private fun isReturningRoute(initial: String, target: String): Boolean = when (target) {
     KeepRoute.Home.name -> initial in setOf(
@@ -246,6 +250,13 @@ fun KeepApp(launchNoteId: String? = null, launchNoteToken: Int = 0) {
                     isDark = dark,
                     onClose = { route = KeepRoute.Editor.name },
                 )
+                KeepRoute.Assembly.name -> {
+                    val a64Vm: StudioViewModel = viewModel()
+                    BackHandler { route = KeepRoute.Home.name }
+                    A64Theme(a64Vm.colors, a64Vm.themeMode, a64Vm.dynamicColor) {
+                        StudioApp(a64Vm)
+                    }
+                }
                 KeepRoute.Editor.name -> editingNoteId?.let { noteId ->
                     KeepNoteEditorScreen(
                         noteId = noteId,
@@ -306,6 +317,7 @@ fun KeepApp(launchNoteId: String? = null, launchNoteToken: Int = 0) {
                             "Audio" -> audioPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
                         }
                     },
+                    onCreateAssembly = { route = KeepRoute.Assembly.name },
                     onOpenNote = { id -> editingNoteId = id; route = KeepRoute.Editor.name },
                     onCreateLabel = { name -> scope.launch { repository.createLabel(name) } },
                     onSort = { mode -> updateSettings { it.copy(sortMode = mode) } },
@@ -335,6 +347,7 @@ fun KeepApp(launchNoteId: String? = null, launchNoteToken: Int = 0) {
                             "Audio" -> audioPermissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
                         }
                     },
+                    onCreateAssembly = { route = KeepRoute.Assembly.name },
                     onOpenNote = { id -> editingNoteId = id; route = KeepRoute.Editor.name },
                     onCreateLabel = { name -> scope.launch { repository.createLabel(name) } },
                     onSort = { mode -> updateSettings { it.copy(sortMode = mode) } },

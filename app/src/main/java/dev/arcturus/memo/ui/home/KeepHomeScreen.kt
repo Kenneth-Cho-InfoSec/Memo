@@ -45,6 +45,7 @@ import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.Archive
 import androidx.compose.material.icons.filled.Brush
 import androidx.compose.material.icons.filled.CheckBox
+import androidx.compose.material.icons.filled.Code
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.GridView
@@ -110,6 +111,7 @@ fun KeepHomeScreen(
     onCreateNote: (Boolean) -> Unit,
     onCreateImageNote: () -> Unit,
     onCreateSpecialNote: (String) -> Unit,
+    onCreateAssembly: () -> Unit,
     onOpenNote: (String) -> Unit,
     onCreateLabel: (String) -> Unit,
     onSort: (String) -> Unit,
@@ -273,7 +275,7 @@ fun KeepHomeScreen(
                     horizontalAlignment = Alignment.End,
                     verticalArrangement = Arrangement.spacedBy(4.dp),
                 ) {
-                    listOf("Image", "Drawing", "Audio", "List", "Text").forEachIndexed { index, type ->
+                    listOf("Assembly Code", "Image", "Drawing", "Audio", "List", "Text").forEachIndexed { index, type ->
                         AnimatedVisibility(
                             visible = createMenuOpen,
                             enter = slideInVertically(
@@ -290,6 +292,7 @@ fun KeepHomeScreen(
                                 when (type) {
                                     "Image" -> onCreateImageNote()
                                     "Drawing", "Audio" -> onCreateSpecialNote(type)
+                                    "Assembly Code" -> onCreateAssembly()
                                     else -> onCreateNote(type == "List")
                                 }
                             }
@@ -338,6 +341,7 @@ private fun CreateTypeRow(type: String, colors: KeepColors, onClick: () -> Unit)
         "Image" -> Icons.Filled.Image
         "Drawing" -> Icons.Filled.Brush
         "Audio" -> Icons.Filled.Mic
+        "Assembly Code" -> Icons.Filled.Code
         else -> Icons.Filled.StickyNote2
     }
     Surface(
